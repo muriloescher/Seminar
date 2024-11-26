@@ -1,0 +1,24 @@
+\section{Plan}
+\label{sec:plan}
+The idea of this project is to use RAG, consisting of CVE reports and SAST tools, to enhance a LLM's ability to perform vulnerability detection.
+The focus is going to be on reducing false positives for memory related vulnerabilites.
+
+Using this dataset \url{https://github.com/ARISE-Handong/BugOss}, the pipeline will be as follows:
+
+\begin{enumerate}
+    \item Run CodeQL on dataset
+    \item Get related CVE reports based on the output from CodeQL
+    \item Merge both information as RAG ressource
+    \item Use Gemini's API to send this info, along with the vulnerable code to the LLM
+    \item Get LLM response through API
+    \item Save response in a table?
+\end{enumerate}
+
+The data then will be evaluated as follows:
+
+\begin{enumerate}
+    \item The false positive rate will be calculated for both CodeQL and the LLM
+    \item The \#vuln detected must be taken into account, otherwise FP would be 0 for 0 vulns
+\end{enumerate}
+
+Would using another SAST tool with a voting system (both must detect the vuln. for it to be sent to the llm) be useful?
