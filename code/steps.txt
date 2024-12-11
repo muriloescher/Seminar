@@ -1,0 +1,34 @@
+codeql output into chatgpt/gemini -> manual prototype
+cve search or another database for rag
+get both working
+integrate into gemini
+
+write the paper in parallel
+
+come up with protocoll to see if function is vuln. or not
+
+analyze 
+
+codeql output + cve search (top x results in similarity, based on CWE, prog. language, recommended to use more) as rag into gemini
+    -> prompt needs to be structured specifically
+
+check with and without RAG, check FP
+
+Compare SAST vs. SAST + LLM vs. SAST + LLM + RAG
+
+RAG: encode all data we could want to fetch into latent space (like a vector space), RAG is prog. for information retrieval, based on similarity.
+Based on cos-similarity, retrieve data from latent space
+
+Retrieve data, encode it first, based on user query
+Read more on how to use and encode RAG
+
+a) Go for heuristic approach (hard to define which vars to use to retrieve data) or
+b) latent space approach (hard to know which info to encode)
+-> choice needs to be explained
+
+Check into CVE Search -> container
+
+1. Compile everything and then run CodeQL on everything
+    -> LLM is not gonna help if CodeQL doesn't detect anything
+
+Diagnostics, Summary, Telemetry are not needed
