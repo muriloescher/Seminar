@@ -1,0 +1,2356 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &uc (type unsigned char const *) is never used.",
+        "severity": "ERROR",
+        "line": 76,
+        "column": 12,
+        "procedure": "eatquote",
+        "procedure_start_line": 66,
+        "file": "/project/src/is_csv.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/is_csv.c",
+                "line_number": 76,
+                "column_number": 12,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "is_csv.c|eatquote|DEAD_STORE",
+        "hash": "254cd9bd83530ca69b8b66b308fee9e3",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &rv (type int) is never used.",
+        "severity": "ERROR",
+        "line": 75,
+        "column": 2,
+        "procedure": "file_ascmagic",
+        "procedure_start_line": 70,
+        "file": "/project/src/ascmagic.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/ascmagic.c",
+                "line_number": 75,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ascmagic.c|file_ascmagic|DEAD_STORE",
+        "hash": "f8077e933c6e984396563cb94cc23616",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from rv was never initialized.",
+        "severity": "ERROR",
+        "line": 134,
+        "column": 2,
+        "procedure": "_cdf_tole2",
+        "procedure_start_line": 126,
+        "file": "/project/src/cdf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/cdf.c",
+                "line_number": 134,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "cdf.c|_cdf_tole2|UNINITIALIZED_VALUE",
+        "hash": "0e4dca9424d267e3ef7397d565d36da4",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from rv was never initialized.",
+        "severity": "ERROR",
+        "line": 150,
+        "column": 2,
+        "procedure": "_cdf_tole4",
+        "procedure_start_line": 140,
+        "file": "/project/src/cdf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/cdf.c",
+                "line_number": 150,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "cdf.c|_cdf_tole4|UNINITIALIZED_VALUE",
+        "hash": "3cac6e4901942b45ea570556bd526259",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from rv was never initialized.",
+        "severity": "ERROR",
+        "line": 170,
+        "column": 2,
+        "procedure": "_cdf_tole8",
+        "procedure_start_line": 156,
+        "file": "/project/src/cdf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/cdf.c",
+                "line_number": 170,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "cdf.c|_cdf_tole8|UNINITIALIZED_VALUE",
+        "hash": "358c82d0b57024bff2150708d652a2e0",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &flush (type int) is never used.",
+        "severity": "ERROR",
+        "line": 440,
+        "column": 6,
+        "procedure": "match",
+        "procedure_start_line": 193,
+        "file": "/project/src/softmagic.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/softmagic.c",
+                "line_number": 440,
+                "column_number": 6,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "softmagic.c|match|DEAD_STORE",
+        "hash": "280ca04c44c75d21f6902607f50b5608",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 400,
+        "column": 9,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 400,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "dcc3bc3e8dcd2c812b08f48608106ce9",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 400,
+        "column": 37,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 400,
+                "column_number": 37,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "dcc3bc3e8dcd2c812b08f48608106ce9",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 388,
+        "column": 32,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 388,
+                "column_number": 32,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "ec575862eb54b40a42873d9dbf484ebd",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 401,
+        "column": 10,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 401,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "ec575862eb54b40a42873d9dbf484ebd",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_type was never initialized.",
+        "severity": "ERROR",
+        "line": 393,
+        "column": 7,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 393,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "59e6c1c67b81941e4e156b47382857c4",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 400,
+        "column": 9,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 400,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "07be4f1ac6a2c69fe9e013bd6f619340",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 400,
+        "column": 37,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 400,
+                "column_number": 37,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "07be4f1ac6a2c69fe9e013bd6f619340",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 388,
+        "column": 32,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 388,
+                "column_number": 32,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "6c3e9b6a4d06224f35c0115db15f2617",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 401,
+        "column": 10,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 401,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "6c3e9b6a4d06224f35c0115db15f2617",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_type was never initialized.",
+        "severity": "ERROR",
+        "line": 393,
+        "column": 7,
+        "procedure": "dophn_core",
+        "procedure_start_line": 348,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 393,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_core|UNINITIALIZED_VALUE",
+        "hash": "aba667405a6c52e4413c13dfc1c46c09",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ispipe (type int) is never used.",
+        "severity": "ERROR",
+        "line": 444,
+        "column": 5,
+        "procedure": "file_or_fd",
+        "procedure_start_line": 401,
+        "file": "/project/src/magic.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/magic.c",
+                "line_number": 444,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "magic.c|file_or_fd|DEAD_STORE",
+        "hash": "65d3cb6791b15a3409f6e584d7290414",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &last (type char*) is never used.",
+        "severity": "ERROR",
+        "line": 678,
+        "column": 6,
+        "procedure": "mprint",
+        "procedure_start_line": 578,
+        "file": "/project/src/softmagic.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/softmagic.c",
+                "line_number": 678,
+                "column_number": 6,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "softmagic.c|mprint|DEAD_STORE",
+        "hash": "101bd592f5a9fdac4ee57fe3598fdf20",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 964,
+        "column": 55,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 964,
+                "column_number": 55,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "eec12869045dc00d09ef6ea080af2cff",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 959,
+        "column": 32,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 959,
+                "column_number": 32,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "cf72de76678cce89c2c18cfdfb9f1d8e",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 965,
+        "column": 11,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 965,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "cf72de76678cce89c2c18cfdfb9f1d8e",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_vaddr was never initialized.",
+        "severity": "ERROR",
+        "line": 964,
+        "column": 19,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 964,
+                "column_number": 19,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "5845b2eeb7db681d296db8ac28810297",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_vaddr was never initialized.",
+        "severity": "ERROR",
+        "line": 964,
+        "column": 43,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 964,
+                "column_number": 43,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "5845b2eeb7db681d296db8ac28810297",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_vaddr was never initialized.",
+        "severity": "ERROR",
+        "line": 965,
+        "column": 36,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 965,
+                "column_number": 36,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "5845b2eeb7db681d296db8ac28810297",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 964,
+        "column": 55,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 964,
+                "column_number": 55,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "fc9ed1520ec606b2d5fc2e15effd7657",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 959,
+        "column": 32,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 959,
+                "column_number": 32,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "2eb9b47af241822ac9128b8f5c1e7406",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 965,
+        "column": 11,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 965,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "2eb9b47af241822ac9128b8f5c1e7406",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_vaddr was never initialized.",
+        "severity": "ERROR",
+        "line": 964,
+        "column": 19,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 964,
+                "column_number": 19,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "5e64fb635faccb163429e60d51fd21a9",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_vaddr was never initialized.",
+        "severity": "ERROR",
+        "line": 964,
+        "column": 43,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 964,
+                "column_number": 43,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "5e64fb635faccb163429e60d51fd21a9",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_vaddr was never initialized.",
+        "severity": "ERROR",
+        "line": 965,
+        "column": 36,
+        "procedure": "get_offset_from_virtaddr",
+        "procedure_start_line": 936,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 965,
+                "column_number": 36,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|get_offset_from_virtaddr|UNINITIALIZED_VALUE",
+        "hash": "5e64fb635faccb163429e60d51fd21a9",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from auxv32.a_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1055,
+        "column": 10,
+        "procedure": "do_auxv_note",
+        "procedure_start_line": 1005,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1055,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|do_auxv_note|UNINITIALIZED_VALUE",
+        "hash": "8e56c6e5943718c21987f436a3fba1b3",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from auxv32.a_v was never initialized.",
+        "severity": "ERROR",
+        "line": 1093,
+        "column": 31,
+        "procedure": "do_auxv_note",
+        "procedure_start_line": 1005,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1093,
+                "column_number": 31,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|do_auxv_note|UNINITIALIZED_VALUE",
+        "hash": "b4bb6783a9374280509f2d16b4d6b5b0",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from auxv32.a_v was never initialized.",
+        "severity": "ERROR",
+        "line": 1102,
+        "column": 8,
+        "procedure": "do_auxv_note",
+        "procedure_start_line": 1005,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1102,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|do_auxv_note|UNINITIALIZED_VALUE",
+        "hash": "b4bb6783a9374280509f2d16b4d6b5b0",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from auxv64.a_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1055,
+        "column": 10,
+        "procedure": "do_auxv_note",
+        "procedure_start_line": 1005,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1055,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|do_auxv_note|UNINITIALIZED_VALUE",
+        "hash": "0ecadce7cb610ad8c61c493975aa07a2",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from auxv64.a_v was never initialized.",
+        "severity": "ERROR",
+        "line": 1093,
+        "column": 31,
+        "procedure": "do_auxv_note",
+        "procedure_start_line": 1005,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1093,
+                "column_number": 31,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|do_auxv_note|UNINITIALIZED_VALUE",
+        "hash": "3a577700da18583fdf021de8536fe133",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from auxv64.a_v was never initialized.",
+        "severity": "ERROR",
+        "line": 1102,
+        "column": 8,
+        "procedure": "do_auxv_note",
+        "procedure_start_line": 1005,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1102,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|do_auxv_note|UNINITIALIZED_VALUE",
+        "hash": "3a577700da18583fdf021de8536fe133",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from dh32.d_tag was never initialized.",
+        "severity": "ERROR",
+        "line": 1130,
+        "column": 10,
+        "procedure": "dodynamic",
+        "procedure_start_line": 1112,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1130,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dodynamic|UNINITIALIZED_VALUE",
+        "hash": "88d2bcbf37e9aa63cb5a108c5bb9f21d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from dh64.d_tag was never initialized.",
+        "severity": "ERROR",
+        "line": 1130,
+        "column": 10,
+        "procedure": "dodynamic",
+        "procedure_start_line": 1112,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1130,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dodynamic|UNINITIALIZED_VALUE",
+        "hash": "8938d03e8586ffcc190c55abeccd99f9",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from cap32.c_tag was never initialized.",
+        "severity": "ERROR",
+        "line": 1540,
+        "column": 13,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1540,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "d2a7e8a1af65531f70b9f9760ff767e5",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from cap32.c_tag was never initialized.",
+        "severity": "ERROR",
+        "line": 1554,
+        "column": 10,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1554,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "d2a7e8a1af65531f70b9f9760ff767e5",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from cap64.c_tag was never initialized.",
+        "severity": "ERROR",
+        "line": 1540,
+        "column": 13,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1540,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "c55b8755cdaf046d98adb91ae2c5bfa5",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from cap64.c_tag was never initialized.",
+        "severity": "ERROR",
+        "line": 1554,
+        "column": 10,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1554,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "c55b8755cdaf046d98adb91ae2c5bfa5",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_name was never initialized.",
+        "severity": "ERROR",
+        "line": 1392,
+        "column": 21,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1392,
+                "column_number": 21,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "a657febdce19cbae775a23ab064b7b9b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1381,
+        "column": 13,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1381,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "99e4421d0186c1255785294d918a50da",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1425,
+        "column": 33,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1425,
+                "column_number": 33,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "99e4421d0186c1255785294d918a50da",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1436,
+        "column": 8,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1436,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "99e4421d0186c1255785294d918a50da",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1442,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1442,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "99e4421d0186c1255785294d918a50da",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1453,
+        "column": 11,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1453,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "99e4421d0186c1255785294d918a50da",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1490,
+        "column": 18,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1490,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "99e4421d0186c1255785294d918a50da",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1436,
+        "column": 8,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1436,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1443,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1443,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1448,
+        "column": 23,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1448,
+                "column_number": 23,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1454,
+        "column": 24,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1454,
+                "column_number": 24,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1455,
+        "column": 8,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1455,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1466,
+        "column": 17,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1466,
+                "column_number": 17,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1469,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1469,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1502,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1502,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1559,
+        "column": 14,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1559,
+                "column_number": 14,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "7b915f0a7af0ec3dca33e9844eaa164b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1417,
+        "column": 11,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1417,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "b057ddb869361129e380d1e7d02685a7",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh32.sh_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1434,
+        "column": 11,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1434,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "b057ddb869361129e380d1e7d02685a7",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_name was never initialized.",
+        "severity": "ERROR",
+        "line": 1392,
+        "column": 21,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1392,
+                "column_number": 21,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "d45a7f9ff91f96ebf110fa8ef3c0e50b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1381,
+        "column": 13,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1381,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "054607f674772b118fb61b72126c49ef",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1425,
+        "column": 33,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1425,
+                "column_number": 33,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "054607f674772b118fb61b72126c49ef",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1436,
+        "column": 8,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1436,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "054607f674772b118fb61b72126c49ef",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1442,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1442,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "054607f674772b118fb61b72126c49ef",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1453,
+        "column": 11,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1453,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "054607f674772b118fb61b72126c49ef",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1490,
+        "column": 18,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1490,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "054607f674772b118fb61b72126c49ef",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1436,
+        "column": 8,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1436,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1443,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1443,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1448,
+        "column": 23,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1448,
+                "column_number": 23,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1454,
+        "column": 24,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1454,
+                "column_number": 24,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1455,
+        "column": 8,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1455,
+                "column_number": 8,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1466,
+        "column": 17,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1466,
+                "column_number": 17,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1469,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1469,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1502,
+        "column": 9,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1502,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_size was never initialized.",
+        "severity": "ERROR",
+        "line": 1559,
+        "column": 14,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1559,
+                "column_number": 14,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9696ee13f4a5950a0dc85b96b519dd27",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1417,
+        "column": 11,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1417,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9d4d7c754fc8c5e4997c550843d3a207",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from sh64.sh_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1434,
+        "column": 11,
+        "procedure": "doshn",
+        "procedure_start_line": 1343,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1434,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|doshn|UNINITIALIZED_VALUE",
+        "hash": "9d4d7c754fc8c5e4997c550843d3a207",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1481,
+        "column": 3,
+        "procedure": "do_ops",
+        "procedure_start_line": 1447,
+        "file": "/project/src/softmagic.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/softmagic.c",
+                "line_number": 1481,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "softmagic.c|do_ops|UNINITIALIZED_VALUE",
+        "hash": "1bb7e0cd896fd5cdde8538cd946c2a2e",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1483,
+        "column": 2,
+        "procedure": "do_ops",
+        "procedure_start_line": 1447,
+        "file": "/project/src/softmagic.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/softmagic.c",
+                "line_number": 1483,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "softmagic.c|do_ops|UNINITIALIZED_VALUE",
+        "hash": "1bb7e0cd896fd5cdde8538cd946c2a2e",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from nbuf[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1753,
+        "column": 19,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1753,
+                "column_number": 19,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "9f02ee26a979735cac242b1a901e3074",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_align was never initialized.",
+        "severity": "ERROR",
+        "line": 1693,
+        "column": 18,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1693,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "b415c4d7cd6cc38a0d181db716bd0e91",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 1715,
+        "column": 10,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1715,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "328404d0cb3cd7640a3a21a0f2179a8a",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 1715,
+        "column": 38,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1715,
+                "column_number": 38,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "328404d0cb3cd7640a3a21a0f2179a8a",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1707,
+        "column": 33,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1707,
+                "column_number": 33,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "ac725d1b09f83228007b3b00ceb2883f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1717,
+        "column": 17,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1717,
+                "column_number": 17,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "ac725d1b09f83228007b3b00ceb2883f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1686,
+        "column": 11,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1686,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "8ef88a0fc193df875fda970b79a7344f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph32.p_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1730,
+        "column": 11,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1730,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "8ef88a0fc193df875fda970b79a7344f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_align was never initialized.",
+        "severity": "ERROR",
+        "line": 1693,
+        "column": 18,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1693,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "9285d4ca3009609be15c556072cfdb0f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 1715,
+        "column": 10,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1715,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "9b8cbf63c9db7faad395e8e7fe6e56f8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_filesz was never initialized.",
+        "severity": "ERROR",
+        "line": 1715,
+        "column": 38,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1715,
+                "column_number": 38,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "9b8cbf63c9db7faad395e8e7fe6e56f8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1707,
+        "column": 33,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1707,
+                "column_number": 33,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "b2ef425eaa2078aefdd523e9618425d6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1717,
+        "column": 17,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1717,
+                "column_number": 17,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "b2ef425eaa2078aefdd523e9618425d6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1686,
+        "column": 11,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1686,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "525ca20386e3b629cf954667f1815876",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ph64.p_type was never initialized.",
+        "severity": "ERROR",
+        "line": 1730,
+        "column": 11,
+        "procedure": "dophn_exec",
+        "procedure_start_line": 1643,
+        "file": "/project/src/readelf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/readelf.c",
+                "line_number": 1730,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "readelf.c|dophn_exec|UNINITIALIZED_VALUE",
+        "hash": "525ca20386e3b629cf954667f1815876",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &slen (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 2215,
+        "column": 13,
+        "procedure": "magiccheck",
+        "procedure_start_line": 2008,
+        "file": "/project/src/softmagic.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/softmagic.c",
+                "line_number": 2215,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "softmagic.c|magiccheck|DEAD_STORE",
+        "hash": "ef3cf57f1365fa1bac6fc33c4e97231d",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &m (type magic*) is never used.",
+        "severity": "ERROR",
+        "line": 2396,
+        "column": 2,
+        "procedure": "parse_apple",
+        "procedure_start_line": 2392,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 2396,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|parse_apple|DEAD_STORE",
+        "hash": "24755facff0ae825e9825a9b871287e6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &m (type magic*) is never used.",
+        "severity": "ERROR",
+        "line": 2410,
+        "column": 2,
+        "procedure": "parse_ext",
+        "procedure_start_line": 2406,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 2410,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|parse_ext|DEAD_STORE",
+        "hash": "d66f4d2ccd41e465164459e875095b2c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &m (type magic*) is never used.",
+        "severity": "ERROR",
+        "line": 2425,
+        "column": 2,
+        "procedure": "parse_mime",
+        "procedure_start_line": 2421,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 2425,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|parse_mime|DEAD_STORE",
+        "hash": "3b2241f3491d0aa21ecae8d25ee0aee9",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ptr (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 2496,
+        "column": 12,
+        "procedure": "check_format_type",
+        "procedure_start_line": 2432,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 2496,
+                "column_number": 12,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|check_format_type|DEAD_STORE",
+        "hash": "cbd1f44e6fd5c49aa8fd15c4c662d2ff",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ptr (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 2580,
+        "column": 12,
+        "procedure": "check_format_type",
+        "procedure_start_line": 2432,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 2580,
+                "column_number": 12,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|check_format_type|DEAD_STORE",
+        "hash": "cbd1f44e6fd5c49aa8fd15c4c662d2ff",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ptr (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 2605,
+        "column": 12,
+        "procedure": "check_format_type",
+        "procedure_start_line": 2432,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 2605,
+                "column_number": 12,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|check_format_type|DEAD_STORE",
+        "hash": "cbd1f44e6fd5c49aa8fd15c4c662d2ff",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &fd (type int) is never used.",
+        "severity": "ERROR",
+        "line": 3235,
+        "column": 2,
+        "procedure": "apprentice_compile",
+        "procedure_start_line": 3230,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 3235,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|apprentice_compile|DEAD_STORE",
+        "hash": "56a14626e89986696b2aa84c19aa9d18",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &p (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 3295,
+        "column": 9,
+        "procedure": "mkdbname",
+        "procedure_start_line": 3287,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 3295,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "apprentice.c|mkdbname|DEAD_STORE",
+        "hash": "904b90cbcedd4bacfd47f99d14cd641c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from rv was never initialized.",
+        "severity": "ERROR",
+        "line": 3353,
+        "column": 2,
+        "procedure": "swap2",
+        "procedure_start_line": 3345,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 3353,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "apprentice.c|swap2|UNINITIALIZED_VALUE",
+        "hash": "0e9c540026eb7dd792349c9114c11a5b",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from rv was never initialized.",
+        "severity": "ERROR",
+        "line": 3369,
+        "column": 2,
+        "procedure": "swap4",
+        "procedure_start_line": 3359,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 3369,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "apprentice.c|swap4|UNINITIALIZED_VALUE",
+        "hash": "bf50fb87977c808863deb3d910d864c2",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from rv was never initialized.",
+        "severity": "ERROR",
+        "line": 3400,
+        "column": 2,
+        "procedure": "swap8",
+        "procedure_start_line": 3375,
+        "file": "/project/src/apprentice.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/apprentice.c",
+                "line_number": 3400,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "apprentice.c|swap8|UNINITIALIZED_VALUE",
+        "hash": "a7db3a1173dde400c425fd2d26d52262",
+        "bug_type_hum": "Uninitialized Value"
+    }
+]

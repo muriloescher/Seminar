@@ -32,3 +32,10 @@ Check into CVE Search -> container
     -> LLM is not gonna help if CodeQL doesn't detect anything
 
 Diagnostics, Summary, Telemetry are not needed
+
+
+
+03.01.2025
+
+Use infer as well as codeql, so maybe it is not so stupid
+https://fbinfer.com/

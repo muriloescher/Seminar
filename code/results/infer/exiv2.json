@@ -1,0 +1,3035 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &rc (type int) is never used.",
+        "severity": "ERROR",
+        "line": 16,
+        "column": 3,
+        "procedure": "Exiv2::Internal::stringFormat",
+        "procedure_start_line": 12,
+        "file": "/project/src/image_int.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/image_int.cpp",
+                "line_number": 16,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "image_int.cpp|Exiv2::Internal::stringFormat|DEAD_STORE",
+        "hash": "a87dd4a9b096fa4f9aa0b7b45cf33150",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &zlibResult (type int) is never used.",
+        "severity": "ERROR",
+        "line": 75,
+        "column": 3,
+        "procedure": "Exiv2::zlibToDataBuf",
+        "procedure_start_line": 73,
+        "file": "/project/src/pngimage.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/pngimage.cpp",
+                "line_number": 75,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "pngimage.cpp|Exiv2::zlibToDataBuf|DEAD_STORE",
+        "hash": "ae504ffdccd523af7698a090f5746228",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &zlibResult (type int) is never used.",
+        "severity": "ERROR",
+        "line": 104,
+        "column": 3,
+        "procedure": "Exiv2::zlibToCompressed",
+        "procedure_start_line": 102,
+        "file": "/project/src/pngimage.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/pngimage.cpp",
+                "line_number": 104,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "pngimage.cpp|Exiv2::zlibToCompressed|DEAD_STORE",
+        "hash": "d65ebc047bb88770750ecfa42b9d7e67",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &c (type int) is never used.",
+        "severity": "ERROR",
+        "line": 109,
+        "column": 3,
+        "procedure": "Exiv2::JpegBase::advanceToMarker",
+        "procedure_start_line": 108,
+        "file": "/project/src/jpgimage.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/jpgimage.cpp",
+                "line_number": 109,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "jpgimage.cpp|advanceToMarker|DEAD_STORE",
+        "hash": "3437f6d652059517a09a484598398429",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &server (type int) is never used.",
+        "severity": "ERROR",
+        "line": 204,
+        "column": 3,
+        "procedure": "Exiv2::http",
+        "procedure_start_line": 133,
+        "file": "/project/src/http.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/http.cpp",
+                "line_number": 204,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "http.cpp|Exiv2::http|DEAD_STORE",
+        "hash": "713d68d91e3d6bec7fb21287c475e938",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from decoding_table[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 174,
+        "column": 27,
+        "procedure": "Exiv2::base64decode",
+        "procedure_start_line": 153,
+        "file": "/project/src/futils.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/futils.cpp",
+                "line_number": 174,
+                "column_number": 27,
+                "description": ""
+            }
+        ],
+        "key": "futils.cpp|Exiv2::base64decode|UNINITIALIZED_VALUE",
+        "hash": "730c4bb2db68c303906dc4526d0e3a33",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from decoding_table[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 175,
+        "column": 27,
+        "procedure": "Exiv2::base64decode",
+        "procedure_start_line": 153,
+        "file": "/project/src/futils.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/futils.cpp",
+                "line_number": 175,
+                "column_number": 27,
+                "description": ""
+            }
+        ],
+        "key": "futils.cpp|Exiv2::base64decode|UNINITIALIZED_VALUE",
+        "hash": "730c4bb2db68c303906dc4526d0e3a33",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from decoding_table[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 176,
+        "column": 27,
+        "procedure": "Exiv2::base64decode",
+        "procedure_start_line": 153,
+        "file": "/project/src/futils.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/futils.cpp",
+                "line_number": 176,
+                "column_number": 27,
+                "description": ""
+            }
+        ],
+        "key": "futils.cpp|Exiv2::base64decode|UNINITIALIZED_VALUE",
+        "hash": "730c4bb2db68c303906dc4526d0e3a33",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from decoding_table[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 177,
+        "column": 27,
+        "procedure": "Exiv2::base64decode",
+        "procedure_start_line": 153,
+        "file": "/project/src/futils.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/futils.cpp",
+                "line_number": 177,
+                "column_number": 27,
+                "description": ""
+            }
+        ],
+        "key": "futils.cpp|Exiv2::base64decode|UNINITIALIZED_VALUE",
+        "hash": "730c4bb2db68c303906dc4526d0e3a33",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `iter` last assigned on line 163 could be null and is dereferenced at line 164, column 3.",
+        "severity": "ERROR",
+        "line": 164,
+        "column": 3,
+        "procedure": "WXMPIterator_Skip_1",
+        "procedure_start_line": 156,
+        "file": "/project/xmpsdk/src/WXMPIterator.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 156,
+                "column_number": 1,
+                "description": "start of procedure WXMPIterator_Skip_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 161,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 163,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 163,
+                "column_number": 24,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 164,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPIterator.cpp|WXMPIterator_Skip_1|NULL_DEREFERENCE",
+        "node_key": "ef43566449b136347ea2b6090b787a74",
+        "hash": "cfc2fa2956a8d58b91eb4f47c2d4d740",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &flags (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 230,
+        "column": 5,
+        "procedure": "Exiv2::BmffImage::boxHandler",
+        "procedure_start_line": 157,
+        "file": "/project/src/bmffimage.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/bmffimage.cpp",
+                "line_number": 230,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "bmffimage.cpp|boxHandler|DEAD_STORE",
+        "hash": "a2de0d68075b95c37042f0099e2d2aaf",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &skip (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 378,
+        "column": 7,
+        "procedure": "Exiv2::BmffImage::boxHandler",
+        "procedure_start_line": 157,
+        "file": "/project/src/bmffimage.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/bmffimage.cpp",
+                "line_number": 378,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "bmffimage.cpp|boxHandler|DEAD_STORE",
+        "hash": "74ce3205853120597c34c520d4fdd1cf",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `iter` last assigned on line 178 could be null and is dereferenced at line 179, column 3.",
+        "severity": "ERROR",
+        "line": 179,
+        "column": 3,
+        "procedure": "WXMPUtils_UnlockIter_1",
+        "procedure_start_line": 171,
+        "file": "/project/xmpsdk/src/WXMPIterator.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 171,
+                "column_number": 1,
+                "description": "start of procedure WXMPUtils_UnlockIter_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 175,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 176,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 178,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 178,
+                "column_number": 24,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPIterator.cpp",
+                "line_number": 179,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPIterator.cpp|WXMPUtils_UnlockIter_1|NULL_DEREFERENCE",
+        "node_key": "ebfcd86bb1c9c2b802a95632413dc918",
+        "hash": "fe78de101fc617e7f0b1f4ae4d51d30a",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &prefix (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 277,
+        "column": 21,
+        "procedure": "EndNamespaceDeclHandler",
+        "procedure_start_line": 269,
+        "file": "/project/xmpsdk/src/ExpatAdapter.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ExpatAdapter.cpp",
+                "line_number": 277,
+                "column_number": 21,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ExpatAdapter.cpp|EndNamespaceDeclHandler|DEAD_STORE",
+        "hash": "85e8ca422ff02043f12fd580335cca68",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &attrCount (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 300,
+        "column": 2,
+        "procedure": "StartElementHandler",
+        "procedure_start_line": 292,
+        "file": "/project/xmpsdk/src/ExpatAdapter.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ExpatAdapter.cpp",
+                "line_number": 300,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ExpatAdapter.cpp|StartElementHandler|DEAD_STORE",
+        "hash": "7f299906e2cfea76bd273bf681ffdaf5",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from buffer[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 336,
+        "column": 9,
+        "procedure": "CodePointToUTF8",
+        "procedure_start_line": 304,
+        "file": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 336,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "XMPUtils-FileInfo.cpp|CodePointToUTF8|UNINITIALIZED_VALUE",
+        "hash": "adb9c693ed0ae88afd6cd47c24527b7f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from buffer[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 341,
+        "column": 3,
+        "procedure": "CodePointToUTF8",
+        "procedure_start_line": 304,
+        "file": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 341,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "XMPUtils-FileInfo.cpp|CodePointToUTF8|UNINITIALIZED_VALUE",
+        "hash": "adb9c693ed0ae88afd6cd47c24527b7f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &iptcDone (type _Bool) is never used.",
+        "severity": "ERROR",
+        "line": 508,
+        "column": 5,
+        "procedure": "Exiv2::PsdImage::doWriteMetadata",
+        "procedure_start_line": 326,
+        "file": "/project/src/psdimage.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/psdimage.cpp",
+                "line_number": 508,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "psdimage.cpp|doWriteMetadata|DEAD_STORE",
+        "hash": "9b3c72bf4e065e43af251216cfa3b313",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from buf2.st_mode was never initialized.",
+        "severity": "ERROR",
+        "line": 399,
+        "column": 21,
+        "procedure": "Exiv2::FileIo::transfer",
+        "procedure_start_line": 327,
+        "file": "/project/src/basicio.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/basicio.cpp",
+                "line_number": 399,
+                "column_number": 21,
+                "description": ""
+            }
+        ],
+        "key": "basicio.cpp|transfer|UNINITIALIZED_VALUE",
+        "hash": "a292ca773d502ef0e17d14451f83719c",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `null` is dereferenced by call to `FindChildNode()` at line 411, column 26.",
+        "severity": "ERROR",
+        "line": 411,
+        "column": 26,
+        "procedure": "MoveExplicitAliases",
+        "procedure_start_line": 376,
+        "file": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 376,
+                "column_number": 1,
+                "description": "start of procedure MoveExplicitAliases()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 379,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 380,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 380,
+                "column_number": 31,
+                "description": "Condition is false"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 389,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 390,
+                "column_number": 10,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 391,
+                "column_number": 3,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 393,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 394,
+                "column_number": 11,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 395,
+                "column_number": 4,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 396,
+                "column_number": 12,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 396,
+                "column_number": 11,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 400,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 404,
+                "column_number": 4,
+                "description": "Skipping find: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 405,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 406,
+                "column_number": 4,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 407,
+                "column_number": 4,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 409,
+                "column_number": 4,
+                "description": "Skipping c_str: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 410,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 410,
+                "column_number": 54,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 411,
+                "column_number": 4,
+                "description": "Skipping c_str: method has no implementation"
+            }
+        ],
+        "key": "XMPMeta-Parse.cpp|MoveExplicitAliases|NULL_DEREFERENCE",
+        "node_key": "27a7ec182bb45ab21c3cd44f91ec40f4",
+        "hash": "0a576269b62923727a63ea4e16b3d13d",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &comment (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 468,
+        "column": 22,
+        "procedure": "CommentHandler",
+        "procedure_start_line": 460,
+        "file": "/project/xmpsdk/src/ExpatAdapter.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ExpatAdapter.cpp",
+                "line_number": 468,
+                "column_number": 22,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ExpatAdapter.cpp|CommentHandler|DEAD_STORE",
+        "hash": "acdef2a42650c4a024ced54fdf63bd70",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `null` is dereferenced by call to `FindChildNode()` at line 486, column 25.",
+        "severity": "ERROR",
+        "line": 486,
+        "column": 25,
+        "procedure": "FixGPSTimeStamp",
+        "procedure_start_line": 475,
+        "file": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 475,
+                "column_number": 1,
+                "description": "start of procedure FixGPSTimeStamp()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 478,
+                "column_number": 2,
+                "description": "Skipping XMP_DateTime: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 479,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 480,
+                "column_number": 3,
+                "description": "Skipping ConvertToDate: empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 479,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 484,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 484,
+                "column_number": 35,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 484,
+                "column_number": 63,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 486,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "XMPMeta-Parse.cpp|FixGPSTimeStamp|NULL_DEREFERENCE",
+        "node_key": "9793b83b5da0429b4ea183550d6f401c",
+        "hash": "997b335d6599ee57e910bd599b6cd1b4",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `null` is dereferenced by call to `FindChildNode()` at line 547, column 8.",
+        "severity": "ERROR",
+        "line": 547,
+        "column": 8,
+        "procedure": "FixupQualifiedNode",
+        "procedure_start_line": 502,
+        "file": "/project/xmpsdk/src/ParseRDF.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 502,
+                "column_number": 1,
+                "description": "start of procedure FixupQualifiedNode()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 508,
+                "column_number": 2,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 508,
+                "column_number": 2,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 510,
+                "column_number": 2,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 511,
+                "column_number": 2,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 513,
+                "column_number": 2,
+                "description": "Skipping reserve: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 520,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 521,
+                "column_number": 2,
+                "description": "Skipping size: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 523,
+                "column_number": 7,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 525,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 527,
+                "column_number": 3,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 529,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 530,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 531,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 533,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 536,
+                "column_number": 35,
+                "description": "Skipping begin: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 536,
+                "column_number": 75,
+                "description": "Skipping ~__normal_iterator: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 538,
+                "column_number": 3,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 540,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 544,
+                "column_number": 10,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 546,
+                "column_number": 3,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/ParseRDF.cpp",
+                "line_number": 547,
+                "column_number": 8,
+                "description": "Skipping c_str: method has no implementation"
+            }
+        ],
+        "key": "ParseRDF.cpp|FixupQualifiedNode|NULL_DEREFERENCE",
+        "node_key": "5a7aaddec0ed1c344dd5911e4d4f0cde",
+        "hash": "4142262faa2ce55b499aa2925da1333c",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 528 could be null and is dereferenced at line 529, column 3.",
+        "severity": "ERROR",
+        "line": 529,
+        "column": 3,
+        "procedure": "WXMPMeta_SetProperty_1",
+        "procedure_start_line": 515,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 515,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetProperty_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 523,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 525,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 525,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 526,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 526,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 528,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 528,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 529,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetProperty_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "03a93536bad85022531c1ad3b9464e7c",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `mn_` last assigned on line 538 could be null and is dereferenced at line 540, column 10.",
+        "severity": "ERROR",
+        "line": 540,
+        "column": 10,
+        "procedure": "Exiv2::Internal::TiffMnEntry::doAddPath",
+        "procedure_start_line": 526,
+        "file": "/project/src/tiffcomposite_int.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 526,
+                "column_number": 1,
+                "description": "start of procedure doAddPath"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 528,
+                "column_number": 3,
+                "description": "Skipping top: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 529,
+                "column_number": 3,
+                "description": "Skipping pop: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 530,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 534,
+                "column_number": 3,
+                "description": "Skipping top: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 535,
+                "column_number": 3,
+                "description": "Skipping push: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 536,
+                "column_number": 8,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 537,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 538,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 540,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "tiffcomposite_int.cpp|doAddPath|NULL_DEREFERENCE",
+        "node_key": "e5d4fca643d09d71cd468f4198575b6d",
+        "hash": "4d30144fef96f4e596c3514ac17ea321",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `null` is dereferenced by call to `FindChildNode()` at line 543, column 30.",
+        "severity": "ERROR",
+        "line": 543,
+        "column": 30,
+        "procedure": "MigrateAudioCopyright",
+        "procedure_start_line": 533,
+        "file": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 533,
+                "column_number": 1,
+                "description": "start of procedure MigrateAudioCopyright()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 537,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 539,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 540,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 542,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta-Parse.cpp",
+                "line_number": 543,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "XMPMeta-Parse.cpp|MigrateAudioCopyright|NULL_DEREFERENCE",
+        "node_key": "300e0835e0554d9bd0354088cef4d734",
+        "hash": "e90c99a65c3d3bd394e909605b1283f1",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 550 could be null and is dereferenced at line 551, column 3.",
+        "severity": "ERROR",
+        "line": 551,
+        "column": 3,
+        "procedure": "WXMPMeta_SetArrayItem_1",
+        "procedure_start_line": 536,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 536,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetArrayItem_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 545,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 547,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 547,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 548,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 548,
+                "column_number": 29,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 550,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 550,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 551,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetArrayItem_1|NULL_DEREFERENCE",
+        "node_key": "2e41d4e863ce96e936963e033d4e9ee8",
+        "hash": "0b7ebd01821d45181f3dc72216103962",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 572 could be null and is dereferenced at line 573, column 3.",
+        "severity": "ERROR",
+        "line": 573,
+        "column": 3,
+        "procedure": "WXMPMeta_AppendArrayItem_1",
+        "procedure_start_line": 558,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 558,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_AppendArrayItem_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 567,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 569,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 569,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 570,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 570,
+                "column_number": 29,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 572,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 572,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 573,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_AppendArrayItem_1|NULL_DEREFERENCE",
+        "node_key": "2e41d4e863ce96e936963e033d4e9ee8",
+        "hash": "ba10f5c0d66eaff5c1541f72af9d8e62",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `null` is dereferenced by call to `FindChildNode()` at line 601, column 34.",
+        "severity": "ERROR",
+        "line": 601,
+        "column": 34,
+        "procedure": "ItemValuesMatch",
+        "procedure_start_line": 575,
+        "file": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 575,
+                "column_number": 1,
+                "description": "start of procedure ItemValuesMatch()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 578,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 579,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 581,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 583,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 593,
+                "column_number": 14,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 597,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 599,
+                "column_number": 9,
+                "description": "Skipping size: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 599,
+                "column_number": 66,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 600,
+                "column_number": 4,
+                "description": "Skipping operator[]: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPUtils-FileInfo.cpp",
+                "line_number": 601,
+                "column_number": 4,
+                "description": "Skipping c_str: method has no implementation"
+            }
+        ],
+        "key": "XMPUtils-FileInfo.cpp|ItemValuesMatch|NULL_DEREFERENCE",
+        "node_key": "22fc13bd5b74017fa764c98354974dc8",
+        "hash": "b9cd42876ba9d07326cedb2160ec4d12",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 597 could be null and is dereferenced at line 598, column 3.",
+        "severity": "ERROR",
+        "line": 598,
+        "column": 3,
+        "procedure": "WXMPMeta_SetStructField_1",
+        "procedure_start_line": 580,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 580,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetStructField_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 590,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 592,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 592,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 593,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 593,
+                "column_number": 30,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 594,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 594,
+                "column_number": 27,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 595,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 595,
+                "column_number": 29,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 597,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 597,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 598,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetStructField_1|NULL_DEREFERENCE",
+        "node_key": "7c84396f4fcebc71effd591bb22e604e",
+        "hash": "48a13a36b7570d3b960b73517355e8c9",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `pTiffEntry` last assigned on line 591 could be null and is dereferenced at line 592, column 20.",
+        "severity": "ERROR",
+        "line": 592,
+        "column": 20,
+        "procedure": "Exiv2::Internal::TiffEncoder::updateDirEntry",
+        "procedure_start_line": 590,
+        "file": "/project/src/tiffvisitor_int.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/tiffvisitor_int.cpp",
+                "line_number": 590,
+                "column_number": 1,
+                "description": "start of procedure updateDirEntry"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffvisitor_int.cpp",
+                "line_number": 591,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffvisitor_int.cpp",
+                "line_number": 592,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "tiffvisitor_int.cpp|updateDirEntry|NULL_DEREFERENCE",
+        "node_key": "9e996665dfd6446777692e1b0c96d578",
+        "hash": "52039f0060ab9c8caa5d680453a0f46b",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 622 could be null and is dereferenced at line 623, column 3.",
+        "severity": "ERROR",
+        "line": 623,
+        "column": 3,
+        "procedure": "WXMPMeta_SetQualifier_1",
+        "procedure_start_line": 605,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 605,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetQualifier_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 615,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 617,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 617,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 618,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 618,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 619,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 619,
+                "column_number": 26,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 620,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 620,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 622,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 622,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 623,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetQualifier_1|NULL_DEREFERENCE",
+        "node_key": "7c84396f4fcebc71effd591bb22e604e",
+        "hash": "50ee368d204aa2d9738e9f45daef8d57",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 641 could be null and is dereferenced at line 642, column 3.",
+        "severity": "ERROR",
+        "line": 642,
+        "column": 3,
+        "procedure": "WXMPMeta_DeleteProperty_1",
+        "procedure_start_line": 630,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 630,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_DeleteProperty_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 636,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 638,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 638,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 639,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 639,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 641,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 641,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 642,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_DeleteProperty_1|NULL_DEREFERENCE",
+        "node_key": "17ebfdc46530b5a44f10c094f133500e",
+        "hash": "53660055fee8a17dd5804fe88bec8f3b",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &opt1 (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 754,
+        "column": 2,
+        "procedure": "XMPMeta::Initialize",
+        "procedure_start_line": 642,
+        "file": "/project/xmpsdk/src/XMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta.cpp",
+                "line_number": 754,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "XMPMeta.cpp|Initialize|DEAD_STORE",
+        "hash": "627d69147a3878530030adc8b42177cd",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &opt2 (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 755,
+        "column": 2,
+        "procedure": "XMPMeta::Initialize",
+        "procedure_start_line": 642,
+        "file": "/project/xmpsdk/src/XMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPMeta.cpp",
+                "line_number": 755,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "XMPMeta.cpp|Initialize|DEAD_STORE",
+        "hash": "4e22b9dcf0d5a3a1a53ebc01252e6a5e",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 661 could be null and is dereferenced at line 662, column 3.",
+        "severity": "ERROR",
+        "line": 662,
+        "column": 3,
+        "procedure": "WXMPMeta_DeleteArrayItem_1",
+        "procedure_start_line": 649,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 649,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_DeleteArrayItem_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 656,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 658,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 658,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 659,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 659,
+                "column_number": 29,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 661,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 661,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 662,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_DeleteArrayItem_1|NULL_DEREFERENCE",
+        "node_key": "d08d99251cd422f67ee0c190271b9c00",
+        "hash": "081559447c0d80c90f62be3406bc67a8",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 684 could be null and is dereferenced at line 685, column 3.",
+        "severity": "ERROR",
+        "line": 685,
+        "column": 3,
+        "procedure": "WXMPMeta_DeleteStructField_1",
+        "procedure_start_line": 669,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 669,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_DeleteStructField_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 677,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 679,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 679,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 680,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 680,
+                "column_number": 30,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 681,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 681,
+                "column_number": 27,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 682,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 682,
+                "column_number": 29,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 684,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 684,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 685,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_DeleteStructField_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "eefd1ed1fe6445f8886c66bd3d05bb08",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 707 could be null and is dereferenced at line 708, column 3.",
+        "severity": "ERROR",
+        "line": 708,
+        "column": 3,
+        "procedure": "WXMPMeta_DeleteQualifier_1",
+        "procedure_start_line": 692,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 692,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_DeleteQualifier_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 700,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 702,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 702,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 703,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 703,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 704,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 704,
+                "column_number": 26,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 705,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 705,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 707,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 707,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 708,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_DeleteQualifier_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "84a94caf4dc3d3a45197baebd722444a",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &pos (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 885,
+        "column": 7,
+        "procedure": "Exiv2::Internal::CrwMap::encode0x080a",
+        "procedure_start_line": 864,
+        "file": "/project/src/crwimage_int.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/crwimage_int.cpp",
+                "line_number": 885,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "crwimage_int.cpp|encode0x080a|DEAD_STORE",
+        "hash": "685fb36a6cb225ce2e0556e7d1b4820a",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `imageData` last assigned on line 914 could be null and is dereferenced at line 916, column 43.",
+        "severity": "ERROR",
+        "line": 916,
+        "column": 43,
+        "procedure": "anonymous_namespace__project_src_preview.cpp::decodeAi7Thumbnail",
+        "procedure_start_line": 905,
+        "file": "/project/src/preview.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 905,
+                "column_number": 1,
+                "description": "start of procedure anonymous_namespace__project_src_preview.cpp::decodeAi7Thumbnail()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 906,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 907,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 908,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 914,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 915,
+                "column_number": 3,
+                "description": "Skipping size: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 916,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 916,
+                "column_number": 21,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 916,
+                "column_number": 43,
+                "description": ""
+            }
+        ],
+        "key": "preview.cpp|anonymous_namespace__project_src_preview.cpp::decodeAi7Thumbnail|NULL_DEREFERENCE",
+        "node_key": "9a5729cbb1ab67961062d7f781041ecd",
+        "hash": "a0ed693767610400bf07d2f66f079300",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `imageData` last assigned on line 914 could be null and is dereferenced at line 920, column 18.",
+        "severity": "ERROR",
+        "line": 920,
+        "column": 18,
+        "procedure": "anonymous_namespace__project_src_preview.cpp::decodeAi7Thumbnail",
+        "procedure_start_line": 905,
+        "file": "/project/src/preview.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 905,
+                "column_number": 1,
+                "description": "start of procedure anonymous_namespace__project_src_preview.cpp::decodeAi7Thumbnail()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 906,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 907,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 908,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 914,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 915,
+                "column_number": 3,
+                "description": "Skipping size: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 916,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 916,
+                "column_number": 21,
+                "description": "Condition is false"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 917,
+                "column_number": 3,
+                "description": "Skipping basic_string: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 918,
+                "column_number": 8,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 918,
+                "column_number": 19,
+                "description": "Condition is false"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 918,
+                "column_number": 32,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 919,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/preview.cpp",
+                "line_number": 920,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "preview.cpp|anonymous_namespace__project_src_preview.cpp::decodeAi7Thumbnail|NULL_DEREFERENCE",
+        "node_key": "ab578a2885e0612a6f0fcdb6f65f6f30",
+        "hash": "a0ed693767610400bf07d2f66f079300",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `pDirEntry` last assigned on line 956 could be null and is dereferenced at line 958, column 16.",
+        "severity": "ERROR",
+        "line": 958,
+        "column": 16,
+        "procedure": "Exiv2::Internal::TiffDirectory::writeDirEntry",
+        "procedure_start_line": 953,
+        "file": "/project/src/tiffcomposite_int.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 953,
+                "column_number": 1,
+                "description": "start of procedure writeDirEntry"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 956,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tiffcomposite_int.cpp",
+                "line_number": 958,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "tiffcomposite_int.cpp|writeDirEntry|NULL_DEREFERENCE",
+        "node_key": "f1e0637fb6586c06a59859eb425c61ad",
+        "hash": "cee257938592ccfae0fed2cf9e5e246f",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1006 could be null and is dereferenced at line 1007, column 3.",
+        "severity": "ERROR",
+        "line": 1007,
+        "column": 3,
+        "procedure": "WXMPMeta_SetProperty_Bool_1",
+        "procedure_start_line": 993,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 993,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetProperty_Bool_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1001,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1003,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1003,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1004,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1004,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1006,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1006,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1007,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetProperty_Bool_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "6fc9a9ec5e3550168530d148de3f31d8",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1027 could be null and is dereferenced at line 1028, column 3.",
+        "severity": "ERROR",
+        "line": 1028,
+        "column": 3,
+        "procedure": "WXMPMeta_SetProperty_Int_1",
+        "procedure_start_line": 1014,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1014,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetProperty_Int_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1022,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1024,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1024,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1025,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1025,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1027,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1027,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1028,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetProperty_Int_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "a84a6230dcae53bd88994debe271960e",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1048 could be null and is dereferenced at line 1049, column 3.",
+        "severity": "ERROR",
+        "line": 1049,
+        "column": 3,
+        "procedure": "WXMPMeta_SetProperty_Int64_1",
+        "procedure_start_line": 1035,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1035,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetProperty_Int64_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1043,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1045,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1045,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1046,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1046,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1048,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1048,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1049,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetProperty_Int64_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "e8d38548f64a2de80970a07b3c6b98cb",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1069 could be null and is dereferenced at line 1070, column 3.",
+        "severity": "ERROR",
+        "line": 1070,
+        "column": 3,
+        "procedure": "WXMPMeta_SetProperty_Float_1",
+        "procedure_start_line": 1056,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1056,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetProperty_Float_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1064,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1066,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1066,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1067,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1067,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1069,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1069,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1070,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetProperty_Float_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "3ef927b31538d0bb7f81e6c255961bac",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &stepLim (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 1073,
+        "column": 2,
+        "procedure": "FindNode",
+        "procedure_start_line": 1056,
+        "file": "/project/xmpsdk/src/XMPCore_Impl.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPCore_Impl.cpp",
+                "line_number": 1073,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "XMPCore_Impl.cpp|FindNode|DEAD_STORE",
+        "hash": "5f71bffe48c61a41de350525ee97c704",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &stepNum (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 1072,
+        "column": 2,
+        "procedure": "FindNode",
+        "procedure_start_line": 1056,
+        "file": "/project/xmpsdk/src/XMPCore_Impl.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/XMPCore_Impl.cpp",
+                "line_number": 1072,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "XMPCore_Impl.cpp|FindNode|DEAD_STORE",
+        "hash": "5694dae8dfad0af913c00ad6029aecaf",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1090 could be null and is dereferenced at line 1091, column 3.",
+        "severity": "ERROR",
+        "line": 1091,
+        "column": 3,
+        "procedure": "WXMPMeta_SetProperty_Date_1",
+        "procedure_start_line": 1077,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1077,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetProperty_Date_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1085,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1087,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1087,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1088,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1088,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1090,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1090,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1091,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetProperty_Date_1|NULL_DEREFERENCE",
+        "node_key": "507b56d90193036401e70ccc1f0a4164",
+        "hash": "486c9fbceaed1abdcf64b5c083348935",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from code[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1099,
+        "column": 5,
+        "procedure": "Exiv2::Internal::sonyTagCipher",
+        "procedure_start_line": 1080,
+        "file": "/project/src/sonymn_int.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/sonymn_int.cpp",
+                "line_number": 1099,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "sonymn_int.cpp|Exiv2::Internal::sonyTagCipher|UNINITIALIZED_VALUE",
+        "hash": "40b5a68749eeec1bd728c6957690d8a0",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1123 could be null and is dereferenced at line 1124, column 3.",
+        "severity": "ERROR",
+        "line": 1124,
+        "column": 3,
+        "procedure": "WXMPMeta_Sort_1",
+        "procedure_start_line": 1117,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1117,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_Sort_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1121,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1123,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1123,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1124,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_Sort_1|NULL_DEREFERENCE",
+        "node_key": "21c2d3e02aacbdd5e4d9271407967624",
+        "hash": "c57c3791c67936cf807e7ae791bf9766",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1137 could be null and is dereferenced at line 1138, column 3.",
+        "severity": "ERROR",
+        "line": 1138,
+        "column": 3,
+        "procedure": "WXMPMeta_Erase_1",
+        "procedure_start_line": 1131,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1131,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_Erase_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1135,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1137,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1137,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1138,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_Erase_1|NULL_DEREFERENCE",
+        "node_key": "21c2d3e02aacbdd5e4d9271407967624",
+        "hash": "f4dba612448f5818e880074e0b0c06ce",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1226 could be null and is dereferenced at line 1227, column 3.",
+        "severity": "ERROR",
+        "line": 1227,
+        "column": 3,
+        "procedure": "WXMPMeta_SetObjectName_1",
+        "procedure_start_line": 1217,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1217,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetObjectName_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1222,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1224,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1226,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1226,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1227,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetObjectName_1|NULL_DEREFERENCE",
+        "node_key": "ef43566449b136347ea2b6090b787a74",
+        "hash": "73c8e28750ab81fe7d52af1ee46a53c0",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1256 could be null and is dereferenced at line 1257, column 3.",
+        "severity": "ERROR",
+        "line": 1257,
+        "column": 3,
+        "procedure": "WXMPMeta_SetObjectOptions_1",
+        "procedure_start_line": 1249,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1249,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_SetObjectOptions_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1254,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1256,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1256,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1257,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_SetObjectOptions_1|NULL_DEREFERENCE",
+        "node_key": "ef43566449b136347ea2b6090b787a74",
+        "hash": "8aff43f1bd5c82191030df1e083fbbc7",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `meta` last assigned on line 1273 could be null and is dereferenced at line 1274, column 3.",
+        "severity": "ERROR",
+        "line": 1274,
+        "column": 3,
+        "procedure": "WXMPMeta_ParseFromBuffer_1",
+        "procedure_start_line": 1264,
+        "file": "/project/xmpsdk/src/WXMPMeta.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1264,
+                "column_number": 1,
+                "description": "start of procedure WXMPMeta_ParseFromBuffer_1()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1271,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1273,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1273,
+                "column_number": 20,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/xmpsdk/src/WXMPMeta.cpp",
+                "line_number": 1274,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "WXMPMeta.cpp|WXMPMeta_ParseFromBuffer_1|NULL_DEREFERENCE",
+        "node_key": "d08d99251cd422f67ee0c190271b9c00",
+        "hash": "35af1071d67e9491f225cc88d27062c0",
+        "bug_type_hum": "Null Dereference"
+    }
+]

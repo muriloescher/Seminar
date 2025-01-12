@@ -1,0 +1,941 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `now` last assigned on line 68 could be null and is dereferenced at line 70, column 14.",
+        "severity": "ERROR",
+        "line": 70,
+        "column": 14,
+        "procedure": "tool_debug_cb",
+        "procedure_start_line": 44,
+        "file": "/project/src/tool_cb_dbg.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 44,
+                "column_number": 1,
+                "description": "start of procedure tool_debug_cb()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 48,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 49,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 50,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 59,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 61,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 62,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 63,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 67,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 68,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/src/tool_cb_dbg.c",
+                "line_number": 69,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "tool_cb_dbg.c|tool_debug_cb|NULL_DEREFERENCE",
+        "node_key": "a662e7abf0b59278f8b486a35b94495f",
+        "hash": "ca631170487f4f157ca5d4452387a437",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from result was never initialized.",
+        "severity": "ERROR",
+        "line": 94,
+        "column": 3,
+        "procedure": "Curl_blockread_all",
+        "procedure_start_line": 51,
+        "file": "/project/lib/socks.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/socks.c",
+                "line_number": 94,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "socks.c|Curl_blockread_all|UNINITIALIZED_VALUE",
+        "hash": "969a0d118fa4976d99ec2c746191b23c",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `null` is dereferenced by call to `Curl_closesocket()` at line 112, column 7.",
+        "severity": "ERROR",
+        "line": 112,
+        "column": 7,
+        "procedure": "Curl_ipv6works",
+        "procedure_start_line": 98,
+        "file": "/project/lib/hostip6.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/hostip6.c",
+                "line_number": 98,
+                "column_number": 1,
+                "description": "start of procedure Curl_ipv6works()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/hostip6.c",
+                "line_number": 103,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/hostip6.c",
+                "line_number": 104,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/hostip6.c",
+                "line_number": 106,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/hostip6.c",
+                "line_number": 107,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/hostip6.c",
+                "line_number": 111,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/hostip6.c",
+                "line_number": 112,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "hostip6.c|Curl_ipv6works|NULL_DEREFERENCE",
+        "node_key": "1ce3bb06af05bac51f3c3caea8ebbb18",
+        "hash": "d01589c7476ab4a6ce6cd6b97b50f0c2",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &left (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 130,
+        "column": 3,
+        "procedure": "curl_version",
+        "procedure_start_line": 102,
+        "file": "/project/lib/version.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/version.c",
+                "line_number": 130,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "version.c|curl_version|DEAD_STORE",
+        "hash": "2c38c4f7180edc0f6c479dc7b7df0a71",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ptr (type char*) is never used.",
+        "severity": "ERROR",
+        "line": 131,
+        "column": 3,
+        "procedure": "curl_version",
+        "procedure_start_line": 102,
+        "file": "/project/lib/version.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/version.c",
+                "line_number": 131,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "version.c|curl_version|DEAD_STORE",
+        "hash": "b47eba3e8aa953079bbd02169b6004c6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `end` last assigned on line 172 could be null and is dereferenced by call to `strspn()` at line 174, column 18.",
+        "severity": "ERROR",
+        "line": 174,
+        "column": 18,
+        "procedure": "Curl_get_pathname",
+        "procedure_start_line": 113,
+        "file": "/project/lib/curl_path.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 113,
+                "column_number": 1,
+                "description": "start of procedure Curl_get_pathname()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 115,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 119,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 120,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 122,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 128,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 130,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 131,
+                "column_number": 3,
+                "description": "Skipping __function_pointer__(): unresolved function pointer"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 132,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 136,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 136,
+                "column_number": 21,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 170,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 171,
+                "column_number": 8,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 172,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/lib/curl_path.c",
+                "line_number": 174,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "curl_path.c|Curl_get_pathname|NULL_DEREFERENCE",
+        "node_key": "949ddee5c3a367b6c9777dc62cfcb730",
+        "hash": "e0c2ec3d73420d6f624c339c126b3bd2",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from hdrbuf[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 135,
+        "column": 23,
+        "procedure": "read_field_headers",
+        "procedure_start_line": 120,
+        "file": "/project/src/tool_formparse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/tool_formparse.c",
+                "line_number": 135,
+                "column_number": 23,
+                "description": ""
+            }
+        ],
+        "key": "tool_formparse.c|read_field_headers|UNINITIALIZED_VALUE",
+        "hash": "cab4539715c30a9971ca021f049fdcd8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &result (type int) is never used.",
+        "severity": "ERROR",
+        "line": 154,
+        "column": 3,
+        "procedure": "Curl_rand_hex",
+        "procedure_start_line": 151,
+        "file": "/project/lib/rand.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/rand.c",
+                "line_number": 154,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "rand.c|Curl_rand_hex|DEAD_STORE",
+        "hash": "7268e2680f02e614cef49cf46cb9ed5f",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ibuf[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 228,
+        "column": 5,
+        "procedure": "base64_encode",
+        "procedure_start_line": 171,
+        "file": "/project/lib/base64.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/base64.c",
+                "line_number": 228,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.c|base64_encode|UNINITIALIZED_VALUE",
+        "hash": "e05e4856e899aafa1373b1a0688fe586",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ibuf[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 229,
+        "column": 5,
+        "procedure": "base64_encode",
+        "procedure_start_line": 171,
+        "file": "/project/lib/base64.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/base64.c",
+                "line_number": 229,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.c|base64_encode|UNINITIALIZED_VALUE",
+        "hash": "e05e4856e899aafa1373b1a0688fe586",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ibuf[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 231,
+        "column": 5,
+        "procedure": "base64_encode",
+        "procedure_start_line": 171,
+        "file": "/project/lib/base64.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/base64.c",
+                "line_number": 231,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.c|base64_encode|UNINITIALIZED_VALUE",
+        "hash": "e05e4856e899aafa1373b1a0688fe586",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ibuf[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 233,
+        "column": 5,
+        "procedure": "base64_encode",
+        "procedure_start_line": 171,
+        "file": "/project/lib/base64.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/base64.c",
+                "line_number": 233,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.c|base64_encode|UNINITIALIZED_VALUE",
+        "hash": "e05e4856e899aafa1373b1a0688fe586",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &nread (type long) is never used.",
+        "severity": "ERROR",
+        "line": 237,
+        "column": 14,
+        "procedure": "getpass_r",
+        "procedure_start_line": 222,
+        "file": "/project/src/tool_getpass.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/tool_getpass.c",
+                "line_number": 237,
+                "column_number": 14,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "tool_getpass.c|getpass_r|DEAD_STORE",
+        "hash": "09e2af84937e04860fa75d5126ac8e90",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &fd (type int) is never used.",
+        "severity": "ERROR",
+        "line": 447,
+        "column": 3,
+        "procedure": "file_or_stdin",
+        "procedure_start_line": 444,
+        "file": "/project/src/tool_formparse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/src/tool_formparse.c",
+                "line_number": 447,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "tool_formparse.c|file_or_stdin|DEAD_STORE",
+        "hash": "0bd3f7ee9d83fdfa5a1e107dc10ae8c6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &rc (type _Bool) is never used.",
+        "severity": "ERROR",
+        "line": 486,
+        "column": 3,
+        "procedure": "verifyconnect",
+        "procedure_start_line": 484,
+        "file": "/project/lib/connect.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/connect.c",
+                "line_number": 486,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "connect.c|verifyconnect|DEAD_STORE",
+        "hash": "7546dc2a94b6d322df61394a5bc4a7c6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &pf (type int) is never used.",
+        "severity": "ERROR",
+        "line": 631,
+        "column": 3,
+        "procedure": "Curl_resolver_getaddrinfo",
+        "procedure_start_line": 624,
+        "file": "/project/lib/asyn-thread.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/asyn-thread.c",
+                "line_number": 631,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "asyn-thread.c|Curl_resolver_getaddrinfo|DEAD_STORE",
+        "hash": "e30c038984580df9069e2526a2c6f060",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &portsock (type int) is never used.",
+        "severity": "ERROR",
+        "line": 936,
+        "column": 3,
+        "procedure": "ftp_state_use_port",
+        "procedure_start_line": 929,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 936,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ftp.c|ftp_state_use_port|DEAD_STORE",
+        "hash": "b84bf65c29d03127f63724f3cf36a64e",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &rc (type int) is never used.",
+        "severity": "ERROR",
+        "line": 986,
+        "column": 3,
+        "procedure": "singleipconnect",
+        "procedure_start_line": 981,
+        "file": "/project/lib/connect.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/connect.c",
+                "line_number": 986,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "connect.c|singleipconnect|DEAD_STORE",
+        "hash": "efb6681553a7f878ad6f8b0046285a7e",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &startwrite (type int) is never used.",
+        "severity": "ERROR",
+        "line": 1219,
+        "column": 3,
+        "procedure": "telrcv",
+        "procedure_start_line": 1059,
+        "file": "/project/lib/telnet.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/telnet.c",
+                "line_number": 1219,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "telnet.c|telrcv|DEAD_STORE",
+        "hash": "5ae3d35a4fb8fc1ce6171888df9fd3e6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from h[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1647,
+        "column": 5,
+        "procedure": "Curl_add_custom_headers",
+        "procedure_start_line": 1607,
+        "file": "/project/lib/http.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/http.c",
+                "line_number": 1647,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "http.c|Curl_add_custom_headers|UNINITIALIZED_VALUE",
+        "hash": "d7e4b660f57babccbd494311e3f4c12a",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ip[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1903,
+        "column": 18,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1903,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "6574d49ba8594f691fbf9f860cd063c1",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ip[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1903,
+        "column": 35,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1903,
+                "column_number": 35,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "6574d49ba8594f691fbf9f860cd063c1",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ip[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1903,
+        "column": 53,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1903,
+                "column_number": 53,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "6574d49ba8594f691fbf9f860cd063c1",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ip[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1904,
+        "column": 9,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1904,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "6574d49ba8594f691fbf9f860cd063c1",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ip[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1913,
+        "column": 7,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1913,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "6574d49ba8594f691fbf9f860cd063c1",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ip[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1919,
+        "column": 23,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1919,
+                "column_number": 23,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "6574d49ba8594f691fbf9f860cd063c1",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from port[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1904,
+        "column": 26,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1904,
+                "column_number": 26,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "4fc253bb9b358aa716cff4d69f5d33a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from port[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1904,
+        "column": 46,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1904,
+                "column_number": 46,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "4fc253bb9b358aa716cff4d69f5d33a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from port[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1924,
+        "column": 5,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1924,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "4fc253bb9b358aa716cff4d69f5d33a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from separator[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1850,
+        "column": 9,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1850,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "fb982abece65b9e72e5e38fff0ae7c9d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from separator[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1856,
+        "column": 14,
+        "procedure": "ftp_state_pasv_resp",
+        "procedure_start_line": 1822,
+        "file": "/project/lib/ftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/ftp.c",
+                "line_number": 1856,
+                "column_number": 14,
+                "description": ""
+            }
+        ],
+        "key": "ftp.c|ftp_state_pasv_resp|UNINITIALIZED_VALUE",
+        "hash": "fb982abece65b9e72e5e38fff0ae7c9d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &protop (type char*) is never used.",
+        "severity": "ERROR",
+        "line": 2004,
+        "column": 3,
+        "procedure": "parseurlandfillconn",
+        "procedure_start_line": 1992,
+        "file": "/project/lib/url.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/url.c",
+                "line_number": 2004,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "url.c|parseurlandfillconn|DEAD_STORE",
+        "hash": "6390b7aedf91ea68530ecd46cc2c4fd9",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &port (type long) is never used.",
+        "severity": "ERROR",
+        "line": 2708,
+        "column": 3,
+        "procedure": "parse_proxy",
+        "procedure_start_line": 2697,
+        "file": "/project/lib/url.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/url.c",
+                "line_number": 2708,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "url.c|parse_proxy|DEAD_STORE",
+        "hash": "3797f8e8e08fef42a81eccb1be6450da",
+        "bug_type_hum": "Dead Store"
+    }
+]

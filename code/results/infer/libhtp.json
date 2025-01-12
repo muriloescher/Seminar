@@ -1,0 +1,673 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `name` last assigned on line 75 could be null and is dereferenced by call to `htp_transcode_bstr()` at line 83, column 9.",
+        "severity": "ERROR",
+        "line": 83,
+        "column": 9,
+        "procedure": "htp_transcode_params",
+        "procedure_start_line": 50,
+        "file": "/project/htp/htp_transcoder.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 50,
+                "column_number": 1,
+                "description": "start of procedure htp_transcode_params()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 51,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 54,
+                "column_number": 10,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 54,
+                "column_number": 51,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 57,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 58,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 61,
+                "column_number": 5,
+                "description": "Skipping iconv_open(): method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 62,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 75,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 76,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 77,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 77,
+                "column_number": 55,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 78,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 80,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transcoder.c",
+                "line_number": 83,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "htp_transcoder.c|htp_transcode_params|NULL_DEREFERENCE",
+        "node_key": "55e4d868c409fd1aeb5c951dcf641ac8",
+        "hash": "1a76eb78fc1f5588f10b6a3ecfa86192",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &offs (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 300,
+        "column": 11,
+        "procedure": "LzmaDec_DecodeReal_3",
+        "procedure_start_line": 219,
+        "file": "/project/htp/lzma/LzmaDec.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/lzma/LzmaDec.c",
+                "line_number": 300,
+                "column_number": 11,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "LzmaDec.c|LzmaDec_DecodeReal_3|DEAD_STORE",
+        "hash": "3aad987b5970cdcd7f53a225de85e6e0",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `p` last assigned on line 262 could be null and is dereferenced at line 263, column 13.",
+        "severity": "ERROR",
+        "line": 263,
+        "column": 13,
+        "procedure": "htp_tx_req_get_param_ex",
+        "procedure_start_line": 256,
+        "file": "/project/htp/htp_transaction.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 256,
+                "column_number": 1,
+                "description": "start of procedure htp_tx_req_get_param_ex()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 257,
+                "column_number": 10,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 257,
+                "column_number": 26,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 259,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 261,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 261,
+                "column_number": 64,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 262,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 263,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "htp_transaction.c|htp_tx_req_get_param_ex|NULL_DEREFERENCE",
+        "node_key": "f1a61cb01a17823a8f48aba5dd99f987",
+        "hash": "9cc6c09cfcf4b1c708c2f03258dba511",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &name_end (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 355,
+        "column": 9,
+        "procedure": "htp_mpartp_parse_header",
+        "procedure_start_line": 312,
+        "file": "/project/htp/htp_multipart.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_multipart.c",
+                "line_number": 355,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "htp_multipart.c|htp_mpartp_parse_header|DEAD_STORE",
+        "hash": "bdbe4c057277b7903753dcfa62f1d334",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &prev (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 354,
+        "column": 9,
+        "procedure": "htp_mpartp_parse_header",
+        "procedure_start_line": 312,
+        "file": "/project/htp/htp_multipart.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_multipart.c",
+                "line_number": 354,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "htp_multipart.c|htp_mpartp_parse_header|DEAD_STORE",
+        "hash": "94dbfded39eb8a97fd0067876452758b",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &rc (type int) is never used.",
+        "severity": "ERROR",
+        "line": 363,
+        "column": 5,
+        "procedure": "htp_tx_process_request_headers",
+        "procedure_start_line": 358,
+        "file": "/project/htp/htp_transaction.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 363,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "htp_transaction.c|htp_tx_process_request_headers|DEAD_STORE",
+        "hash": "64a16d73ecf4b38926111a8875800ff6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `h` last assigned on line 595 could be null and is dereferenced at line 596, column 23.",
+        "severity": "ERROR",
+        "line": 596,
+        "column": 23,
+        "procedure": "htp_connp_RES_BODY_DETERMINE",
+        "procedure_start_line": 529,
+        "file": "/project/htp/htp_response.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 529,
+                "column_number": 1,
+                "description": "start of procedure htp_connp_RES_BODY_DETERMINE()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 533,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 561,
+                "column_number": 5,
+                "description": "Skipping htp_table_get_c(): empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 562,
+                "column_number": 5,
+                "description": "Skipping htp_table_get_c(): empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 570,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 586,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 586,
+                "column_number": 57,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 586,
+                "column_number": 71,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 587,
+                "column_number": 13,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 593,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 594,
+                "column_number": 14,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 594,
+                "column_number": 81,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 595,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_response.c",
+                "line_number": 596,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "htp_response.c|htp_connp_RES_BODY_DETERMINE|NULL_DEREFERENCE",
+        "node_key": "a2b0ee44186b30fcdbf26ccfd976fa51",
+        "hash": "b18cc72709e83f09a0ef10aaab08382e",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `h` last assigned on line 601 could be null and is dereferenced at line 602, column 19.",
+        "severity": "ERROR",
+        "line": 602,
+        "column": 19,
+        "procedure": "htp_tx_req_set_headers_clear",
+        "procedure_start_line": 596,
+        "file": "/project/htp/htp_transaction.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 596,
+                "column_number": 1,
+                "description": "start of procedure htp_tx_req_set_headers_clear()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 597,
+                "column_number": 10,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 597,
+                "column_number": 26,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 599,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 600,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 600,
+                "column_number": 65,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 601,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 602,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "htp_transaction.c|htp_tx_req_set_headers_clear|NULL_DEREFERENCE",
+        "node_key": "3587fa0c79684c80068586490c8bc1ea",
+        "hash": "ce99858c160624c5350a96d2c1861e32",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buf (type unsigned char const *) is never used.",
+        "severity": "ERROR",
+        "line": 740,
+        "column": 13,
+        "procedure": "LzmaDec_TryDummy",
+        "procedure_start_line": 662,
+        "file": "/project/htp/lzma/LzmaDec.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/lzma/LzmaDec.c",
+                "line_number": 740,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "LzmaDec.c|LzmaDec_TryDummy|DEAD_STORE",
+        "hash": "cc6bff9bd36d3cc9122c23fa04f73a3b",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buf (type unsigned char const *) is never used.",
+        "severity": "ERROR",
+        "line": 850,
+        "column": 3,
+        "procedure": "LzmaDec_TryDummy",
+        "procedure_start_line": 662,
+        "file": "/project/htp/lzma/LzmaDec.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/lzma/LzmaDec.c",
+                "line_number": 850,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "LzmaDec.c|LzmaDec_TryDummy|DEAD_STORE",
+        "hash": "cc6bff9bd36d3cc9122c23fa04f73a3b",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &code (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 740,
+        "column": 13,
+        "procedure": "LzmaDec_TryDummy",
+        "procedure_start_line": 662,
+        "file": "/project/htp/lzma/LzmaDec.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/lzma/LzmaDec.c",
+                "line_number": 740,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "LzmaDec.c|LzmaDec_TryDummy|DEAD_STORE",
+        "hash": "b60d90f0bb65427648d89e220c514db6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &code (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 850,
+        "column": 3,
+        "procedure": "LzmaDec_TryDummy",
+        "procedure_start_line": 662,
+        "file": "/project/htp/lzma/LzmaDec.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/lzma/LzmaDec.c",
+                "line_number": 850,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "LzmaDec.c|LzmaDec_TryDummy|DEAD_STORE",
+        "hash": "b60d90f0bb65427648d89e220c514db6",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &range (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 740,
+        "column": 13,
+        "procedure": "LzmaDec_TryDummy",
+        "procedure_start_line": 662,
+        "file": "/project/htp/lzma/LzmaDec.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/lzma/LzmaDec.c",
+                "line_number": 740,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "LzmaDec.c|LzmaDec_TryDummy|DEAD_STORE",
+        "hash": "b84cd0fd65584712773c1721eef42057",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &range (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 850,
+        "column": 3,
+        "procedure": "LzmaDec_TryDummy",
+        "procedure_start_line": 662,
+        "file": "/project/htp/lzma/LzmaDec.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/lzma/LzmaDec.c",
+                "line_number": 850,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "LzmaDec.c|LzmaDec_TryDummy|DEAD_STORE",
+        "hash": "b84cd0fd65584712773c1721eef42057",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `h` last assigned on line 745 could be null and is dereferenced at line 746, column 19.",
+        "severity": "ERROR",
+        "line": 746,
+        "column": 19,
+        "procedure": "htp_tx_res_set_headers_clear",
+        "procedure_start_line": 740,
+        "file": "/project/htp/htp_transaction.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 740,
+                "column_number": 1,
+                "description": "start of procedure htp_tx_res_set_headers_clear()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 741,
+                "column_number": 10,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 741,
+                "column_number": 26,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 743,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 744,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 744,
+                "column_number": 66,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 745,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/htp/htp_transaction.c",
+                "line_number": 746,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "htp_transaction.c|htp_tx_res_set_headers_clear|NULL_DEREFERENCE",
+        "node_key": "3587fa0c79684c80068586490c8bc1ea",
+        "hash": "00788668b62d01738cb016f5b191369f",
+        "bug_type_hum": "Null Dereference"
+    }
+]

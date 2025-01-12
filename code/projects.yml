@@ -1,0 +1,180 @@
+projects:
+  - name: "arrow"
+    repo_url: "https://github.com/apache/arrow.git"
+    commit_hash: "3c5b62c116733e434508a8673c2d466776b27eed"
+    dependencies: ""
+    setup_commands: ""
+    build_commands:
+      - "cmake -S ${REPO_DIR}/cpp -B ${BUILD_DIR} -DCMAKE_EXPORT_COMPILE_COMMANDS=1"
+    tool_build_command: "cmake --build /build"
+  - name: "aspell"
+    repo_url: "https://github.com/GNUAspell/aspell.git"
+    commit_hash: "e0646f9b063b23754951f1254f1ecb7af8ca36f3"
+    dependencies: "libtool gettext autopoint texinfo"
+    setup_commands:
+      - "./autogen"
+    build_commands:
+      - '${REPO_DIR}/configure --prefix=/usr LDFLAGS="-pthread"'
+    tool_build_command: "make -C /build"
+  - name: "curl"
+    repo_url: "https://github.com/curl/curl.git"
+    commit_hash: "dd7521bcc1b7a6fcb53c31f9bd1192fcc884bd56"
+    dependencies: "libtool"
+    setup_commands: 
+      - "./buildconf"
+    build_commands:
+      - '${REPO_DIR}/configure --prefix=/usr --with-openssl'
+    tool_build_command: "make"
+  - name: "exiv2"
+    repo_url: "https://github.com/Exiv2/exiv2.git"
+    commit_hash: "10a62b23500954abf7eb2cc3e577bebb21bb0b72"
+    dependencies: ""
+    setup_commands: ""
+    build_commands:
+      - 'cmake -S ${REPO_DIR} -B ${BUILD_DIR} -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS="-lstdc++fs" -DCMAKE_EXPORT_COMPILE_COMMANDS=1'
+    tool_build_command: "cmake --build /build"
+  - name: "file"
+    repo_url: "https://github.com/file/file.git"
+    commit_hash: "6de3683de955277c4be4be350ec683b3203d3f31"
+    dependencies: "libtool"
+    setup_commands:
+      - "autoreconf --install"
+    build_commands:
+      - "${REPO_DIR}/configure --prefix=/usr"
+    tool_build_command: "make -C /build"
+  - name: "gdal"
+    repo_url: "https://github.com/OSGeo/gdal.git"
+    commit_hash: "9e2d1f33c9049e925019a3c0c1e6261968a19758"
+    dependencies: "libproj-dev proj-data proj-bin libcrypto++-dev unixodbc-dev freetds-dev libmysqlclient-dev libcurl4-openssl-dev libxml2-dev libexpat1-dev libxerces-c-dev zlib1g-dev"
+    setup_commands: ""
+    build_commands:
+      - "cmake -S ${REPO_DIR} -B ${BUILD_DIR} -DCMAKE_BUILD_TYPE=Release -DCMAKE_EXE_LINKER_FLAGS='-ldl' -DGDAL_BUILD_TESTING=OFF"
+    tool_build_command: "cmake --build /build"
+  - name: "grok"
+    repo_url: "https://github.com/GrokImageCompression/grok.git"
+    commit_hash: "93e6af95ec46bbba5e112a1fbdbdb6a1294d61d8"
+    dependencies: ""
+    setup_commands: ""
+    build_commands:
+      - "cmake -S ${REPO_DIR} -B ${BUILD_DIR} -DCMAKE_EXPORT_COMPILE_COMMANDS=1"
+    tool_build_command: "cmake --build /build"
+  - name: "harfbuzz"
+    repo_url: "https://github.com/harfbuzz/harfbuzz.git"
+    commit_hash: "8708b9e081192786c027bb7f5f23d76dbe5c19e8"
+    dependencies: "meson pkg-config ragel gtk-doc-tools gcc g++ libfreetype6-dev libglib2.0-dev libcairo2-dev python3 python3-pip ninja-build"
+    setup_commands:
+      - "pip3 install --upgrade meson"
+      - "meson setup ${BUILD_DIR}"
+    build_commands: "" 
+    tool_build_command: "ninja"
+  - name: "leptonica"
+    repo_url: "https://github.com/DanBloomberg/leptonica.git"
+    commit_hash: "8fc49016cf44ecbbab28979442e2781bd064584e"
+    dependencies: ""
+    setup_commands: ""
+    build_commands:
+      - "cmake -S ${REPO_DIR} -B ${BUILD_DIR} -DCMAKE_EXPORT_COMPILE_COMMANDS=1"
+    tool_build_command: "cmake --build /build"
+  - name: "libarchive"
+    repo_url: "https://github.com/libarchive/libarchive.git"
+    commit_hash: "52efa50c69653029687bfc545703b7340b7a51e2"
+    dependencies: ""
+    setup_commands: ""
+    build_commands:
+      - "cmake -S ${REPO_DIR} -B ${BUILD_DIR} -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_FLAGS='-Wno-unused-but-set-variable' -DCMAKE_EXPORT_COMPILE_COMMANDS=1"
+    tool_build_command: "cmake --build /build"
+  - name: "libhtp"
+    repo_url: "https://github.com/OISF/libhtp.git"
+    commit_hash: "3c6555078ec30e0baa4855ec69d55a22fc8d3589"
+    dependencies: "libtool"
+    setup_commands:
+      - "chmod u+x autogen.sh"
+      - "./autogen.sh"
+    build_commands:
+      - "${REPO_DIR}/configure"
+    tool_build_command: "make"
+  - name: "libxml2"
+    repo_url: "https://gitlab.gnome.org/GNOME/libxml2.git"
+    commit_hash: "1fbcf4098ba2aefe241de8d7ceb229b995d8daec"
+    dependencies: "libtool pkg-config"
+    setup_commands:
+      - "./autogen.sh"
+    build_commands: ""
+    tool_build_command: "make"
+  - name: "ndpi"
+    repo_url: "https://github.com/ntop/nDPI.git"
+    commit_hash: "2edfaeba4ada90ca8771a44132d2b9cc85e45570"
+    dependencies: "libtool pkg-config libpcap-dev"
+    setup_commands:
+      - "./autogen.sh"
+    build_commands:
+      - '${REPO_DIR}/configure --prefix=/usr'
+    tool_build_command: "make"
+  - name: "openh264"
+    repo_url: "https://github.com/cisco/openh264.git"
+    commit_hash: "effb3931c7c67f34b167fe6e0a93253bf075f78c"
+    dependencies: "nasm"
+    setup_commands: 
+    - 'export CXXFLAGS="-stdlib=libc++"'
+    - 'export LDFLAGS="-stdlib=libc++ -lc++ -lc++abi -pthread"'
+    build_commands: ""
+    tool_build_command: 'make OS=linux ARCH=x86_64'
+  - name: "openssl"
+    repo_url: "https://github.com/openssl/openssl.git"
+    commit_hash: "4baee2d72e0c82bfd6de085df23a1bdc6af887ba"
+    dependencies: ""
+    setup_commands: ""
+    build_commands:
+      - "${REPO_DIR}/config --prefix=/usr"
+    tool_build_command: 'make -C /build'
+  - name: "pcapplusplus"
+    repo_url: "https://github.com/seladb/PcapPlusPlus.git"
+    commit_hash: "50aab202d24331ef35b9eff68d96ef9f97baf6a1"
+    dependencies: "libpcap-dev"
+    setup_commands: 
+      - "${REPO_DIR}/configure-linux.sh --default"
+    build_commands: ""
+    tool_build_command: 'make'
+  - name: "poppler"
+    repo_url: "https://gitlab.freedesktop.org/poppler/poppler.git"
+    commit_hash: "2b2808719d2c91283ae358381391bb0b37d9061d"
+    dependencies: "libfreetype6-dev libfontconfig1-dev libjpeg-dev libopenjp2-7-dev"
+    setup_commands: ""
+    build_commands:
+      - 'cmake -S ${REPO_DIR} -B ${BUILD_DIR} -DCMAKE_EXPORT_COMPILE_COMMANDS=1'
+    tool_build_command: "make -C /build"
+  - name: "readstat"
+    repo_url: "https://github.com/WizardMac/ReadStat.git"
+    commit_hash: "1de4f389a8ffb07775cb1d99e33cbfa7e96bccf2"
+    dependencies: "libtool"
+    setup_commands:
+      - "./autogen.sh"
+    build_commands:
+      - '${REPO_DIR}/configure --prefix=/usr'
+    tool_build_command: 'env CFLAGS=-Wno-error=strict-prototypes make -C /build'
+  - name: "usrsctp"
+    repo_url: "https://github.com/sctplab/usrsctp.git"
+    commit_hash: "05bea46702687f26a81c41c3fb1fd1dd3d9c0aa1"
+    dependencies: "libtool"
+    setup_commands:
+      - "./bootstrap"
+    build_commands:
+      - 'export CPPFLAGS="-U socklen_t"'
+      - '${REPO_DIR}/configure --prefix=/usr'
+    tool_build_command: 'make -C /build'
+  - name: "yara"
+    repo_url: "https://github.com/VirusTotal/yara.git"
+    commit_hash: "5cc28d24a251370218448100de4e9817e0d9233e"
+    dependencies: "libtool pkg-config libprotobuf-c-dev protobuf-c-compiler"
+    setup_commands:
+      - "./bootstrap.sh"
+    build_commands:
+      - '${REPO_DIR}/configure --prefix=/usr'
+    tool_build_command: 'make -C /build'
+  - name: "zstd"
+    repo_url: "https://github.com/facebook/zstd.git"
+    commit_hash: "0ed07f6dfe942627e7724e5b910e23ec3cd8ece8"
+    dependencies: ""
+    setup_commands: ""
+    build_commands: ""
+    tool_build_command: 'make'

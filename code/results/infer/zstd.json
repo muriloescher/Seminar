@@ -1,0 +1,695 @@
+[
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from symbolNext[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 119,
+        "column": 35,
+        "procedure": "FSE_buildDTable",
+        "procedure_start_line": 70,
+        "file": "lib/common/fse_decompress.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/common/fse_decompress.c",
+                "line_number": 119,
+                "column_number": 35,
+                "description": ""
+            }
+        ],
+        "key": "fse_decompress.c|FSE_buildDTable|UNINITIALIZED_VALUE",
+        "hash": "e1d1de69376045a504b21453c452ffbe",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from outcome.error_result_never_ever_use_directly was never initialized.",
+        "severity": "ERROR",
+        "line": 97,
+        "column": 5,
+        "procedure": "BMK_setValid_runTime",
+        "procedure_start_line": 92,
+        "file": "programs/benchfn.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "programs/benchfn.c",
+                "line_number": 97,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "benchfn.c|BMK_setValid_runTime|UNINITIALIZED_VALUE",
+        "hash": "8f3ddb4f193a17871c3334d025608126",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ptr (type unsigned long const *) is never used.",
+        "severity": "ERROR",
+        "line": 294,
+        "column": 15,
+        "procedure": "COVER_lower_bound",
+        "procedure_start_line": 286,
+        "file": "lib/dictBuilder/cover.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/dictBuilder/cover.c",
+                "line_number": 294,
+                "column_number": 15,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "cover.c|COVER_lower_bound|DEAD_STORE",
+        "hash": "64705f12a533fd486d14cd81dbdb4416",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from symbolNext[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 420,
+        "column": 35,
+        "procedure": "ZSTD_buildFSETable",
+        "procedure_start_line": 367,
+        "file": "lib/decompress/zstd_decompress_block.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/decompress/zstd_decompress_block.c",
+                "line_number": 420,
+                "column_number": 35,
+                "description": ""
+            }
+        ],
+        "key": "zstd_decompress_block.c|ZSTD_buildFSETable|UNINITIALIZED_VALUE",
+        "hash": "f04b0b30eff4c3919a663f06c7d4bf85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &p32 (type unsigned int const *) is never used.",
+        "severity": "ERROR",
+        "line": 604,
+        "column": 76,
+        "procedure": "XXH32_update_endian",
+        "procedure_start_line": 580,
+        "file": "lib/common/xxhash.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/common/xxhash.c",
+                "line_number": 604,
+                "column_number": 76,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "xxhash.c|XXH32_update_endian|DEAD_STORE",
+        "hash": "b2258a87a47777ad96873c3ac407fcbd",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from litLengthCount[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 806,
+        "column": 39,
+        "procedure": "ZDICT_analyzeEntropy",
+        "procedure_start_line": 708,
+        "file": "lib/dictBuilder/zdict.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/dictBuilder/zdict.c",
+                "line_number": 806,
+                "column_number": 39,
+                "description": ""
+            }
+        ],
+        "key": "zdict.c|ZDICT_analyzeEntropy|UNINITIALIZED_VALUE",
+        "hash": "c11549bda72c553ae1483924a48ceefe",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from matchLengthCount[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 797,
+        "column": 39,
+        "procedure": "ZDICT_analyzeEntropy",
+        "procedure_start_line": 708,
+        "file": "lib/dictBuilder/zdict.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/dictBuilder/zdict.c",
+                "line_number": 797,
+                "column_number": 39,
+                "description": ""
+            }
+        ],
+        "key": "zdict.c|ZDICT_analyzeEntropy|UNINITIALIZED_VALUE",
+        "hash": "111bcc3eee8fd900d131a0f731f5e959",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from offcodeCount[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 788,
+        "column": 44,
+        "procedure": "ZDICT_analyzeEntropy",
+        "procedure_start_line": 708,
+        "file": "lib/dictBuilder/zdict.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/dictBuilder/zdict.c",
+                "line_number": 788,
+                "column_number": 44,
+                "description": ""
+            }
+        ],
+        "key": "zdict.c|ZDICT_analyzeEntropy|UNINITIALIZED_VALUE",
+        "hash": "0ca6c012a9f0075736bd49d887c5a888",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "RESOURCE_LEAK",
+        "qualifier": "resource of type `_IO_FILE` acquired by call to `fopen()` at line 767, column 29 is not released after line 772, column 51.",
+        "severity": "ERROR",
+        "line": 772,
+        "column": 51,
+        "procedure": "BMK_loadFiles",
+        "procedure_start_line": 748,
+        "file": "programs/benchzstd.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 748,
+                "column_number": 1,
+                "description": "start of procedure BMK_loadFiles()"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 753,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 755,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 755,
+                "column_number": 15,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 756,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "programs/util.c",
+                "line_number": 240,
+                "column_number": 1,
+                "description": "start of procedure UTIL_getFileSize()"
+            },
+            {
+                "level": 1,
+                "filename": "programs/util.c",
+                "line_number": 242,
+                "column_number": 10,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "programs/util.c",
+                "line_number": 254,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "programs/util.c",
+                "line_number": 255,
+                "column_number": 13,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "programs/util.c",
+                "line_number": 255,
+                "column_number": 19,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "programs/util.c",
+                "line_number": 257,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "programs/util.c",
+                "line_number": 259,
+                "column_number": 1,
+                "description": "return from a call to UTIL_getFileSize"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 757,
+                "column_number": 13,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 762,
+                "column_number": 13,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 767,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 768,
+                "column_number": 17,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 769,
+                "column_number": 13,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 149,
+                "column_number": 1,
+                "description": "start of procedure UTIL_clockSpanMicro()"
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 151,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "programs/timefn.c",
+                "line_number": 93,
+                "column_number": 1,
+                "description": "start of procedure UTIL_getTime()"
+            },
+            {
+                "level": 2,
+                "filename": "programs/timefn.c",
+                "line_number": 97,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "programs/timefn.c",
+                "line_number": 98,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 2,
+                "filename": "programs/timefn.c",
+                "line_number": 102,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "programs/timefn.c",
+                "line_number": 103,
+                "column_number": 1,
+                "description": "return from a call to UTIL_getTime"
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 152,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 153,
+                "column_number": 1,
+                "description": "return from a call to UTIL_clockSpanMicro"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 769,
+                "column_number": 13,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 93,
+                "column_number": 1,
+                "description": "start of procedure UTIL_getTime()"
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 97,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 98,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 102,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "programs/timefn.c",
+                "line_number": 103,
+                "column_number": 1,
+                "description": "return from a call to UTIL_getTime"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 769,
+                "column_number": 13,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 770,
+                "column_number": 17,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 771,
+                "column_number": 17,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 772,
+                "column_number": 21,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "programs/benchzstd.c",
+                "line_number": 772,
+                "column_number": 51,
+                "description": "Taking false branch"
+            }
+        ],
+        "key": "benchzstd.c|BMK_loadFiles|RESOURCE_LEAK",
+        "node_key": "a3466749f0c161339d40a5ecdecea896",
+        "hash": "a97f8a9590a5727f16ce40ca263e5cee",
+        "bug_type_hum": "Resource Leak"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &opt (type ZSTD_optimal_t*) is never used.",
+        "severity": "ERROR",
+        "line": 838,
+        "column": 5,
+        "procedure": "ZSTD_compressBlock_opt_generic",
+        "procedure_start_line": 816,
+        "file": "lib/compress/zstd_opt.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/compress/zstd_opt.c",
+                "line_number": 838,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "zstd_opt.c|ZSTD_compressBlock_opt_generic|DEAD_STORE",
+        "hash": "c6a87edc07820ae6c467f8b08de8579e",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &sufficient_len (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 834,
+        "column": 32,
+        "procedure": "ZSTD_compressBlock_opt_generic",
+        "procedure_start_line": 816,
+        "file": "lib/compress/zstd_opt.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/compress/zstd_opt.c",
+                "line_number": 834,
+                "column_number": 32,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "zstd_opt.c|ZSTD_compressBlock_opt_generic|DEAD_STORE",
+        "hash": "855603dcba6bb185c2ccc74248b08783",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from seq.match was never initialized.",
+        "severity": "ERROR",
+        "line": 936,
+        "column": 5,
+        "procedure": "ZSTD_decodeSequence",
+        "procedure_start_line": 826,
+        "file": "lib/decompress/zstd_decompress_block.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/decompress/zstd_decompress_block.c",
+                "line_number": 936,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "zstd_decompress_block.c|ZSTD_decodeSequence|UNINITIALIZED_VALUE",
+        "hash": "60a06c83af61c27e96756db6eee5c5fa",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from symbolNext[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1256,
+        "column": 29,
+        "procedure": "FSEv05_buildDTable",
+        "procedure_start_line": 1209,
+        "file": "lib/legacy/zstd_v05.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v05.c",
+                "line_number": 1256,
+                "column_number": 29,
+                "description": ""
+            }
+        ],
+        "key": "zstd_v05.c|FSEv05_buildDTable|UNINITIALIZED_VALUE",
+        "hash": "ebee693d8612c5421b6fe1f144a0b964",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from symbolNext[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1508,
+        "column": 29,
+        "procedure": "FSEv06_buildDTable",
+        "procedure_start_line": 1458,
+        "file": "lib/legacy/zstd_v06.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v06.c",
+                "line_number": 1508,
+                "column_number": 29,
+                "description": ""
+            }
+        ],
+        "key": "zstd_v06.c|FSEv06_buildDTable|UNINITIALIZED_VALUE",
+        "hash": "60481d4d48451b6fafe2124e4377f6c1",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from symbolNext[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1528,
+        "column": 29,
+        "procedure": "FSEv07_buildDTable",
+        "procedure_start_line": 1478,
+        "file": "lib/legacy/zstd_v07.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v07.c",
+                "line_number": 1528,
+                "column_number": 29,
+                "description": ""
+            }
+        ],
+        "key": "zstd_v07.c|FSEv07_buildDTable|UNINITIALIZED_VALUE",
+        "hash": "bc719a4aba192450179ceb503891a2ec",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from Dtime[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 2536,
+        "column": 5,
+        "procedure": "HUFv05_decompress",
+        "procedure_start_line": 2516,
+        "file": "lib/legacy/zstd_v05.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v05.c",
+                "line_number": 2536,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "zstd_v05.c|HUFv05_decompress|UNINITIALIZED_VALUE",
+        "hash": "d6d3c14c0f428f7527b1458559f095a7",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from Dtime[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 2663,
+        "column": 5,
+        "procedure": "HUFv06_decompress",
+        "procedure_start_line": 2645,
+        "file": "lib/legacy/zstd_v06.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v06.c",
+                "line_number": 2663,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "zstd_v06.c|HUFv06_decompress|UNINITIALIZED_VALUE",
+        "hash": "d8296a3027a00f87a2aa9b8b0f68ac8d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &LLlog (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 3055,
+        "column": 13,
+        "procedure": "ZSTDv05_decodeSeqHeaders",
+        "procedure_start_line": 2997,
+        "file": "lib/legacy/zstd_v05.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v05.c",
+                "line_number": 3055,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "zstd_v05.c|ZSTDv05_decodeSeqHeaders|DEAD_STORE",
+        "hash": "a075a403d021e4dc35fdde636abbbdb0",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &MLlog (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 3103,
+        "column": 13,
+        "procedure": "ZSTDv05_decodeSeqHeaders",
+        "procedure_start_line": 2997,
+        "file": "lib/legacy/zstd_v05.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v05.c",
+                "line_number": 3103,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "zstd_v05.c|ZSTDv05_decodeSeqHeaders|DEAD_STORE",
+        "hash": "03382468175f230ae898295c6744d4d9",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &Offlog (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 3079,
+        "column": 13,
+        "procedure": "ZSTDv05_decodeSeqHeaders",
+        "procedure_start_line": 2997,
+        "file": "lib/legacy/zstd_v05.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "lib/legacy/zstd_v05.c",
+                "line_number": 3079,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "zstd_v05.c|ZSTDv05_decodeSeqHeaders|DEAD_STORE",
+        "hash": "e62e0b0465cb138dfe68d0dcfbdc1168",
+        "bug_type_hum": "Dead Store"
+    }
+]

@@ -1,0 +1,3918 @@
+[
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from mode_len was never initialized.",
+        "severity": "ERROR",
+        "line": 95,
+        "column": 11,
+        "procedure": "ndpi_search_tftp",
+        "procedure_start_line": 39,
+        "file": "src/lib/protocols/tftp.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/tftp.c",
+                "line_number": 95,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "tftp.c|ndpi_search_tftp|UNINITIALIZED_VALUE",
+        "hash": "83bffeadb951fd60909c7b5146c0ed3f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from pow[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 102,
+        "column": 9,
+        "procedure": "aes_gen_tables",
+        "procedure_start_line": 64,
+        "file": "src/lib/third_party/src/gcrypt/aes.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/aes.c",
+                "line_number": 102,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "aes.c|aes_gen_tables|UNINITIALIZED_VALUE",
+        "hash": "cc3ab08ade190dc87f99915560fd0729",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from pow[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 134,
+        "column": 31,
+        "procedure": "aes_gen_tables",
+        "procedure_start_line": 64,
+        "file": "src/lib/third_party/src/gcrypt/aes.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/aes.c",
+                "line_number": 134,
+                "column_number": 31,
+                "description": ""
+            }
+        ],
+        "key": "aes.c|aes_gen_tables|UNINITIALIZED_VALUE",
+        "hash": "cc3ab08ade190dc87f99915560fd0729",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from pow[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 135,
+        "column": 31,
+        "procedure": "aes_gen_tables",
+        "procedure_start_line": 64,
+        "file": "src/lib/third_party/src/gcrypt/aes.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/aes.c",
+                "line_number": 135,
+                "column_number": 31,
+                "description": ""
+            }
+        ],
+        "key": "aes.c|aes_gen_tables|UNINITIALIZED_VALUE",
+        "hash": "cc3ab08ade190dc87f99915560fd0729",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from pow[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 136,
+        "column": 31,
+        "procedure": "aes_gen_tables",
+        "procedure_start_line": 64,
+        "file": "src/lib/third_party/src/gcrypt/aes.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/aes.c",
+                "line_number": 136,
+                "column_number": 31,
+                "description": ""
+            }
+        ],
+        "key": "aes.c|aes_gen_tables|UNINITIALIZED_VALUE",
+        "hash": "cc3ab08ade190dc87f99915560fd0729",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from pow[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 137,
+        "column": 31,
+        "procedure": "aes_gen_tables",
+        "procedure_start_line": 64,
+        "file": "src/lib/third_party/src/gcrypt/aes.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/aes.c",
+                "line_number": 137,
+                "column_number": 31,
+                "description": ""
+            }
+        ],
+        "key": "aes.c|aes_gen_tables|UNINITIALIZED_VALUE",
+        "hash": "cc3ab08ade190dc87f99915560fd0729",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `q` last assigned on line 127 could be null and is dereferenced at line 133, column 19.",
+        "severity": "ERROR",
+        "line": 133,
+        "column": 19,
+        "procedure": "ndpi_tsearch",
+        "procedure_start_line": 109,
+        "file": "src/lib/ndpi_utils.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 109,
+                "column_number": 1,
+                "description": "start of procedure ndpi_tsearch()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 113,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 114,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 116,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 118,
+                "column_number": 10,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 121,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 123,
+                "column_number": 14,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 123,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 118,
+                "column_number": 10,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 127,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is false"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 128,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 133,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_utils.c|ndpi_tsearch|NULL_DEREFERENCE",
+        "node_key": "e4f1d3e6f9430d22983eb1262df81bc6",
+        "hash": "15eddd39fb36a3fe987e8d0cf988a3e8",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &a (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 165,
+        "column": 5,
+        "procedure": "SHA1Transform",
+        "procedure_start_line": 113,
+        "file": "src/lib/third_party/src/ndpi_sha1.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_sha1.c",
+                "line_number": 165,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_sha1.c|SHA1Transform|DEAD_STORE",
+        "hash": "b9c894cc05524b963d91c1e9a525903b",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from hostname_offset was never initialized.",
+        "severity": "ERROR",
+        "line": 188,
+        "column": 7,
+        "procedure": "ndpi_search_collectd",
+        "procedure_start_line": 130,
+        "file": "src/lib/protocols/collectd.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/collectd.c",
+                "line_number": 188,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "collectd.c|ndpi_search_collectd|UNINITIALIZED_VALUE",
+        "hash": "88b0f7cae2f5d47f550198082bd85f09",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from W[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 154,
+        "column": 5,
+        "procedure": "sha256_transform",
+        "procedure_start_line": 130,
+        "file": "src/lib/third_party/src/gcrypt/digest.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/digest.c",
+                "line_number": 154,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "digest.c|sha256_transform|UNINITIALIZED_VALUE",
+        "hash": "8f5988304f25d23af6da9238b8fd1541",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ret (type int) is never used.",
+        "severity": "ERROR",
+        "line": 180,
+        "column": 5,
+        "procedure": "mbedtls_gcm_setkey",
+        "procedure_start_line": 175,
+        "file": "src/lib/third_party/src/gcrypt/gcm.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/gcm.c",
+                "line_number": 180,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "gcm.c|mbedtls_gcm_setkey|DEAD_STORE",
+        "hash": "e79f59aca58f32ba9e5d63697a543bce",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &offset (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 371,
+        "column": 3,
+        "procedure": "concat_hash_string",
+        "procedure_start_line": 224,
+        "file": "src/lib/protocols/ssh.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/ssh.c",
+                "line_number": 371,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ssh.c|concat_hash_string|DEAD_STORE",
+        "hash": "79bba6ce4d2ecb1c6c34d75614a49e0b",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ret (type int) is never used.",
+        "severity": "ERROR",
+        "line": 227,
+        "column": 5,
+        "procedure": "mbedtls_cipher_update",
+        "procedure_start_line": 224,
+        "file": "src/lib/third_party/src/gcrypt/cipher.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/cipher.c",
+                "line_number": 227,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "cipher.c|mbedtls_cipher_update|DEAD_STORE",
+        "hash": "d1cc688b8b522cbfe91ed14e878a3b09",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &is_printable (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 242,
+        "column": 3,
+        "procedure": "extractRDNSequence",
+        "procedure_start_line": 237,
+        "file": "src/lib/protocols/tls.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/tls.c",
+                "line_number": 242,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "tls.c|extractRDNSequence|DEAD_STORE",
+        "hash": "c492f4f29a2b8fd91496bda14aac7869",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ret (type int) is never used.",
+        "severity": "ERROR",
+        "line": 284,
+        "column": 5,
+        "procedure": "mbedtls_gcm_starts",
+        "procedure_start_line": 280,
+        "file": "src/lib/third_party/src/gcrypt/gcm.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/gcm.c",
+                "line_number": 284,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "gcm.c|mbedtls_gcm_starts|DEAD_STORE",
+        "hash": "e9034c9ec231fee9d21c58edc06c64e2",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `patricia` last assigned on line 300 could be null and is dereferenced at line 302, column 3.",
+        "severity": "ERROR",
+        "line": 302,
+        "column": 3,
+        "procedure": "ndpi_patricia_new",
+        "procedure_start_line": 297,
+        "file": "src/lib/third_party/src/ndpi_patricia.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 297,
+                "column_number": 1,
+                "description": "start of procedure ndpi_patricia_new()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 300,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 220,
+                "column_number": 1,
+                "description": "start of procedure ndpi_calloc()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 221,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 222,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is false"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 224,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 229,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 230,
+                "column_number": 1,
+                "description": "return from a call to ndpi_calloc"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 302,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_patricia.c|ndpi_patricia_new|NULL_DEREFERENCE",
+        "node_key": "208396ab68cb996565cbf5c589ccb810",
+        "hash": "d0c368c18c0e0fa166831459c5adefc2",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &RK (type unsigned int*) is never used.",
+        "severity": "ERROR",
+        "line": 423,
+        "column": 5,
+        "procedure": "mbedtls_internal_aes_encrypt",
+        "procedure_start_line": 389,
+        "file": "src/lib/third_party/src/gcrypt/aes.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/aes.c",
+                "line_number": 423,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aes.c|mbedtls_internal_aes_encrypt|DEAD_STORE",
+        "hash": "cb7c0f1628b8a0c20675838ab5f742c0",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ret (type int) is never used.",
+        "severity": "ERROR",
+        "line": 431,
+        "column": 5,
+        "procedure": "gcm_mask",
+        "procedure_start_line": 424,
+        "file": "src/lib/third_party/src/gcrypt/gcm.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/gcm.c",
+                "line_number": 431,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "gcm.c|gcm_mask|DEAD_STORE",
+        "hash": "9e85a1d9a64d25ebd7f3b49880c9d39c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `ndpi_str->proto_defaults[protoId].subprotocols` last assigned on line 459 could be null and is dereferenced at line 467, column 7.",
+        "severity": "ERROR",
+        "line": 467,
+        "column": 7,
+        "procedure": "ndpi_set_proto_subprotocols",
+        "procedure_start_line": 436,
+        "file": "src/lib/ndpi_main.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 436,
+                "column_number": 1,
+                "description": "start of procedure ndpi_set_proto_subprotocols()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 439,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 441,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 442,
+                "column_number": 10,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 444,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 445,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 442,
+                "column_number": 10,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 447,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 449,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 452,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 454,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 459,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is false"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 462,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 463,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 464,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 465,
+                "column_number": 10,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 467,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_main.c|ndpi_set_proto_subprotocols|NULL_DEREFERENCE",
+        "node_key": "fd501e5c9e66534da8262da08b781c69",
+        "hash": "b7eef5aff12ac85387b6e317d136de36",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &RK (type unsigned int*) is never used.",
+        "severity": "ERROR",
+        "line": 471,
+        "column": 5,
+        "procedure": "mbedtls_internal_aes_decrypt",
+        "procedure_start_line": 437,
+        "file": "src/lib/third_party/src/gcrypt/aes.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/aes.c",
+                "line_number": 471,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aes.c|mbedtls_internal_aes_decrypt|DEAD_STORE",
+        "hash": "03b063c25c5192544f6cfd68215f053d",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ret (type int) is never used.",
+        "severity": "ERROR",
+        "line": 453,
+        "column": 5,
+        "procedure": "mbedtls_gcm_update",
+        "procedure_start_line": 448,
+        "file": "src/lib/third_party/src/gcrypt/gcm.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/gcm.c",
+                "line_number": 453,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "gcm.c|mbedtls_gcm_update|DEAD_STORE",
+        "hash": "96f7ac4b2e0dce4998c470ce92ed4674",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from stack[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 605,
+        "column": 5,
+        "procedure": "ndpi_patricia_search_best2",
+        "procedure_start_line": 527,
+        "file": "src/lib/third_party/src/ndpi_patricia.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 605,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_patricia.c|ndpi_patricia_search_best2|UNINITIALIZED_VALUE",
+        "hash": "9b32bc495cc7368a87d063b2e9d52f17",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ret (type int) is never used.",
+        "severity": "ERROR",
+        "line": 596,
+        "column": 5,
+        "procedure": "mbedtls_gcm_crypt_and_tag",
+        "procedure_start_line": 584,
+        "file": "src/lib/third_party/src/gcrypt/gcm.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/gcrypt/gcm.c",
+                "line_number": 596,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "gcm.c|mbedtls_gcm_crypt_and_tag|DEAD_STORE",
+        "hash": "6799d18ee7c75c93bf04e6513f83a507",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 607,
+        "column": 5,
+        "procedure": "ndpi_serialize_raw_record",
+        "procedure_start_line": 587,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 607,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_raw_record|DEAD_STORE",
+        "hash": "adbd0951eadc228e95dc13d045724415",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `node` last assigned on line 649 could be null and is dereferenced at line 650, column 5.",
+        "severity": "ERROR",
+        "line": 650,
+        "column": 5,
+        "procedure": "ndpi_patricia_lookup",
+        "procedure_start_line": 631,
+        "file": "src/lib/third_party/src/ndpi_patricia.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 631,
+                "column_number": 1,
+                "description": "start of procedure ndpi_patricia_lookup()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 644,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 645,
+                "column_number": 3,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 646,
+                "column_number": 3,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 648,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 649,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 220,
+                "column_number": 1,
+                "description": "start of procedure ndpi_calloc()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 221,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 222,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is false"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 224,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 229,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 230,
+                "column_number": 1,
+                "description": "return from a call to ndpi_calloc"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/ndpi_patricia.c",
+                "line_number": 650,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_patricia.c|ndpi_patricia_lookup|NULL_DEREFERENCE",
+        "node_key": "ae5c8d93247dbd042198a40391b02f86",
+        "hash": "e940fd03d701a5c868ad7a036b51a501",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &argidx (type int) is never used.",
+        "severity": "ERROR",
+        "line": 665,
+        "column": 84,
+        "procedure": "extcap_config",
+        "procedure_start_line": 645,
+        "file": "example/ndpiReader.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 665,
+                "column_number": 84,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpiReader.c|extcap_config|DEAD_STORE",
+        "hash": "278bc25e3e353d6c2bd858c57d4efb00",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &l4_data_len (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 717,
+        "column": 3,
+        "procedure": "get_ndpi_flow_info",
+        "procedure_start_line": 695,
+        "file": "example/reader_util.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "example/reader_util.c",
+                "line_number": 717,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "reader_util.c|get_ndpi_flow_info|DEAD_STORE",
+        "hash": "fb147845cec812623a192b1d26c63de8",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &len (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 1112,
+        "column": 7,
+        "procedure": "ndpi_base64_encode",
+        "procedure_start_line": 1070,
+        "file": "src/lib/ndpi_utils.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 1112,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_utils.c|ndpi_base64_encode|DEAD_STORE",
+        "hash": "0fd4539dce317faeb6eaa0c07a4c3b8a",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_3[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1100,
+        "column": 5,
+        "procedure": "ndpi_base64_encode",
+        "procedure_start_line": 1070,
+        "file": "src/lib/ndpi_utils.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 1100,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_utils.c|ndpi_base64_encode|UNINITIALIZED_VALUE",
+        "hash": "3228fce3685ab9c6daf71b52afc73d8f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_3[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1101,
+        "column": 5,
+        "procedure": "ndpi_base64_encode",
+        "procedure_start_line": 1070,
+        "file": "src/lib/ndpi_utils.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 1101,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_utils.c|ndpi_base64_encode|UNINITIALIZED_VALUE",
+        "hash": "3228fce3685ab9c6daf71b52afc73d8f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_3[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1102,
+        "column": 5,
+        "procedure": "ndpi_base64_encode",
+        "procedure_start_line": 1070,
+        "file": "src/lib/ndpi_utils.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 1102,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_utils.c|ndpi_base64_encode|UNINITIALIZED_VALUE",
+        "hash": "3228fce3685ab9c6daf71b52afc73d8f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_3[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1103,
+        "column": 5,
+        "procedure": "ndpi_base64_encode",
+        "procedure_start_line": 1070,
+        "file": "src/lib/ndpi_utils.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_utils.c",
+                "line_number": 1103,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_utils.c|ndpi_base64_encode|UNINITIALIZED_VALUE",
+        "hash": "3228fce3685ab9c6daf71b52afc73d8f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1104,
+        "column": 5,
+        "procedure": "ndpi_serialize_uint32_binary",
+        "procedure_start_line": 1075,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1104,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_uint32_binary|DEAD_STORE",
+        "hash": "fada5080b91f4d8d8914b656405dd165",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &idx (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1090,
+        "column": 5,
+        "procedure": "ndpi_hw_add_value",
+        "procedure_start_line": 1081,
+        "file": "src/lib/ndpi_analyze.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 1090,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_analyze.c|ndpi_hw_add_value|DEAD_STORE",
+        "hash": "e5ea74ac61b209f9d8613eac484b369f",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1274,
+        "column": 2,
+        "procedure": "ndpi_serialize_string_int32",
+        "procedure_start_line": 1259,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1274,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_string_int32|DEAD_STORE",
+        "hash": "fe93a30dfd1c21adc0c312216dff2c36",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1331,
+        "column": 7,
+        "procedure": "ndpi_serialize_binary_int64",
+        "procedure_start_line": 1298,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1331,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_binary_int64|DEAD_STORE",
+        "hash": "cd80b56e35eea2453e7a416aa2d80c28",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &invalid_ja3 (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 1574,
+        "column": 3,
+        "procedure": "processClientServerHello",
+        "procedure_start_line": 1358,
+        "file": "src/lib/protocols/tls.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/tls.c",
+                "line_number": 1574,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "tls.c|processClientServerHello|DEAD_STORE",
+        "hash": "1928248775536b4e1807f7a7a534acaf",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &invalid_ja3 (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 1581,
+        "column": 6,
+        "procedure": "processClientServerHello",
+        "procedure_start_line": 1358,
+        "file": "src/lib/protocols/tls.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/tls.c",
+                "line_number": 1581,
+                "column_number": 6,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "tls.c|processClientServerHello|DEAD_STORE",
+        "hash": "1928248775536b4e1807f7a7a534acaf",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ja3_str_len (type unsigned short) is never used.",
+        "severity": "ERROR",
+        "line": 1621,
+        "column": 53,
+        "procedure": "processClientServerHello",
+        "procedure_start_line": 1358,
+        "file": "src/lib/protocols/tls.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/tls.c",
+                "line_number": 1621,
+                "column_number": 53,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "tls.c|processClientServerHello|DEAD_STORE",
+        "hash": "59ada687b0c2e9569a1b23d1555b4dc0",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ja3_str_len (type unsigned short) is never used.",
+        "severity": "ERROR",
+        "line": 2372,
+        "column": 52,
+        "procedure": "processClientServerHello",
+        "procedure_start_line": 1358,
+        "file": "src/lib/protocols/tls.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/protocols/tls.c",
+                "line_number": 2372,
+                "column_number": 52,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "tls.c|processClientServerHello|DEAD_STORE",
+        "hash": "59ada687b0c2e9569a1b23d1555b4dc0",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1391,
+        "column": 2,
+        "procedure": "ndpi_serialize_binary_uint32",
+        "procedure_start_line": 1371,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1391,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_binary_uint32|DEAD_STORE",
+        "hash": "db9218f4a2e5fa22a605d0cb8a3a6b5a",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1432,
+        "column": 7,
+        "procedure": "ndpi_serialize_binary_uint32",
+        "procedure_start_line": 1371,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1432,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_binary_uint32|DEAD_STORE",
+        "hash": "db9218f4a2e5fa22a605d0cb8a3a6b5a",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1534,
+        "column": 7,
+        "procedure": "ndpi_serialize_binary_uint64",
+        "procedure_start_line": 1501,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1534,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_binary_uint64|DEAD_STORE",
+        "hash": "5b418b87bf98538e2d89780496eada86",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1696,
+        "column": 5,
+        "procedure": "ndpi_serialize_binary_raw",
+        "procedure_start_line": 1646,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1696,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_binary_raw|DEAD_STORE",
+        "hash": "236c8c639fe9c2aa287fa7a3b0853610",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1759,
+        "column": 2,
+        "procedure": "ndpi_serialize_string_string_len",
+        "procedure_start_line": 1744,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1759,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_string_string_len|DEAD_STORE",
+        "hash": "b15d8ab69d103b9735b0d9793963c14b",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1957,
+        "column": 5,
+        "procedure": "ndpi_serialize_start_of_block_binary",
+        "procedure_start_line": 1933,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 1957,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_start_of_block_binary|DEAD_STORE",
+        "hash": "fc13aff337975af8f8a05e05edd91649",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 2012,
+        "column": 5,
+        "procedure": "ndpi_serialize_end_of_block",
+        "procedure_start_line": 1998,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2012,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_serialize_end_of_block|DEAD_STORE",
+        "hash": "49e972d343dd1952cd44ff62acec0d48",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &dst_buff_diff (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 2599,
+        "column": 5,
+        "procedure": "ndpi_deserialize_clone_item",
+        "procedure_start_line": 2566,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2599,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_item|DEAD_STORE",
+        "hash": "cec97d6c846ca1fc9c5a8a95c7dcbf8a",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from k32 was never initialized.",
+        "severity": "ERROR",
+        "line": 2662,
+        "column": 12,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2662,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "f083a68ee19facdcb680d4bb907488a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from k32 was never initialized.",
+        "severity": "ERROR",
+        "line": 2668,
+        "column": 12,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2668,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "f083a68ee19facdcb680d4bb907488a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from k32 was never initialized.",
+        "severity": "ERROR",
+        "line": 2674,
+        "column": 12,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2674,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "f083a68ee19facdcb680d4bb907488a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from k32 was never initialized.",
+        "severity": "ERROR",
+        "line": 2680,
+        "column": 12,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2680,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "f083a68ee19facdcb680d4bb907488a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from k32 was never initialized.",
+        "severity": "ERROR",
+        "line": 2686,
+        "column": 12,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2686,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "f083a68ee19facdcb680d4bb907488a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from k32 was never initialized.",
+        "severity": "ERROR",
+        "line": 2692,
+        "column": 12,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2692,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "f083a68ee19facdcb680d4bb907488a8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ks.str_len was never initialized.",
+        "severity": "ERROR",
+        "line": 2661,
+        "column": 25,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2661,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "565297923b1f61f0553aa3a6e98558e6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ks.str_len was never initialized.",
+        "severity": "ERROR",
+        "line": 2667,
+        "column": 25,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2667,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "565297923b1f61f0553aa3a6e98558e6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ks.str_len was never initialized.",
+        "severity": "ERROR",
+        "line": 2673,
+        "column": 25,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2673,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "565297923b1f61f0553aa3a6e98558e6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ks.str_len was never initialized.",
+        "severity": "ERROR",
+        "line": 2679,
+        "column": 25,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2679,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "565297923b1f61f0553aa3a6e98558e6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ks.str_len was never initialized.",
+        "severity": "ERROR",
+        "line": 2685,
+        "column": 25,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2685,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "565297923b1f61f0553aa3a6e98558e6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ks.str_len was never initialized.",
+        "severity": "ERROR",
+        "line": 2691,
+        "column": 25,
+        "procedure": "ndpi_deserialize_clone_all",
+        "procedure_start_line": 2614,
+        "file": "src/lib/ndpi_serializer.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_serializer.c",
+                "line_number": 2691,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_serializer.c|ndpi_deserialize_clone_all|UNINITIALIZED_VALUE",
+        "hash": "565297923b1f61f0553aa3a6e98558e6",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &againstRepeat (type int) is never used.",
+        "severity": "ERROR",
+        "line": 2990,
+        "column": 17,
+        "procedure": "printFlowsStats",
+        "procedure_start_line": 2756,
+        "file": "example/ndpiReader.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 2990,
+                "column_number": 17,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpiReader.c|printFlowsStats|DEAD_STORE",
+        "hash": "8dbee8a501b85916fbc00d3591209669",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &num_ja3_server (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 2948,
+        "column": 30,
+        "procedure": "printFlowsStats",
+        "procedure_start_line": 2756,
+        "file": "example/ndpiReader.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 2948,
+                "column_number": 30,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "ndpiReader.c|printFlowsStats|DEAD_STORE",
+        "hash": "55c9c90f420bb16113aff8f7207b74c2",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from subprotocol_id was never initialized.",
+        "severity": "ERROR",
+        "line": 3504,
+        "column": 7,
+        "procedure": "ndpi_handle_rule",
+        "procedure_start_line": 3375,
+        "file": "src/lib/ndpi_main.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 3504,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_main.c|ndpi_handle_rule|UNINITIALIZED_VALUE",
+        "hash": "bb37fc663f5f77db68c70ea844bdff06",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from subprotocol_id was never initialized.",
+        "severity": "ERROR",
+        "line": 3507,
+        "column": 2,
+        "procedure": "ndpi_handle_rule",
+        "procedure_start_line": 3375,
+        "file": "src/lib/ndpi_main.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 3507,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_main.c|ndpi_handle_rule|UNINITIALIZED_VALUE",
+        "hash": "bb37fc663f5f77db68c70ea844bdff06",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from subprotocol_id was never initialized.",
+        "severity": "ERROR",
+        "line": 3510,
+        "column": 2,
+        "procedure": "ndpi_handle_rule",
+        "procedure_start_line": 3375,
+        "file": "src/lib/ndpi_main.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 3510,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_main.c|ndpi_handle_rule|UNINITIALIZED_VALUE",
+        "hash": "bb37fc663f5f77db68c70ea844bdff06",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `s` last assigned on line 4392 could be null and is dereferenced by call to `ndpi_data_add_value()` at line 4396, column 5.",
+        "severity": "ERROR",
+        "line": 4396,
+        "column": 5,
+        "procedure": "analyzeUnitTest",
+        "procedure_start_line": 4391,
+        "file": "example/ndpiReader.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4391,
+                "column_number": 1,
+                "description": "start of procedure analyzeUnitTest()"
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4392,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 52,
+                "column_number": 1,
+                "description": "start of procedure ndpi_alloc_data_analysis()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 53,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is false"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 55,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 58,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 59,
+                "column_number": 1,
+                "description": "return from a call to ndpi_alloc_data_analysis"
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4395,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4395,
+                "column_number": 12,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4396,
+                "column_number": 5,
+                "description": "Skipping rand(): method has no implementation"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 87,
+                "column_number": 1,
+                "description": "start of procedure ndpi_data_add_value()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 88,
+                "column_number": 6,
+                "description": ""
+            }
+        ],
+        "key": "ndpiReader.c|analyzeUnitTest|NULL_DEREFERENCE",
+        "node_key": "f754debb3077b34dc7814b8b79842f25",
+        "hash": "e88601497a805827a3b0fe6e8f7eacfa",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `s` last assigned on line 4486 could be null and is dereferenced by call to `ndpi_data_add_value()` at line 4490, column 5.",
+        "severity": "ERROR",
+        "line": 4490,
+        "column": 5,
+        "procedure": "analysisUnitTest",
+        "procedure_start_line": 4485,
+        "file": "example/ndpiReader.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4485,
+                "column_number": 1,
+                "description": "start of procedure analysisUnitTest()"
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4486,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 52,
+                "column_number": 1,
+                "description": "start of procedure ndpi_alloc_data_analysis()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 53,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is false"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 55,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 58,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 59,
+                "column_number": 1,
+                "description": "return from a call to ndpi_alloc_data_analysis"
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4489,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4489,
+                "column_number": 12,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4490,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 87,
+                "column_number": 1,
+                "description": "start of procedure ndpi_data_add_value()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/ndpi_analyze.c",
+                "line_number": 88,
+                "column_number": 6,
+                "description": ""
+            }
+        ],
+        "key": "ndpiReader.c|analysisUnitTest|NULL_DEREFERENCE",
+        "node_key": "06b62a860ac94a9210798388bfe63ac1",
+        "hash": "8ac4b5be05f95b76d681afa74fcf52c9",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `c` last assigned on line 4673 could be null and is dereferenced by call to `array_container_remove()` at line 4687, column 13.",
+        "severity": "ERROR",
+        "line": 4687,
+        "column": 13,
+        "procedure": "container_remove",
+        "procedure_start_line": 4668,
+        "file": "src/lib/third_party/src/roaring.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4668,
+                "column_number": 1,
+                "description": "start of procedure container_remove()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4673,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4267,
+                "column_number": 1,
+                "description": "start of procedure get_writable_copy_if_shared()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4270,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4271,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15348,
+                "column_number": 1,
+                "description": "start of procedure shared_container_extract_copy()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15351,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15352,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15353,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15354,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15356,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15361,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15328,
+                "column_number": 1,
+                "description": "start of procedure container_clone()"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15331,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15332,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15334,
+                "column_number": 9,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15335,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13281,
+                "column_number": 1,
+                "description": "start of procedure array_container_clone()"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13282,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13242,
+                "column_number": 1,
+                "description": "start of procedure array_container_create_given_capacity()"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is true"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13247,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13262,
+                "column_number": 1,
+                "description": "return from a call to array_container_create_given_capacity"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13284,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13284,
+                "column_number": 31,
+                "description": ""
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13292,
+                "column_number": 1,
+                "description": "return from a call to array_container_clone"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15335,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15346,
+                "column_number": 1,
+                "description": "return from a call to container_clone"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15363,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15364,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15365,
+                "column_number": 1,
+                "description": "return from a call to shared_container_extract_copy"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4271,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4275,
+                "column_number": 1,
+                "description": "return from a call to get_writable_copy_if_shared"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4674,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4675,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4685,
+                "column_number": 9,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4686,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4687,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 1949,
+                "column_number": 1,
+                "description": "start of procedure array_container_remove()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 1951,
+                "column_number": 5,
+                "description": "Skipping binarySearch(): empty list of specs"
+            }
+        ],
+        "key": "roaring.cc|container_remove|NULL_DEREFERENCE",
+        "node_key": "c800bbe78bc55b6247dc9f48637ea4ce",
+        "hash": "b0edb185107cddd455370abd1c3a153a",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `c` last assigned on line 4673 could be null and is dereferenced by call to `run_container_remove()` at line 4691, column 13.",
+        "severity": "ERROR",
+        "line": 4691,
+        "column": 13,
+        "procedure": "container_remove",
+        "procedure_start_line": 4668,
+        "file": "src/lib/third_party/src/roaring.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4668,
+                "column_number": 1,
+                "description": "start of procedure container_remove()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4673,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4267,
+                "column_number": 1,
+                "description": "start of procedure get_writable_copy_if_shared()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4270,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4271,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15348,
+                "column_number": 1,
+                "description": "start of procedure shared_container_extract_copy()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15351,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15352,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15353,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15354,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15356,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15361,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15328,
+                "column_number": 1,
+                "description": "start of procedure container_clone()"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15331,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15332,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15334,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15336,
+                "column_number": 9,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15337,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14419,
+                "column_number": 1,
+                "description": "start of procedure run_container_clone()"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14420,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14387,
+                "column_number": 1,
+                "description": "start of procedure run_container_create_given_capacity()"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14390,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is true"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14390,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14391,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14402,
+                "column_number": 1,
+                "description": "return from a call to run_container_create_given_capacity"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14421,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14421,
+                "column_number": 22,
+                "description": ""
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14426,
+                "column_number": 1,
+                "description": "return from a call to run_container_clone"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15337,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15346,
+                "column_number": 1,
+                "description": "return from a call to container_clone"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15363,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15364,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15365,
+                "column_number": 1,
+                "description": "return from a call to shared_container_extract_copy"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4271,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4275,
+                "column_number": 1,
+                "description": "return from a call to get_writable_copy_if_shared"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4674,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4675,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4685,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4689,
+                "column_number": 9,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4691,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 2800,
+                "column_number": 1,
+                "description": "start of procedure run_container_remove()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 2801,
+                "column_number": 5,
+                "description": "Skipping interleavedBinarySearch(): empty list of specs"
+            }
+        ],
+        "key": "roaring.cc|container_remove|NULL_DEREFERENCE",
+        "node_key": "06b62a860ac94a9210798388bfe63ac1",
+        "hash": "25a2110cb544a248d4d7932d40b9fdca",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from do_trace was never initialized.",
+        "severity": "ERROR",
+        "line": 4979,
+        "column": 6,
+        "procedure": "zscoreUnitTest",
+        "procedure_start_line": 4971,
+        "file": "example/ndpiReader.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "example/ndpiReader.c",
+                "line_number": 4979,
+                "column_number": 6,
+                "description": ""
+            }
+        ],
+        "key": "ndpiReader.c|zscoreUnitTest|UNINITIALIZED_VALUE",
+        "hash": "a0cc373b8dc4c256032519510d1e4e80",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `c1` last assigned on line 5075 could be null and is dereferenced by call to `array_container_intersection_inplace()` at line 5088, column 13.",
+        "severity": "ERROR",
+        "line": 5088,
+        "column": 13,
+        "procedure": "container_iand",
+        "procedure_start_line": 5070,
+        "file": "src/lib/third_party/src/roaring.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5070,
+                "column_number": 1,
+                "description": "start of procedure container_iand()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5075,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4267,
+                "column_number": 1,
+                "description": "start of procedure get_writable_copy_if_shared()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4270,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4271,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15348,
+                "column_number": 1,
+                "description": "start of procedure shared_container_extract_copy()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15351,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15352,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15353,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15354,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15356,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15361,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15328,
+                "column_number": 1,
+                "description": "start of procedure container_clone()"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15331,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15332,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15334,
+                "column_number": 9,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15335,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13281,
+                "column_number": 1,
+                "description": "start of procedure array_container_clone()"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13282,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13242,
+                "column_number": 1,
+                "description": "start of procedure array_container_create_given_capacity()"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is true"
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 6,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13247,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 5,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13262,
+                "column_number": 1,
+                "description": "return from a call to array_container_create_given_capacity"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13284,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13284,
+                "column_number": 31,
+                "description": ""
+            },
+            {
+                "level": 4,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13292,
+                "column_number": 1,
+                "description": "return from a call to array_container_clone"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15335,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15346,
+                "column_number": 1,
+                "description": "return from a call to container_clone"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15363,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15364,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15365,
+                "column_number": 1,
+                "description": "return from a call to shared_container_extract_copy"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4271,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4275,
+                "column_number": 1,
+                "description": "return from a call to get_writable_copy_if_shared"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5076,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4222,
+                "column_number": 1,
+                "description": "start of procedure container_unwrap_shared()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4225,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4226,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4227,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4228,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 4232,
+                "column_number": 1,
+                "description": "return from a call to container_unwrap_shared"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5077,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5078,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5079,
+                "column_number": 9,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5087,
+                "column_number": 9,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 5088,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13548,
+                "column_number": 1,
+                "description": "start of procedure array_container_intersection_inplace()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13551,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "roaring.cc|container_iand|NULL_DEREFERENCE",
+        "node_key": "06b62a860ac94a9210798388bfe63ac1",
+        "hash": "349dcc60b2eefafe0870b0ff4158fb93",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from confidence was never initialized.",
+        "severity": "ERROR",
+        "line": 5608,
+        "column": 7,
+        "procedure": "ndpi_detection_giveup",
+        "procedure_start_line": 5514,
+        "file": "src/lib/ndpi_main.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 5608,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "ndpi_main.c|ndpi_detection_giveup|UNINITIALIZED_VALUE",
+        "hash": "83f43117833b4801068637cecb06676a",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `ra->keys` last assigned on line 7339 could be null and is dereferenced at line 7342, column 9.",
+        "severity": "ERROR",
+        "line": 7342,
+        "column": 9,
+        "procedure": "ra_append_copy_range",
+        "procedure_start_line": 7336,
+        "file": "src/lib/third_party/src/roaring.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7336,
+                "column_number": 1,
+                "description": "start of procedure ra_append_copy_range()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7339,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7279,
+                "column_number": 1,
+                "description": "start of procedure extend_array()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7280,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7281,
+                "column_number": 5,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7282,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7283,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7284,
+                "column_number": 14,
+                "description": "Condition is true"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7284,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7285,
+                "column_number": 13,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7289,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7133,
+                "column_number": 1,
+                "description": "start of procedure realloc_array()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7139,
+                "column_number": 10,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7140,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 234,
+                "column_number": 1,
+                "description": "start of procedure ndpi_free()"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 235,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 236,
+                "column_number": 8,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 237,
+                "column_number": 7,
+                "description": "Skipping __function_pointer__(): unresolved function pointer"
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 235,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 242,
+                "column_number": 1,
+                "description": "return from a call to ndpi_free"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7141,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7142,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7143,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7144,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7145,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7168,
+                "column_number": 1,
+                "description": "return from a call to realloc_array"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7289,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7292,
+                "column_number": 1,
+                "description": "return from a call to extend_array"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7340,
+                "column_number": 21,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7340,
+                "column_number": 38,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7341,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 7342,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "roaring.cc|ra_append_copy_range|NULL_DEREFERENCE",
+        "node_key": "afa2248685eaccc64582693a14211669",
+        "hash": "33605e80420f671591840207ca1ea696",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `result` last assigned on line 14023 could be null and is dereferenced at line 14025, column 5.",
+        "severity": "ERROR",
+        "line": 14025,
+        "column": 5,
+        "procedure": "array_container_from_bitset",
+        "procedure_start_line": 14022,
+        "file": "src/lib/third_party/src/roaring.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14022,
+                "column_number": 1,
+                "description": "start of procedure array_container_from_bitset()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14023,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13242,
+                "column_number": 1,
+                "description": "start of procedure array_container_create_given_capacity()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is true"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13247,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13262,
+                "column_number": 1,
+                "description": "return from a call to array_container_create_given_capacity"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14025,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "roaring.cc|array_container_from_bitset|NULL_DEREFERENCE",
+        "node_key": "5931a14f9ab3adc4a616165335414ab2",
+        "hash": "22c608663172ac773d64188337dab46d",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `answer` last assigned on line 14128 could be null and is dereferenced at line 14129, column 9.",
+        "severity": "ERROR",
+        "line": 14129,
+        "column": 9,
+        "procedure": "convert_run_to_efficient_container",
+        "procedure_start_line": 14105,
+        "file": "src/lib/third_party/src/roaring.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14105,
+                "column_number": 1,
+                "description": "start of procedure convert_run_to_efficient_container()"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14109,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 3034,
+                "column_number": 1,
+                "description": "start of procedure run_container_serialized_size_in_bytes()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 3035,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 3037,
+                "column_number": 1,
+                "description": "return from a call to run_container_serialized_size_in_bytes"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14112,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 2506,
+                "column_number": 1,
+                "description": "start of procedure bitset_container_serialized_size_in_bytes()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 2507,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 2508,
+                "column_number": 1,
+                "description": "return from a call to bitset_container_serialized_size_in_bytes"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14114,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15143,
+                "column_number": 1,
+                "description": "start of procedure run_container_cardinality()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15144,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15145,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15148,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15149,
+                "column_number": 17,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15149,
+                "column_number": 24,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15150,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15149,
+                "column_number": 36,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15149,
+                "column_number": 24,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15153,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 15154,
+                "column_number": 1,
+                "description": "return from a call to run_container_cardinality"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14115,
+                "column_number": 5,
+                "description": "Skipping array_container_serialized_size_in_bytes(): method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14118,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14119,
+                "column_number": 9,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14122,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14126,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14128,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13242,
+                "column_number": 1,
+                "description": "start of procedure array_container_create_given_capacity()"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 207,
+                "column_number": 1,
+                "description": "start of procedure ndpi_malloc()"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 208,
+                "column_number": 3,
+                "description": "Skipping __sync_fetch_and_add_8(): method has no implementation"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": "Condition is true"
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 209,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "src/lib/ndpi_main.c",
+                "line_number": 210,
+                "column_number": 1,
+                "description": "return from a call to ndpi_malloc"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13245,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13247,
+                "column_number": 9,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 13262,
+                "column_number": 1,
+                "description": "return from a call to array_container_create_given_capacity"
+            },
+            {
+                "level": 0,
+                "filename": "src/lib/third_party/src/roaring.cc",
+                "line_number": 14129,
+                "column_number": 9,
+                "description": ""
+            }
+        ],
+        "key": "roaring.cc|convert_run_to_efficient_container|NULL_DEREFERENCE",
+        "node_key": "0a20ac60b6e64a6191bdcfd73929392b",
+        "hash": "a983d1cad3dabb6d23e302dbb8ad9e1a",
+        "bug_type_hum": "Null Dereference"
+    }
+]

@@ -1,0 +1,1746 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &decimal (type double) is never used.",
+        "severity": "ERROR",
+        "line": 18,
+        "column": 5,
+        "procedure": "acommon::strtodbl_c",
+        "procedure_start_line": 14,
+        "file": "/project/common/strtonum.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/strtonum.cpp",
+                "line_number": 18,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "strtonum.cpp|acommon::strtodbl_c|DEAD_STORE",
+        "hash": "6c00ed7ab73e2e881c17d6268e267f8c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `first` last assigned on line 18 could be null and is dereferenced at line 19, column 3.",
+        "severity": "ERROR",
+        "line": 19,
+        "column": 3,
+        "procedure": "acommon::ObjStack::ObjStack",
+        "procedure_start_line": 15,
+        "file": "/project/common/objstack.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/objstack.cpp",
+                "line_number": 15,
+                "column_number": 1,
+                "description": "start of procedure ObjStack"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/objstack.cpp",
+                "line_number": 16,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/objstack.cpp",
+                "line_number": 16,
+                "column_number": 26,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/objstack.cpp",
+                "line_number": 16,
+                "column_number": 44,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/objstack.cpp",
+                "line_number": 18,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/objstack.cpp",
+                "line_number": 19,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "objstack.cpp|ObjStack|NULL_DEREFERENCE",
+        "node_key": "61c4169535bef0f084d40871b008ef89",
+        "hash": "0dc35bd68ac18d00518e69c706a19689",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from i was never initialized.",
+        "severity": "ERROR",
+        "line": 22,
+        "column": 26,
+        "procedure": "get_line",
+        "procedure_start_line": 18,
+        "file": "/project/prog/checker_string.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/checker_string.cpp",
+                "line_number": 22,
+                "column_number": 26,
+                "description": ""
+            }
+        ],
+        "key": "checker_string.cpp|get_line|UNINITIALIZED_VALUE",
+        "hash": "957801e5ea35ddbff31b3a899c477540",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `mesg` last assigned on line 27 could be null and is dereferenced by call to `strcpy()` at line 28, column 7.",
+        "severity": "ERROR",
+        "line": 28,
+        "column": 7,
+        "procedure": "acommon::Error::Error",
+        "procedure_start_line": 24,
+        "file": "/project/common/error.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 24,
+                "column_number": 3,
+                "description": "start of procedure Error"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 26,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 27,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 28,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "error.cpp|Error|NULL_DEREFERENCE",
+        "node_key": "1748245d8c0815d4e344949562ce25b7",
+        "hash": "e4b77d053bf6cb77c53038e842ca2e2c",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &te (type short) is never used.",
+        "severity": "ERROR",
+        "line": 50,
+        "column": 4,
+        "procedure": "aspeller::typo_edit_distance",
+        "procedure_start_line": 24,
+        "file": "/project/modules/speller/default/typo_editdist.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/typo_editdist.cpp",
+                "line_number": 50,
+                "column_number": 4,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "typo_editdist.cpp|aspeller::typo_edit_distance|DEAD_STORE",
+        "hash": "562611a5f1effafbe358b30a7c3e4bc1",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `mesg` last assigned on line 39 could be null and is dereferenced by call to `memcpy()` at line 40, column 7.",
+        "severity": "ERROR",
+        "line": 40,
+        "column": 7,
+        "procedure": "acommon::Error::operator=",
+        "procedure_start_line": 33,
+        "file": "/project/common/error.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 33,
+                "column_number": 3,
+                "description": "start of procedure operator="
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 35,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 36,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 37,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 38,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 39,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/error.cpp",
+                "line_number": 40,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "error.cpp|operator=|NULL_DEREFERENCE",
+        "node_key": "6c1d7f126122ff7b363067320b7d828c",
+        "hash": "8f85dc8c19608d1907fc5013b44a4ee7",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 53,
+        "column": 24,
+        "procedure": "get_word",
+        "procedure_start_line": 48,
+        "file": "/project/prog/compress.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/compress.c",
+                "line_number": 53,
+                "column_number": 24,
+                "description": ""
+            }
+        ],
+        "key": "compress.c|get_word|UNINITIALIZED_VALUE",
+        "hash": "37087a602d0890c0fc0e667ea5624701",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 53,
+        "column": 35,
+        "procedure": "get_word",
+        "procedure_start_line": 48,
+        "file": "/project/prog/compress.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/compress.c",
+                "line_number": 53,
+                "column_number": 35,
+                "description": ""
+            }
+        ],
+        "key": "compress.c|get_word|UNINITIALIZED_VALUE",
+        "hash": "37087a602d0890c0fc0e667ea5624701",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `begin_` last assigned on line 53 could be null and is dereferenced by call to `memmove()` at line 54, column 7.",
+        "severity": "ERROR",
+        "line": 54,
+        "column": 7,
+        "procedure": "acommon::String::assign_only_nonnull",
+        "procedure_start_line": 51,
+        "file": "/project/common/string.hpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/string.hpp",
+                "line_number": 51,
+                "column_number": 5,
+                "description": "start of procedure assign_only_nonnull"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/string.hpp",
+                "line_number": 53,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/string.hpp",
+                "line_number": 54,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "string.hpp|assign_only_nonnull|NULL_DEREFERENCE",
+        "node_key": "dc0f1ed2459a20fe64754fa34bdaef1e",
+        "hash": "2eb122565e1b376b104c42ab6233d9cc",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 59,
+        "column": 29,
+        "procedure": "acommon::FStream::skipws",
+        "procedure_start_line": 56,
+        "file": "/project/common/fstream.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/fstream.cpp",
+                "line_number": 59,
+                "column_number": 29,
+                "description": ""
+            }
+        ],
+        "key": "fstream.cpp|skipws|UNINITIALIZED_VALUE",
+        "hash": "f4eb1c16f7c930d2f845b6e7f052cc59",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 59,
+        "column": 41,
+        "procedure": "acommon::FStream::skipws",
+        "procedure_start_line": 56,
+        "file": "/project/common/fstream.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/fstream.cpp",
+                "line_number": 59,
+                "column_number": 41,
+                "description": ""
+            }
+        ],
+        "key": "fstream.cpp|skipws|UNINITIALIZED_VALUE",
+        "hash": "f4eb1c16f7c930d2f845b6e7f052cc59",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `path.begin_` last assigned on line 62 could be null and is dereferenced by call to `set` at line 62, column 42.",
+        "severity": "ERROR",
+        "line": 62,
+        "column": 42,
+        "procedure": "aspeller::Dictionary::FileName::FileName",
+        "procedure_start_line": 62,
+        "file": "/project/modules/speller/default/data.hpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/data.hpp",
+                "line_number": 62,
+                "column_number": 7,
+                "description": "start of procedure FileName"
+            },
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/data.hpp",
+                "line_number": 62,
+                "column_number": 16,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/data.hpp",
+                "line_number": 62,
+                "column_number": 42,
+                "description": "Skipping ParmString: method has no implementation"
+            }
+        ],
+        "key": "data.hpp|FileName|NULL_DEREFERENCE",
+        "node_key": "718fa6205dbbbf6fa81e28ec6d7d338a",
+        "hash": "a6df631428db92a46e7f46e7816d0262",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 68,
+        "column": 29,
+        "procedure": "acommon::FStream::operator>>",
+        "procedure_start_line": 63,
+        "file": "/project/common/fstream.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/fstream.cpp",
+                "line_number": 68,
+                "column_number": 29,
+                "description": ""
+            }
+        ],
+        "key": "fstream.cpp|operator>>|UNINITIALIZED_VALUE",
+        "hash": "1656178b6541adc9c593e4d7a2eb8813",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 68,
+        "column": 42,
+        "procedure": "acommon::FStream::operator>>",
+        "procedure_start_line": 63,
+        "file": "/project/common/fstream.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/fstream.cpp",
+                "line_number": 68,
+                "column_number": 42,
+                "description": ""
+            }
+        ],
+        "key": "fstream.cpp|operator>>|UNINITIALIZED_VALUE",
+        "hash": "1656178b6541adc9c593e4d7a2eb8813",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &sign (type int) is never used.",
+        "severity": "ERROR",
+        "line": 85,
+        "column": 14,
+        "procedure": "acommon::strtoi_c",
+        "procedure_start_line": 74,
+        "file": "/project/common/strtonum.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/strtonum.cpp",
+                "line_number": 85,
+                "column_number": 14,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "strtonum.cpp|acommon::strtoi_c|DEAD_STORE",
+        "hash": "d581eed99bb22c82a9763fe7f834a468",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &sign (type long) is never used.",
+        "severity": "ERROR",
+        "line": 78,
+        "column": 5,
+        "procedure": "acommon::strtoi_c",
+        "procedure_start_line": 74,
+        "file": "/project/common/strtonum.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/strtonum.cpp",
+                "line_number": 78,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "strtonum.cpp|acommon::strtoi_c|DEAD_STORE",
+        "hash": "9b96d00b7a9b4e854a51a149abacd807",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 220,
+        "column": 13,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 220,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 242,
+        "column": 34,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 242,
+                "column_number": 34,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 249,
+        "column": 17,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 249,
+                "column_number": 17,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 250,
+        "column": 20,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 250,
+                "column_number": 20,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 275,
+        "column": 37,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 275,
+                "column_number": 37,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 277,
+        "column": 29,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 277,
+                "column_number": 29,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 279,
+        "column": 23,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 279,
+                "column_number": 23,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 280,
+        "column": 25,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 280,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 284,
+        "column": 13,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 284,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 288,
+        "column": 42,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 288,
+                "column_number": 42,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 300,
+        "column": 40,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 300,
+                "column_number": 40,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 307,
+        "column": 23,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 307,
+                "column_number": 23,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 308,
+        "column": 27,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 308,
+                "column_number": 27,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 330,
+        "column": 42,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 330,
+                "column_number": 42,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 385,
+        "column": 38,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 385,
+                "column_number": 38,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from word[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 394,
+        "column": 15,
+        "procedure": "aspeller::phonet",
+        "procedure_start_line": 191,
+        "file": "/project/modules/speller/default/phonet.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/phonet.cpp",
+                "line_number": 394,
+                "column_number": 15,
+                "description": ""
+            }
+        ],
+        "key": "phonet.cpp|aspeller::phonet|UNINITIALIZED_VALUE",
+        "hash": "c970d2b91c2162606c2690d12b8d6f0d",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &offset (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 316,
+        "column": 7,
+        "procedure": "anonymous_namespace__project_modules_speller_default_readonly_ws.cpp::ReadOnlyDict::low_level_dump",
+        "procedure_start_line": 305,
+        "file": "/project/modules/speller/default/readonly_ws.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/readonly_ws.cpp",
+                "line_number": 316,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "readonly_ws.cpp|low_level_dump|DEAD_STORE",
+        "hash": "83a02da4e76dfdbc210fd4ffe3072c2d",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &p (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 323,
+        "column": 7,
+        "procedure": "anonymous_namespace__project_modules_speller_default_readonly_ws.cpp::ReadOnlyDict::low_level_dump",
+        "procedure_start_line": 305,
+        "file": "/project/modules/speller/default/readonly_ws.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/readonly_ws.cpp",
+                "line_number": 323,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "readonly_ws.cpp|low_level_dump|DEAD_STORE",
+        "hash": "dbe4065a85e91d8e3b92652dcf7e70af",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &size (type int) is never used.",
+        "severity": "ERROR",
+        "line": 317,
+        "column": 7,
+        "procedure": "anonymous_namespace__project_modules_speller_default_readonly_ws.cpp::ReadOnlyDict::low_level_dump",
+        "procedure_start_line": 305,
+        "file": "/project/modules/speller/default/readonly_ws.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/readonly_ws.cpp",
+                "line_number": 317,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "readonly_ws.cpp|low_level_dump|DEAD_STORE",
+        "hash": "b2c3c335a0f3d5294e81918346b93fb5",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `final` last assigned on line 412 could be null and is dereferenced by call to `memset()` at line 414, column 5.",
+        "severity": "ERROR",
+        "line": 414,
+        "column": 5,
+        "procedure": "acommon::create_norm_table<acommon::FromUniNormEntry>",
+        "procedure_start_line": 364,
+        "file": "/project/common/convert.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 364,
+                "column_number": 3,
+                "description": "start of procedure acommon::create_norm_table<acommon::FromUniNormEntry>()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 366,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 367,
+                "column_number": 5,
+                "description": "Skipping acommon::get_nb_line(): empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 368,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 369,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 370,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 371,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 372,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 373,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 373,
+                "column_number": 39,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 373,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 374,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 374,
+                "column_number": 36,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 375,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 375,
+                "column_number": 36,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 376,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 376,
+                "column_number": 36,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 377,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 378,
+                "column_number": 38,
+                "description": "Condition is false"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 378,
+                "column_number": 12,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 408,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 409,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 410,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 411,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 412,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 414,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "convert.cpp|acommon::create_norm_table<acommon::FromUniNormEntry>|NULL_DEREFERENCE",
+        "node_key": "820a4b90f98dea84ab00121b9f3a8d7b",
+        "hash": "1caf86f8512d1d120a38a25d448a4f9c",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from x was never initialized.",
+        "severity": "ERROR",
+        "line": 370,
+        "column": 43,
+        "procedure": "aspeller::InsensitiveCompare::operator()",
+        "procedure_start_line": 365,
+        "file": "/project/modules/speller/default/language.hpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/language.hpp",
+                "line_number": 370,
+                "column_number": 43,
+                "description": ""
+            }
+        ],
+        "key": "language.hpp|operator()|UNINITIALIZED_VALUE",
+        "hash": "154b3e93fa253cecec114e1b67f6732f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from x was never initialized.",
+        "severity": "ERROR",
+        "line": 374,
+        "column": 7,
+        "procedure": "aspeller::InsensitiveCompare::operator()",
+        "procedure_start_line": 365,
+        "file": "/project/modules/speller/default/language.hpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/language.hpp",
+                "line_number": 374,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "language.hpp|operator()|UNINITIALIZED_VALUE",
+        "hash": "154b3e93fa253cecec114e1b67f6732f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from y was never initialized.",
+        "severity": "ERROR",
+        "line": 371,
+        "column": 43,
+        "procedure": "aspeller::InsensitiveCompare::operator()",
+        "procedure_start_line": 365,
+        "file": "/project/modules/speller/default/language.hpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/language.hpp",
+                "line_number": 371,
+                "column_number": 43,
+                "description": ""
+            }
+        ],
+        "key": "language.hpp|operator()|UNINITIALIZED_VALUE",
+        "hash": "3746f56524dfba911061df9f6818515e",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from y was never initialized.",
+        "severity": "ERROR",
+        "line": 374,
+        "column": 7,
+        "procedure": "aspeller::InsensitiveCompare::operator()",
+        "procedure_start_line": 365,
+        "file": "/project/modules/speller/default/language.hpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/language.hpp",
+                "line_number": 374,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "language.hpp|operator()|UNINITIALIZED_VALUE",
+        "hash": "3746f56524dfba911061df9f6818515e",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &add (type _Bool) is never used.",
+        "severity": "ERROR",
+        "line": 681,
+        "column": 13,
+        "procedure": "acommon::FilterModeList::get_new",
+        "procedure_start_line": 542,
+        "file": "/project/lib/new_fmode.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/lib/new_fmode.cpp",
+                "line_number": 681,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "new_fmode.cpp|get_new|DEAD_STORE",
+        "hash": "242e416cba0e6597e3e9841bc06e8a98",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `dlist` last assigned on line 577 could be null and is dereferenced at line 579, column 38.",
+        "severity": "ERROR",
+        "line": 579,
+        "column": 38,
+        "procedure": "dicts",
+        "procedure_start_line": 575,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 575,
+                "column_number": 1,
+                "description": "start of procedure dicts()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 577,
+                "column_number": 3,
+                "description": "Skipping operator_acommon::Config_*: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 579,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "aspell.cpp|dicts|NULL_DEREFERENCE",
+        "node_key": "75c50c0ab64b43c7c8339cf7c08ed33b",
+        "hash": "3ef60f16d8a56b63822e84cf53cca29d",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from mbr[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 722,
+        "column": 13,
+        "procedure": "aspeller::encodeit",
+        "procedure_start_line": 643,
+        "file": "/project/modules/speller/default/affix.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/affix.cpp",
+                "line_number": 722,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "affix.cpp|aspeller::encodeit|UNINITIALIZED_VALUE",
+        "hash": "f7f103a987db86473afba43104b087fe",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from mbr[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 729,
+        "column": 13,
+        "procedure": "aspeller::encodeit",
+        "procedure_start_line": 643,
+        "file": "/project/modules/speller/default/affix.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/affix.cpp",
+                "line_number": 729,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "affix.cpp|aspeller::encodeit|UNINITIALIZED_VALUE",
+        "hash": "f7f103a987db86473afba43104b087fe",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `ci` last assigned on line 674 could be null and is dereferenced at line 675, column 9.",
+        "severity": "ERROR",
+        "line": 675,
+        "column": 9,
+        "procedure": "status_fun",
+        "procedure_start_line": 670,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 670,
+                "column_number": 1,
+                "description": "start of procedure status_fun()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 672,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 673,
+                "column_number": 7,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 673,
+                "column_number": 21,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 674,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 675,
+                "column_number": 9,
+                "description": "Taking false branch"
+            }
+        ],
+        "key": "aspell.cpp|status_fun|NULL_DEREFERENCE",
+        "node_key": "88135ad30a22cc0b57de479bc2e75d17",
+        "hash": "05c660839a185ded65652954aa719dcd",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &terse_mode (type _Bool) is never used.",
+        "severity": "ERROR",
+        "line": 702,
+        "column": 3,
+        "procedure": "pipe",
+        "procedure_start_line": 698,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 702,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aspell.cpp|pipe|DEAD_STORE",
+        "hash": "54e57e8ae6dc80217c8d7e1dc31fd00c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &terse_mode (type _Bool) is never used.",
+        "severity": "ERROR",
+        "line": 803,
+        "column": 7,
+        "procedure": "pipe",
+        "procedure_start_line": 698,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 803,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aspell.cpp|pipe|DEAD_STORE",
+        "hash": "54e57e8ae6dc80217c8d7e1dc31fd00c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 754,
+        "column": 27,
+        "procedure": "pipe",
+        "procedure_start_line": 698,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 754,
+                "column_number": 27,
+                "description": ""
+            }
+        ],
+        "key": "aspell.cpp|pipe|UNINITIALIZED_VALUE",
+        "hash": "7170b336fcacfbe0292eb423e149bff7",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 754,
+        "column": 40,
+        "procedure": "pipe",
+        "procedure_start_line": 698,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 754,
+                "column_number": 40,
+                "description": ""
+            }
+        ],
+        "key": "aspell.cpp|pipe|UNINITIALIZED_VALUE",
+        "hash": "7170b336fcacfbe0292eb423e149bff7",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &u (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 787,
+        "column": 5,
+        "procedure": "acommon::from_utf8",
+        "procedure_start_line": 784,
+        "file": "/project/common/convert.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/common/convert.cpp",
+                "line_number": 787,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "convert.cpp|acommon::from_utf8|DEAD_STORE",
+        "hash": "f5c2f9e715f827e02463335c5bbc033c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &s (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 928,
+        "column": 9,
+        "procedure": "anonymous_namespace__project_modules_speller_default_readonly_ws.cpp::create",
+        "procedure_start_line": 831,
+        "file": "/project/modules/speller/default/readonly_ws.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/readonly_ws.cpp",
+                "line_number": 928,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "readonly_ws.cpp|anonymous_namespace__project_modules_speller_default_readonly_ws.cpp::create|DEAD_STORE",
+        "hash": "150af94ac35b8b79218890bcd171b923",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &pos (type void*) is never used.",
+        "severity": "ERROR",
+        "line": 839,
+        "column": 5,
+        "procedure": "anonymous_namespace__project_modules_filter_markdown.cpp::LinkRefDefinition::proc_line",
+        "procedure_start_line": 836,
+        "file": "/project/modules/filter/markdown.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/filter/markdown.cpp",
+                "line_number": 839,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "markdown.cpp|proc_line|DEAD_STORE",
+        "hash": "2cb640d86eba27bd16a88fc55679b872",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from keep_open was never initialized.",
+        "severity": "ERROR",
+        "line": 919,
+        "column": 37,
+        "procedure": "anonymous_namespace__project_modules_filter_markdown.cpp::MarkdownFilter::process",
+        "procedure_start_line": 898,
+        "file": "/project/modules/filter/markdown.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/filter/markdown.cpp",
+                "line_number": 919,
+                "column_number": 37,
+                "description": ""
+            }
+        ],
+        "key": "markdown.cpp|process|UNINITIALIZED_VALUE",
+        "hash": "1ec65163c464da618938b6258ca944f5",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from keep_open was never initialized.",
+        "severity": "ERROR",
+        "line": 923,
+        "column": 19,
+        "procedure": "anonymous_namespace__project_modules_filter_markdown.cpp::MarkdownFilter::process",
+        "procedure_start_line": 898,
+        "file": "/project/modules/filter/markdown.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/filter/markdown.cpp",
+                "line_number": 923,
+                "column_number": 19,
+                "description": ""
+            }
+        ],
+        "key": "markdown.cpp|process|UNINITIALIZED_VALUE",
+        "hash": "1ec65163c464da618938b6258ca944f5",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &tmpl (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1260,
+        "column": 7,
+        "procedure": "aspeller::SfxEntry::check",
+        "procedure_start_line": 1208,
+        "file": "/project/modules/speller/default/affix.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/affix.cpp",
+                "line_number": 1260,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "affix.cpp|check|DEAD_STORE",
+        "hash": "05dcab12909d149f85ff387c0ecf61dc",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from pos was never initialized.",
+        "severity": "ERROR",
+        "line": 1342,
+        "column": 44,
+        "procedure": "anonymous_namespace__project_modules_speller_default_suggest.cpp::Suggestions::transfer",
+        "procedure_start_line": 1311,
+        "file": "/project/modules/speller/default/suggest.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/modules/speller/default/suggest.cpp",
+                "line_number": 1342,
+                "column_number": 44,
+                "description": ""
+            }
+        ],
+        "key": "suggest.cpp|transfer|UNINITIALIZED_VALUE",
+        "hash": "0651667336dc7b06c1d6faf3f11d0298",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 1411,
+        "column": 27,
+        "procedure": "filter",
+        "procedure_start_line": 1387,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 1411,
+                "column_number": 27,
+                "description": ""
+            }
+        ],
+        "key": "aspell.cpp|filter|UNINITIALIZED_VALUE",
+        "hash": "653ebb3022000e4f52ba2a0f50b709bc",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from c was never initialized.",
+        "severity": "ERROR",
+        "line": 1411,
+        "column": 40,
+        "procedure": "filter",
+        "procedure_start_line": 1387,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 1411,
+                "column_number": 40,
+                "description": ""
+            }
+        ],
+        "key": "aspell.cpp|filter|UNINITIALIZED_VALUE",
+        "hash": "653ebb3022000e4f52ba2a0f50b709bc",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &s (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 1777,
+        "column": 7,
+        "procedure": "expand",
+        "procedure_start_line": 1750,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 1777,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aspell.cpp|expand|DEAD_STORE",
+        "hash": "31f3a5617bb246bacc1b85f1863bda9c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &s (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 1866,
+        "column": 7,
+        "procedure": "combine",
+        "procedure_start_line": 1844,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 1866,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aspell.cpp|combine|DEAD_STORE",
+        "hash": "4f13b2ba9aabb63023f2ffe93f648f23",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &s (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 1982,
+        "column": 7,
+        "procedure": "munch_list_simple",
+        "procedure_start_line": 1958,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 1982,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aspell.cpp|munch_list_simple|DEAD_STORE",
+        "hash": "57dd6f10476ba571771897a0ff8ddafb",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &prev_working_size (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 2607,
+        "column": 5,
+        "procedure": "munch_list_complete",
+        "procedure_start_line": 2319,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 2607,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aspell.cpp|munch_list_complete|DEAD_STORE",
+        "hash": "b5f1f66e4b0d787bd06ddef39907be16",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &s (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 2343,
+        "column": 7,
+        "procedure": "munch_list_complete",
+        "procedure_start_line": 2319,
+        "file": "/project/prog/aspell.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/prog/aspell.cpp",
+                "line_number": 2343,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "aspell.cpp|munch_list_complete|DEAD_STORE",
+        "hash": "49d9ef8606e0cd38b991fa1560d04e63",
+        "bug_type_hum": "Dead Store"
+    }
+]

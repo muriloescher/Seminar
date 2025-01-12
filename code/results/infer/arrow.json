@@ -1,0 +1,3345 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `out_buf` last assigned on line 51 could be null and is dereferenced by call to `memset()` at line 52, column 3.",
+        "severity": "ERROR",
+        "line": 52,
+        "column": 3,
+        "procedure": "arrow::internal::BytesToBits",
+        "procedure_start_line": 46,
+        "file": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 46,
+                "column_number": 1,
+                "description": "start of procedure arrow::internal::BytesToBits()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 48,
+                "column_number": 3,
+                "description": "Skipping size: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 50,
+                "column_number": 3,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 50,
+                "column_number": 3,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 50,
+                "column_number": 3,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 51,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 52,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            }
+        ],
+        "key": "bitmap_builders.cc|arrow::internal::BytesToBits|NULL_DEREFERENCE",
+        "node_key": "b660df7616555f556b472aea434d3c2b",
+        "hash": "e34d63bb605bc32da5ba62f92049a5ee",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_3[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 74,
+        "column": 5,
+        "procedure": "arrow::util::base64_encode",
+        "procedure_start_line": 48,
+        "file": "/project/cpp/src/arrow/vendored/base64.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/base64.cpp",
+                "line_number": 74,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.cpp|arrow::util::base64_encode|UNINITIALIZED_VALUE",
+        "hash": "417ed75f7de0a0b8f208d4b8d3027f72",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_3[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 75,
+        "column": 5,
+        "procedure": "arrow::util::base64_encode",
+        "procedure_start_line": 48,
+        "file": "/project/cpp/src/arrow/vendored/base64.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/base64.cpp",
+                "line_number": 75,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.cpp|arrow::util::base64_encode|UNINITIALIZED_VALUE",
+        "hash": "417ed75f7de0a0b8f208d4b8d3027f72",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_3[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 76,
+        "column": 5,
+        "procedure": "arrow::util::base64_encode",
+        "procedure_start_line": 48,
+        "file": "/project/cpp/src/arrow/vendored/base64.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/base64.cpp",
+                "line_number": 76,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.cpp|arrow::util::base64_encode|UNINITIALIZED_VALUE",
+        "hash": "417ed75f7de0a0b8f208d4b8d3027f72",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `indices_data` last assigned on line 56 could be null and is dereferenced at line 61, column 35.",
+        "severity": "ERROR",
+        "line": 61,
+        "column": 35,
+        "procedure": "arrow::DictionaryArray::GetValueIndex",
+        "procedure_start_line": 55,
+        "file": "/project/cpp/src/arrow/array/array_dict.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 55,
+                "column_number": 1,
+                "description": "start of procedure GetValueIndex"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 56,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 58,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 59,
+                "column_number": 5,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 61,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "array_dict.cc|GetValueIndex|NULL_DEREFERENCE",
+        "node_key": "ef9697c40a8a20a8f6b829dc6e47694e",
+        "hash": "a39db90831d958b315676ebe38e005c5",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `indices_data` last assigned on line 56 could be null and is dereferenced at line 65, column 11.",
+        "severity": "ERROR",
+        "line": 65,
+        "column": 11,
+        "procedure": "arrow::DictionaryArray::GetValueIndex",
+        "procedure_start_line": 55,
+        "file": "/project/cpp/src/arrow/array/array_dict.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 55,
+                "column_number": 1,
+                "description": "start of procedure GetValueIndex"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 56,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 58,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 59,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 60,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 62,
+                "column_number": 5,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 64,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "array_dict.cc|GetValueIndex|NULL_DEREFERENCE",
+        "node_key": "ef9697c40a8a20a8f6b829dc6e47694e",
+        "hash": "a39db90831d958b315676ebe38e005c5",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `indices_data` last assigned on line 56 could be null and is dereferenced at line 69, column 11.",
+        "severity": "ERROR",
+        "line": 69,
+        "column": 11,
+        "procedure": "arrow::DictionaryArray::GetValueIndex",
+        "procedure_start_line": 55,
+        "file": "/project/cpp/src/arrow/array/array_dict.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 55,
+                "column_number": 1,
+                "description": "start of procedure GetValueIndex"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 56,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 58,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 59,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 60,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 62,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 63,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 66,
+                "column_number": 5,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 68,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "array_dict.cc|GetValueIndex|NULL_DEREFERENCE",
+        "node_key": "ef9697c40a8a20a8f6b829dc6e47694e",
+        "hash": "a39db90831d958b315676ebe38e005c5",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `indices_data` last assigned on line 56 could be null and is dereferenced at line 73, column 11.",
+        "severity": "ERROR",
+        "line": 73,
+        "column": 11,
+        "procedure": "arrow::DictionaryArray::GetValueIndex",
+        "procedure_start_line": 55,
+        "file": "/project/cpp/src/arrow/array/array_dict.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 55,
+                "column_number": 1,
+                "description": "start of procedure GetValueIndex"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 56,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 58,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 59,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 60,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 62,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 63,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 66,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 67,
+                "column_number": 5,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 70,
+                "column_number": 5,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/array_dict.cc",
+                "line_number": 72,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "array_dict.cc|GetValueIndex|NULL_DEREFERENCE",
+        "node_key": "ef9697c40a8a20a8f6b829dc6e47694e",
+        "hash": "a39db90831d958b315676ebe38e005c5",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `bitmap_data` last assigned on line 65 could be null and is dereferenced by call to `arrow::BitUtil::SetBitsTo()` at line 66, column 3.",
+        "severity": "ERROR",
+        "line": 66,
+        "column": 3,
+        "procedure": "arrow::internal::BitmapAllButOne",
+        "procedure_start_line": 57,
+        "file": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 57,
+                "column_number": 1,
+                "description": "start of procedure arrow::internal::BitmapAllButOne()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 59,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 59,
+                "column_number": 28,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 63,
+                "column_number": 3,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 63,
+                "column_number": 3,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 63,
+                "column_number": 3,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 65,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/bitmap_builders.cc",
+                "line_number": 66,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "bitmap_builders.cc|arrow::internal::BitmapAllButOne|NULL_DEREFERENCE",
+        "node_key": "5889103b2bebda85c08b1182946623f1",
+        "hash": "42c8668f030b0dcef88d2cc909b1ad42",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_4[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 116,
+        "column": 25,
+        "procedure": "arrow::util::base64_decode",
+        "procedure_start_line": 90,
+        "file": "/project/cpp/src/arrow/vendored/base64.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/base64.cpp",
+                "line_number": 116,
+                "column_number": 25,
+                "description": ""
+            }
+        ],
+        "key": "base64.cpp|arrow::util::base64_decode|UNINITIALIZED_VALUE",
+        "hash": "3c93444c1f6a47933c867a58e5579b1f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_4[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 118,
+        "column": 5,
+        "procedure": "arrow::util::base64_decode",
+        "procedure_start_line": 90,
+        "file": "/project/cpp/src/arrow/vendored/base64.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/base64.cpp",
+                "line_number": 118,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.cpp|arrow::util::base64_decode|UNINITIALIZED_VALUE",
+        "hash": "3c93444c1f6a47933c867a58e5579b1f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from char_array_4[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 119,
+        "column": 5,
+        "procedure": "arrow::util::base64_decode",
+        "procedure_start_line": 90,
+        "file": "/project/cpp/src/arrow/vendored/base64.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/base64.cpp",
+                "line_number": 119,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "base64.cpp|arrow::util::base64_decode|UNINITIALIZED_VALUE",
+        "hash": "3c93444c1f6a47933c867a58e5579b1f",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `in_data` last assigned on line 116 could be null and is dereferenced at line 122, column 39.",
+        "severity": "ERROR",
+        "line": 122,
+        "column": 39,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_array_util.cc::ArrayDataEndianSwapper::ByteSwapBuffer<double>",
+        "procedure_start_line": 110,
+        "file": "/project/cpp/src/arrow/array/util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 110,
+                "column_number": 3,
+                "description": "start of procedure ByteSwapBuffer<double>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 112,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 116,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 117,
+                "column_number": 5,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 117,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 117,
+                "column_number": 5,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 118,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 120,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 121,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 121,
+                "column_number": 25,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 122,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "util.cc|ByteSwapBuffer<double>|NULL_DEREFERENCE",
+        "node_key": "454f1e60a88eca4fe5f272bcdfd36bd6",
+        "hash": "52377dbd79c7b53a53c0e99aee5007b9",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `out_data` last assigned on line 118 could be null and is dereferenced at line 122, column 7.",
+        "severity": "ERROR",
+        "line": 122,
+        "column": 7,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_array_util.cc::ArrayDataEndianSwapper::ByteSwapBuffer<double>",
+        "procedure_start_line": 110,
+        "file": "/project/cpp/src/arrow/array/util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 110,
+                "column_number": 3,
+                "description": "start of procedure ByteSwapBuffer<double>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 112,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 116,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 117,
+                "column_number": 5,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 117,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 117,
+                "column_number": 5,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 118,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 120,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 121,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 121,
+                "column_number": 25,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 122,
+                "column_number": 7,
+                "description": "Skipping arrow::BitUtil::ByteSwap(): method has no implementation"
+            }
+        ],
+        "key": "util.cc|ByteSwapBuffer<double>|NULL_DEREFERENCE",
+        "node_key": "454f1e60a88eca4fe5f272bcdfd36bd6",
+        "hash": "87bfb9c32de9640b598b39da4c06e493",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `src_begin` last assigned on line 147 could be null and is dereferenced at line 151, column 26.",
+        "severity": "ERROR",
+        "line": 151,
+        "column": 26,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_array_concatenate.cc::PutOffsets<int>",
+        "procedure_start_line": 136,
+        "file": "/project/cpp/src/arrow/array/concatenate.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/concatenate.cc",
+                "line_number": 136,
+                "column_number": 1,
+                "description": "start of procedure arrow::anonymous_namespace__project_cpp_src_arrow_array_concatenate.cc::PutOffsets<int>()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/concatenate.cc",
+                "line_number": 138,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/concatenate.cc",
+                "line_number": 147,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/concatenate.cc",
+                "line_number": 148,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/concatenate.cc",
+                "line_number": 151,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "concatenate.cc|arrow::anonymous_namespace__project_cpp_src_arrow_array_concatenate.cc::PutOffsets<int>|NULL_DEREFERENCE",
+        "node_key": "f577248551afced8d66789c685552182",
+        "hash": "9c2fc2e6056cd53690a03b96a3b96822",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &node (type arrow::internal::Trie::Node*) is never used.",
+        "severity": "ERROR",
+        "line": 204,
+        "column": 5,
+        "procedure": "arrow::internal::TrieBuilder::Append",
+        "procedure_start_line": 150,
+        "file": "/project/cpp/src/arrow/util/trie.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/trie.cc",
+                "line_number": 204,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "trie.cc|Append|DEAD_STORE",
+        "hash": "f26504699edfc01728c5edbd6c0b8224",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `data` last assigned on line 152 could be null and is dereferenced at line 161, column 36.",
+        "severity": "ERROR",
+        "line": 161,
+        "column": 36,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_array_util.cc::ArrayDataEndianSwapper::Visit",
+        "procedure_start_line": 151,
+        "file": "/project/cpp/src/arrow/array/util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 151,
+                "column_number": 3,
+                "description": "start of procedure Visit"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 152,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 153,
+                "column_number": 5,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 153,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 153,
+                "column_number": 5,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 154,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 156,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 157,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 157,
+                "column_number": 25,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 159,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 161,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "util.cc|Visit|NULL_DEREFERENCE",
+        "node_key": "63d929035ae9dc63bc89b00b51c8e1c0",
+        "hash": "1d2f921090101e040935dbc320db7715",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `new_data` last assigned on line 154 could be null and is dereferenced at line 162, column 7.",
+        "severity": "ERROR",
+        "line": 162,
+        "column": 7,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_array_util.cc::ArrayDataEndianSwapper::Visit",
+        "procedure_start_line": 151,
+        "file": "/project/cpp/src/arrow/array/util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 151,
+                "column_number": 3,
+                "description": "start of procedure Visit"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 152,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 153,
+                "column_number": 5,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 153,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 153,
+                "column_number": 5,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 154,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 156,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 157,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 157,
+                "column_number": 25,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 159,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 161,
+                "column_number": 7,
+                "description": "Skipping arrow::BitUtil::FromBigEndian<unsigned_long,_unsigned_long>(): method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 162,
+                "column_number": 7,
+                "description": "Skipping arrow::BitUtil::FromBigEndian<unsigned_long,_unsigned_long>(): method has no implementation"
+            }
+        ],
+        "key": "util.cc|Visit|NULL_DEREFERENCE",
+        "node_key": "1fa9ad121cb6d0be5d1796b97cf18721",
+        "hash": "cc4080f4958147a53b2383edc1a7d43d",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &width (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 248,
+        "column": 9,
+        "procedure": "arrow::internal::DetectIntWidth",
+        "procedure_start_line": 173,
+        "file": "/project/cpp/src/arrow/util/int_util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/int_util.cc",
+                "line_number": 248,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "int_util.cc|arrow::internal::DetectIntWidth|DEAD_STORE",
+        "hash": "5dc1959b1a691613514435fa0f608a1f",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &width (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 254,
+        "column": 9,
+        "procedure": "arrow::internal::DetectIntWidth",
+        "procedure_start_line": 173,
+        "file": "/project/cpp/src/arrow/util/int_util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/int_util.cc",
+                "line_number": 254,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "int_util.cc|arrow::internal::DetectIntWidth|DEAD_STORE",
+        "hash": "5dc1959b1a691613514435fa0f608a1f",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `data` last assigned on line 175 could be null and is dereferenced at line 184, column 37.",
+        "severity": "ERROR",
+        "line": 184,
+        "column": 37,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_array_util.cc::ArrayDataEndianSwapper::Visit",
+        "procedure_start_line": 174,
+        "file": "/project/cpp/src/arrow/array/util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 174,
+                "column_number": 3,
+                "description": "start of procedure Visit"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 175,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 176,
+                "column_number": 5,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 176,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 176,
+                "column_number": 5,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 177,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 179,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 180,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 180,
+                "column_number": 25,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 182,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 184,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "util.cc|Visit|NULL_DEREFERENCE",
+        "node_key": "aa004d0b224164f343ba38115f492d16",
+        "hash": "1d2f921090101e040935dbc320db7715",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `new_data` last assigned on line 177 could be null and is dereferenced at line 187, column 7.",
+        "severity": "ERROR",
+        "line": 187,
+        "column": 7,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_array_util.cc::ArrayDataEndianSwapper::Visit",
+        "procedure_start_line": 174,
+        "file": "/project/cpp/src/arrow/array/util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 174,
+                "column_number": 3,
+                "description": "start of procedure Visit"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 175,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 176,
+                "column_number": 5,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 176,
+                "column_number": 5,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 176,
+                "column_number": 5,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 177,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 179,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 180,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 180,
+                "column_number": 25,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 182,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 184,
+                "column_number": 7,
+                "description": "Skipping arrow::BitUtil::FromBigEndian<unsigned_long,_unsigned_long>(): method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 185,
+                "column_number": 7,
+                "description": "Skipping arrow::BitUtil::FromBigEndian<unsigned_long,_unsigned_long>(): method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 186,
+                "column_number": 7,
+                "description": "Skipping arrow::BitUtil::FromBigEndian<unsigned_long,_unsigned_long>(): method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/array/util.cc",
+                "line_number": 187,
+                "column_number": 7,
+                "description": "Skipping arrow::BitUtil::FromBigEndian<unsigned_long,_unsigned_long>(): method has no implementation"
+            }
+        ],
+        "key": "util.cc|Visit|NULL_DEREFERENCE",
+        "node_key": "1fa9ad121cb6d0be5d1796b97cf18721",
+        "hash": "cc4080f4958147a53b2383edc1a7d43d",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `out_data` last assigned on line 199 could be null and is dereferenced by call to `memcpy()` at line 201, column 5.",
+        "severity": "ERROR",
+        "line": 201,
+        "column": 5,
+        "procedure": "arrow::ConcatenateBuffers",
+        "procedure_start_line": 192,
+        "file": "/project/cpp/src/arrow/buffer.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 192,
+                "column_number": 1,
+                "description": "start of procedure arrow::ConcatenateBuffers()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 194,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 195,
+                "column_number": 29,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 195,
+                "column_number": 27,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 195,
+                "column_number": 3,
+                "description": "Skipping ~__wrap_iter: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 198,
+                "column_number": 3,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 198,
+                "column_number": 3,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 198,
+                "column_number": 3,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 199,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 200,
+                "column_number": 29,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 200,
+                "column_number": 27,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 200,
+                "column_number": 8,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/buffer.cc",
+                "line_number": 201,
+                "column_number": 5,
+                "description": "Skipping operator->: method has no implementation"
+            }
+        ],
+        "key": "buffer.cc|arrow::ConcatenateBuffers|NULL_DEREFERENCE",
+        "node_key": "e0033df67bf4b9f72847b98d8ba3ce5b",
+        "hash": "79f85c5f30e9f15147571a92c64079a4",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `dst` last assigned on line 221 could be null and is dereferenced by call to `memcpy()` at line 222, column 3.",
+        "severity": "ERROR",
+        "line": 222,
+        "column": 3,
+        "procedure": "arrow::ipc::internal::WriteFlatbufferBuilder",
+        "procedure_start_line": 214,
+        "file": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+                "line_number": 214,
+                "column_number": 1,
+                "description": "start of procedure arrow::ipc::internal::WriteFlatbufferBuilder()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+                "line_number": 217,
+                "column_number": 3,
+                "description": "Skipping GetSize: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+                "line_number": 219,
+                "column_number": 3,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+                "line_number": 219,
+                "column_number": 3,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+                "line_number": 219,
+                "column_number": 3,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+                "line_number": 221,
+                "column_number": 3,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/metadata_internal.h",
+                "line_number": 222,
+                "column_number": 3,
+                "description": "Skipping GetBufferPointer: method has no implementation"
+            }
+        ],
+        "key": "metadata_internal.h|arrow::ipc::internal::WriteFlatbufferBuilder|NULL_DEREFERENCE",
+        "node_key": "d1b793917afa9c4f3b23b17646a4c639",
+        "hash": "f4b15758daa64b572c16ef7eedd52cf9",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &width (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 352,
+        "column": 9,
+        "procedure": "arrow::internal::DetectIntWidth",
+        "procedure_start_line": 264,
+        "file": "/project/cpp/src/arrow/util/int_util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/int_util.cc",
+                "line_number": 352,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "int_util.cc|arrow::internal::DetectIntWidth|DEAD_STORE",
+        "hash": "5dc1959b1a691613514435fa0f608a1f",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &width (type unsigned char) is never used.",
+        "severity": "ERROR",
+        "line": 358,
+        "column": 9,
+        "procedure": "arrow::internal::DetectIntWidth",
+        "procedure_start_line": 264,
+        "file": "/project/cpp/src/arrow/util/int_util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/int_util.cc",
+                "line_number": 358,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "int_util.cc|arrow::internal::DetectIntWidth|DEAD_STORE",
+        "hash": "5dc1959b1a691613514435fa0f608a1f",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `dest_offsets` last assigned on line 281 could be null and is dereferenced at line 286, column 9.",
+        "severity": "ERROR",
+        "line": 286,
+        "column": 9,
+        "procedure": "arrow::ipc::anonymous_namespace__project_cpp_src_arrow_ipc_writer.cc::RecordBatchSerializer::GetZeroBasedValueOffsets<arrow::BinaryArray>",
+        "procedure_start_line": 265,
+        "file": "/project/cpp/src/arrow/ipc/writer.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 265,
+                "column_number": 3,
+                "description": "start of procedure GetZeroBasedValueOffsets<arrow::BinaryArray>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 270,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 270,
+                "column_number": 20,
+                "description": "Skipping value_offsets: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 270,
+                "column_number": 40,
+                "description": "Skipping ~shared_ptr: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 272,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 273,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 278,
+                "column_number": 7,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 278,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 278,
+                "column_number": 7,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 281,
+                "column_number": 7,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 283,
+                "column_number": 7,
+                "description": "Skipping value_offset: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 285,
+                "column_number": 12,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 285,
+                "column_number": 23,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 286,
+                "column_number": 9,
+                "description": "Skipping value_offset: method has no implementation"
+            }
+        ],
+        "key": "writer.cc|GetZeroBasedValueOffsets<arrow::BinaryArray>|NULL_DEREFERENCE",
+        "node_key": "3cdb052e973fe53eba3190fedc8cf8c0",
+        "hash": "a193232a6b977ea169efc8dc00ff5399",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `dest_offsets` last assigned on line 281 could be null and is dereferenced at line 289, column 7.",
+        "severity": "ERROR",
+        "line": 289,
+        "column": 7,
+        "procedure": "arrow::ipc::anonymous_namespace__project_cpp_src_arrow_ipc_writer.cc::RecordBatchSerializer::GetZeroBasedValueOffsets<arrow::BinaryArray>",
+        "procedure_start_line": 265,
+        "file": "/project/cpp/src/arrow/ipc/writer.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 265,
+                "column_number": 3,
+                "description": "start of procedure GetZeroBasedValueOffsets<arrow::BinaryArray>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 270,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 270,
+                "column_number": 20,
+                "description": "Skipping value_offsets: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 270,
+                "column_number": 40,
+                "description": "Skipping ~shared_ptr: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 272,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 273,
+                "column_number": 9,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 278,
+                "column_number": 7,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 278,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 278,
+                "column_number": 7,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 281,
+                "column_number": 7,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 283,
+                "column_number": 7,
+                "description": "Skipping value_offset: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 285,
+                "column_number": 12,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 285,
+                "column_number": 23,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/writer.cc",
+                "line_number": 289,
+                "column_number": 7,
+                "description": "Skipping value_offset: method has no implementation"
+            }
+        ],
+        "key": "writer.cc|GetZeroBasedValueOffsets<arrow::BinaryArray>|NULL_DEREFERENCE",
+        "node_key": "82bda1722e17fb777bb2cd5f6d1cdbdb",
+        "hash": "a193232a6b977ea169efc8dc00ff5399",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `hdfsPread` last assigned on line 416 could be null and is dereferenced at line 418, column 10.",
+        "severity": "ERROR",
+        "line": 418,
+        "column": 10,
+        "procedure": "arrow::io::internal::LibHdfsShim::Pread",
+        "procedure_start_line": 414,
+        "file": "/project/cpp/src/arrow/io/hdfs_internal.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/hdfs_internal.cc",
+                "line_number": 414,
+                "column_number": 1,
+                "description": "start of procedure Pread"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/hdfs_internal.cc",
+                "line_number": 416,
+                "column_number": 3,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/hdfs_internal.cc",
+                "line_number": 417,
+                "column_number": 3,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/hdfs_internal.cc",
+                "line_number": 417,
+                "column_number": 3,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/hdfs_internal.cc",
+                "line_number": 418,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "hdfs_internal.cc|Pread|NULL_DEREFERENCE",
+        "node_key": "acea2815c7a71500dc6842dfe62a9cd6",
+        "hash": "847b92ba86bfa402b2b6074d419e0e83",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "RESOURCE_LEAK",
+        "qualifier": "resource acquired by call to `opendir()` at line 551, column 14 is not released after line 573, column 7.",
+        "severity": "ERROR",
+        "line": 573,
+        "column": 7,
+        "procedure": "arrow::internal::ListDir",
+        "procedure_start_line": 550,
+        "file": "/project/cpp/src/arrow/util/io_util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 550,
+                "column_number": 1,
+                "description": "start of procedure arrow::internal::ListDir()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 551,
+                "column_number": 3,
+                "description": "Skipping c_str: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 552,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 556,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 556,
+                "column_number": 22,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 560,
+                "column_number": 3,
+                "description": "Skipping ~: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 561,
+                "column_number": 3,
+                "description": "Skipping unique_ptr<true,_void>: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 563,
+                "column_number": 3,
+                "description": "Skipping vector: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 564,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 565,
+                "column_number": 3,
+                "description": "Skipping readdir(): method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 566,
+                "column_number": 10,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 573,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "io_util.cc|arrow::internal::ListDir|RESOURCE_LEAK",
+        "node_key": "6a09f2dc09122d81328a61f2a2d2c70d",
+        "hash": "14f567c19acc39d968923ff23fc8dab0",
+        "bug_type_hum": "Resource Leak"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &dict_type (type void&) is never used.",
+        "severity": "ERROR",
+        "line": 552,
+        "column": 3,
+        "procedure": "arrow::DictionaryScalar::GetEncodedValue",
+        "procedure_start_line": 551,
+        "file": "/project/cpp/src/arrow/scalar.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/scalar.cc",
+                "line_number": 552,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "scalar.cc|GetEncodedValue|DEAD_STORE",
+        "hash": "6b6f023a60b2893042b04ddf26555cda",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 623,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 623,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 628,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 628,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 633,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 633,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 637,
+        "column": 11,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 637,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 639,
+        "column": 18,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 639,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 661,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 661,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 666,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 666,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 671,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 671,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 675,
+        "column": 11,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 675,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 677,
+        "column": 18,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 677,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 809,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 809,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 814,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 814,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 819,
+        "column": 12,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 819,
+                "column_number": 12,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 823,
+        "column": 11,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 823,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from digitHistory[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 825,
+        "column": 18,
+        "procedure": "uriParseIPv6address2A",
+        "procedure_start_line": 582,
+        "file": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/uriparser/UriParse.c",
+                "line_number": 825,
+                "column_number": 18,
+                "description": ""
+            }
+        ],
+        "key": "UriParse.c|uriParseIPv6address2A|UNINITIALIZED_VALUE",
+        "hash": "7c18901f4fc1232cab66cc840280bb85",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &pool (type arrow::MemoryPool*) is never used.",
+        "severity": "ERROR",
+        "line": 762,
+        "column": 7,
+        "procedure": "arrow::PoolBuffer::MakeUnique",
+        "procedure_start_line": 759,
+        "file": "/project/cpp/src/arrow/memory_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/memory_pool.cc",
+                "line_number": 762,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "memory_pool.cc|MakeUnique|DEAD_STORE",
+        "hash": "be6755660930c33f363f597b806bd99f",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &kBufferSize (type int) is never used.",
+        "severity": "ERROR",
+        "line": 851,
+        "column": 3,
+        "procedure": "double_conversion::StringToDoubleConverter::StringToIeee<const_char_*>",
+        "procedure_start_line": 813,
+        "file": "/project/cpp/src/arrow/vendored/double-conversion/double-conversion.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/vendored/double-conversion/double-conversion.cc",
+                "line_number": 851,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "double-conversion.cc|StringToIeee<const_char_*>|DEAD_STORE",
+        "hash": "b0995e06a6e326d70de4311e85896c66",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `data` last assigned on line 827 could be null and is dereferenced by call to `memcpy()` at line 830, column 7.",
+        "severity": "ERROR",
+        "line": 830,
+        "column": 7,
+        "procedure": "arrow::ipc::MessageDecoder::MessageDecoderImpl::ConsumeDataChunks",
+        "procedure_start_line": 817,
+        "file": "/project/cpp/src/arrow/ipc/message.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 817,
+                "column_number": 3,
+                "description": "start of procedure ConsumeDataChunks"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 818,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 819,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 820,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 821,
+                "column_number": 5,
+                "description": "Skipping shared_ptr: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 822,
+                "column_number": 24,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 822,
+                "column_number": 22,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 822,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 823,
+                "column_number": 12,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 827,
+                "column_number": 7,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 828,
+                "column_number": 7,
+                "description": "Skipping operator->: method has no implementation"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 829,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/message.cc",
+                "line_number": 830,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "message.cc|ConsumeDataChunks|NULL_DEREFERENCE",
+        "node_key": "08a82aa9e00117121053fa0c8a31f8c7",
+        "hash": "459cc70677523321574930067ee24779",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &union_ty (type void&) is never used.",
+        "severity": "ERROR",
+        "line": 924,
+        "column": 3,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_scalar.cc::CastImpl",
+        "procedure_start_line": 923,
+        "file": "/project/cpp/src/arrow/scalar.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/scalar.cc",
+                "line_number": 924,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "scalar.cc|arrow::anonymous_namespace__project_cpp_src_arrow_scalar.cc::CastImpl|DEAD_STORE",
+        "hash": "9c6ed20529c079d1a77684e54ea7ce3c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &kNumChars (type int) is never used.",
+        "severity": "ERROR",
+        "line": 1471,
+        "column": 3,
+        "procedure": "arrow::internal::TemporaryDir::Make",
+        "procedure_start_line": 1470,
+        "file": "/project/cpp/src/arrow/util/io_util.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/io_util.cc",
+                "line_number": 1471,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "io_util.cc|Make|DEAD_STORE",
+        "hash": "0a085c512c67c677d4a4a054f32e96a3",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &context (type arrow::ipc::IpcReadContext*) is never used.",
+        "severity": "ERROR",
+        "line": 1532,
+        "column": 20,
+        "procedure": "arrow::ipc::StreamDecoder::StreamDecoderImpl::OnRecordBatchMessageDecoded",
+        "procedure_start_line": 1531,
+        "file": "/project/cpp/src/arrow/ipc/reader.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/ipc/reader.cc",
+                "line_number": 1532,
+                "column_number": 20,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "reader.cc|OnRecordBatchMessageDecoded|DEAD_STORE",
+        "hash": "f1e3c2f5fae269972efa2bbcd2e4ba39",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &code (type int) is never used.",
+        "severity": "ERROR",
+        "line": 1794,
+        "column": 9,
+        "procedure": "arrow::anonymous_namespace__project_cpp_src_arrow_c_bridge.cc::ArrayStreamBatchReader::StatusFromCError",
+        "procedure_start_line": 1779,
+        "file": "/project/cpp/src/arrow/c/bridge.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/c/bridge.cc",
+                "line_number": 1794,
+                "column_number": 9,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "bridge.cc|StatusFromCError|DEAD_STORE",
+        "hash": "f02dfba42d9963b14a87b74c644cb408",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::Tell` reads without synchronization from `this->position_`. Potentially races with write in method `arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::WriteAt`.",
+        "severity": "WARNING",
+        "line": 186,
+        "column": 35,
+        "procedure": "arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::Tell",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/io/memory.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 186,
+                "column_number": 35,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 186,
+                "column_number": 35,
+                "description": "access to `this->position_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 204,
+                "column_number": 5,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 204,
+                "column_number": 5,
+                "description": "call to arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::Seek"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 182,
+                "column_number": 5,
+                "description": "access to `this->position_`"
+            }
+        ],
+        "key": "memory.cc|Tell|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "d76fc2bd6fcc36d4b011ba7e7aa363fa",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAFkAAAAIAAAAJgAAAB6gsAEAumORCSMvcHJvamVjdC9jcHAvc3JjL2Fycm93L2lvL21lbW9yeS5jY6CwAQC2RZEJIy9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvaW8vbWVtb3J5LmNjQA=="
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::Write` reads without synchronization from `this->position_`. Potentially races with write in method `arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::WriteAt`.",
+        "severity": "WARNING",
+        "line": 189,
+        "column": 5,
+        "procedure": "arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::Write",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/io/memory.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 189,
+                "column_number": 5,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 189,
+                "column_number": 5,
+                "description": "access to `this->position_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 204,
+                "column_number": 5,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 204,
+                "column_number": 5,
+                "description": "call to arrow::io::FixedSizeBufferWriter::FixedSizeBufferWriterImpl::Seek"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/io/memory.cc",
+                "line_number": 182,
+                "column_number": 5,
+                "description": "access to `this->position_`"
+            }
+        ],
+        "key": "memory.cc|Write|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "f48c4b5924f59b62b4bea553171b301a",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAFkAAAAIAAAAJgAAAB6gsAEAvUWRCSMvcHJvamVjdC9jcHAvc3JjL2Fycm93L2lvL21lbW9yeS5jY6CwAQC2RZEJIy9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvaW8vbWVtb3J5LmNjQA=="
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::FutureWaiterImpl::ShouldSignal` reads without synchronization from `this->fetch_pos_`. Potentially races with write in method `arrow::FutureWaiterImpl::DoWaitAndFetchOne`.",
+        "severity": "WARNING",
+        "line": 99,
+        "column": 22,
+        "procedure": "arrow::FutureWaiterImpl::ShouldSignal",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/future.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 99,
+                "column_number": 22,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 99,
+                "column_number": 22,
+                "description": "access to `this->fetch_pos_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 152,
+                "column_number": 30,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 152,
+                "column_number": 30,
+                "description": "access to `this->fetch_pos_`"
+            }
+        ],
+        "key": "future.cc|ShouldSignal|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "2f1250ee34127954d3f81e9011bde9c6",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAFwAAAAIAAAAKAAAAB6gsABjVpEJJS9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvdXRpbC9mdXR1cmUuY2OgsAEAmF6RCSUvcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvZnV0dXJlLmNjQA=="
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::FutureWaiterImpl::DoMarkFutureFinishedUnlocked` indirectly reads without synchronization from `this->fetch_pos_`. Potentially races with write in method `arrow::FutureWaiterImpl::DoWaitAndFetchOne`.",
+        "severity": "WARNING",
+        "line": 138,
+        "column": 24,
+        "procedure": "arrow::FutureWaiterImpl::DoMarkFutureFinishedUnlocked",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/future.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 138,
+                "column_number": 24,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 138,
+                "column_number": 24,
+                "description": "call to arrow::FutureWaiterImpl::ShouldSignal"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 99,
+                "column_number": 22,
+                "description": "access to `this->fetch_pos_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 152,
+                "column_number": 30,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/future.cc",
+                "line_number": 152,
+                "column_number": 30,
+                "description": "access to `this->fetch_pos_`"
+            }
+        ],
+        "key": "future.cc|DoMarkFutureFinishedUnlocked|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "1d2522fa959d298581134cc39da350b7",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAFwAAAAIAAAAKAAAAB6gsABjVpEJJS9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvdXRpbC9mdXR1cmUuY2OgsAEAmF6RCSUvcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvZnV0dXJlLmNjQA=="
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::io::BufferedOutputStream::Impl::FlushUnlocked` reads without synchronization from `this->buffer_data_`. Potentially races with write in method `arrow::io::BufferedOutputStream::Impl::SetBufferSize`.",
+        "severity": "WARNING",
+        "line": 163,
+        "column": 7,
+        "procedure": "arrow::io::BufferedOutputStream::Impl::FlushUnlocked",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/io/buffered.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 163,
+                "column_number": 7,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 163,
+                "column_number": 7,
+                "description": "access to `this->buffer_data_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 190,
+                "column_number": 12,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 190,
+                "column_number": 12,
+                "description": "call to arrow::io::BufferedBase::ResizeBuffer"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 68,
+                "column_number": 12,
+                "description": "call to arrow::io::BufferedBase::ResetBuffer"
+            },
+            {
+                "level": 2,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 62,
+                "column_number": 5,
+                "description": "access to `this->buffer_data_`"
+            }
+        ],
+        "key": "buffered.cc|FlushUnlocked|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "d7bd1b0edd9365570e8b2ab88cec94a2",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAFsAAAAIAAAAKAAAAB6gsAEAo0eRCSUvcHJvamVjdC9jcHAvc3JjL2Fycm93L2lvL2J1ZmZlcmVkLmNjoLB+RZEJJS9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvaW8vYnVmZmVyZWQuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::io::BufferedOutputStream::Impl::FlushUnlocked` reads without synchronization from `this->buffer_pos_`. Potentially races with write in method `arrow::io::BufferedOutputStream::Impl::Write`.",
+        "severity": "WARNING",
+        "line": 160,
+        "column": 9,
+        "procedure": "arrow::io::BufferedOutputStream::Impl::FlushUnlocked",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/io/buffered.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 160,
+                "column_number": 9,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 160,
+                "column_number": 9,
+                "description": "access to `this->buffer_pos_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 128,
+                "column_number": 59,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 128,
+                "column_number": 59,
+                "description": "call to arrow::io::BufferedOutputStream::Impl::DoWrite"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 144,
+                "column_number": 7,
+                "description": "call to arrow::io::BufferedOutputStream::Impl::FlushUnlocked"
+            },
+            {
+                "level": 2,
+                "filename": "/project/cpp/src/arrow/io/buffered.cc",
+                "line_number": 164,
+                "column_number": 7,
+                "description": "access to `this->buffer_pos_`"
+            }
+        ],
+        "key": "buffered.cc|FlushUnlocked|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "8d4fe58c630d651a929ce7e3cc54fac3",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAADgAAAAHAAAAHQAAABigsAEAoEmRCSUvcHJvamVjdC9jcHAvc3JjL2Fycm93L2lvL2J1ZmZlcmVkLmNjoLABAKRHkQQEQA=="
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::io::CompressedOutputStream::Impl::FlushCompressed` reads without synchronization from `this->compressed_pos_`. Potentially races with write in method `arrow::io::CompressedOutputStream::Impl::Close`.",
+        "severity": "WARNING",
+        "line": 66,
+        "column": 9,
+        "procedure": "arrow::io::CompressedOutputStream::Impl::FlushCompressed",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/io/compressed.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 66,
+                "column_number": 9,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 66,
+                "column_number": 9,
+                "description": "access to `this->compressed_pos_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 161,
+                "column_number": 7,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 161,
+                "column_number": 7,
+                "description": "call to arrow::io::CompressedOutputStream::Impl::FinalizeCompression"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 140,
+                "column_number": 7,
+                "description": "access to `this->compressed_pos_`"
+            }
+        ],
+        "key": "compressed.cc|FlushCompressed|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "4e4d295e1b2a0eba418b374c11929259",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGAAAAAIAAAAKAAAAB6gsABCSZEJJy9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvaW8vY29tcHJlc3NlZC5jY6CwAQCMR5EJJy9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvaW8vY29tcHJlc3NlZC5jY0A="
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::io::CompressedOutputStream::Impl::FinalizeCompression` reads without synchronization from `this->compressed_pos_`. Potentially races with write in method `arrow::io::CompressedOutputStream::Impl::Close`.",
+        "severity": "WARNING",
+        "line": 137,
+        "column": 7,
+        "procedure": "arrow::io::CompressedOutputStream::Impl::FinalizeCompression",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/io/compressed.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 137,
+                "column_number": 7,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 137,
+                "column_number": 7,
+                "description": "access to `this->compressed_pos_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 161,
+                "column_number": 7,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 161,
+                "column_number": 7,
+                "description": "call to arrow::io::CompressedOutputStream::Impl::FinalizeCompression"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/io/compressed.cc",
+                "line_number": 140,
+                "column_number": 7,
+                "description": "access to `this->compressed_pos_`"
+            }
+        ],
+        "key": "compressed.cc|FinalizeCompression|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "b1240e117838606fe71c2e0e7852e7c8",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAADoAAAAHAAAAHQAAABigsAEAiUeRCScvcHJvamVjdC9jcHAvc3JjL2Fycm93L2lvL2NvbXByZXNzZWQuY2OgsAEAjEeRBARA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::SpawnReal` indirectly reads without synchronization from `this->state_->desired_capacity_`. Potentially races with write in method `arrow::internal::ThreadPool::SetCapacity`.",
+        "severity": "WARNING",
+        "line": 344,
+        "column": 5,
+        "procedure": "arrow::internal::ThreadPool::SpawnReal",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 344,
+                "column_number": 5,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 344,
+                "column_number": 5,
+                "description": "call to arrow::internal::ThreadPool::ProtectAgainstFork"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "access to `this->state_->desired_capacity_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "access to `this->state_->desired_capacity_`"
+            }
+        ],
+        "key": "thread_pool.cc|SpawnReal|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "7563187fc4e917c958b646aa0fae45b3",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA60WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBCEORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::SetCapacity` indirectly reads without synchronization from `this->state_->desired_capacity_`. Potentially races with write in method `arrow::internal::ThreadPool::SetCapacity`.",
+        "severity": "WARNING",
+        "line": 254,
+        "column": 3,
+        "procedure": "arrow::internal::ThreadPool::SetCapacity",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 254,
+                "column_number": 3,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 254,
+                "column_number": 3,
+                "description": "call to arrow::internal::ThreadPool::ProtectAgainstFork"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "access to `this->state_->desired_capacity_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "access to `this->state_->desired_capacity_`"
+            }
+        ],
+        "key": "thread_pool.cc|SetCapacity|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "ba200d7be72b471b6dd3801d0f4fd1bb",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA60WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBCEORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::ProtectAgainstFork` reads without synchronization from `this->state_->desired_capacity_`. Potentially races with write in method `arrow::internal::ThreadPool::SetCapacity`.",
+        "severity": "WARNING",
+        "line": 235,
+        "column": 5,
+        "procedure": "arrow::internal::ThreadPool::ProtectAgainstFork",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "access to `this->state_->desired_capacity_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "access to `this->state_->desired_capacity_`"
+            }
+        ],
+        "key": "thread_pool.cc|ProtectAgainstFork|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "41d943f470c4c7dced761518d1c1af57",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA60WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBCEORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::ProtectAgainstFork` reads without synchronization from `this->state_->please_shutdown_`. Potentially races with write in method `arrow::internal::ThreadPool::Shutdown`.",
+        "severity": "WARNING",
+        "line": 238,
+        "column": 5,
+        "procedure": "arrow::internal::ThreadPool::ProtectAgainstFork",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 238,
+                "column_number": 5,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 238,
+                "column_number": 5,
+                "description": "access to `this->state_->please_shutdown_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 303,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 303,
+                "column_number": 3,
+                "description": "access to `this->state_->please_shutdown_`"
+            }
+        ],
+        "key": "thread_pool.cc|ProtectAgainstFork|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "66270dfc0ab6faf441e3d5f48e7e9393",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA7kWRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBL0ORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::ProtectAgainstFork` reads without synchronization from `this->state_->quick_shutdown_`. Potentially races with write in method `arrow::internal::ThreadPool::Shutdown`.",
+        "severity": "WARNING",
+        "line": 239,
+        "column": 5,
+        "procedure": "arrow::internal::ThreadPool::ProtectAgainstFork",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 239,
+                "column_number": 5,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 239,
+                "column_number": 5,
+                "description": "access to `this->state_->quick_shutdown_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 304,
+                "column_number": 29,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 304,
+                "column_number": 29,
+                "description": "access to `this->state_->quick_shutdown_`"
+            }
+        ],
+        "key": "thread_pool.cc|ProtectAgainstFork|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "1842a7b4b4d150eab3ab43e1015c9a69",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA70WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBMF2RCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::GetCapacity` indirectly reads without synchronization from `this->state_->desired_capacity_`. Potentially races with write in method `arrow::internal::ThreadPool::SetCapacity`.",
+        "severity": "WARNING",
+        "line": 279,
+        "column": 3,
+        "procedure": "arrow::internal::ThreadPool::GetCapacity",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 279,
+                "column_number": 3,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 279,
+                "column_number": 3,
+                "description": "call to arrow::internal::ThreadPool::ProtectAgainstFork"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "access to `this->state_->desired_capacity_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "access to `this->state_->desired_capacity_`"
+            }
+        ],
+        "key": "thread_pool.cc|GetCapacity|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "2aff481acd1e645363907363cd5155ec",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA60WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBCEORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::Shutdown` indirectly reads without synchronization from `this->state_->desired_capacity_`. Potentially races with write in method `arrow::internal::ThreadPool::SetCapacity`.",
+        "severity": "WARNING",
+        "line": 297,
+        "column": 3,
+        "procedure": "arrow::internal::ThreadPool::Shutdown",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 297,
+                "column_number": 3,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 297,
+                "column_number": 3,
+                "description": "call to arrow::internal::ThreadPool::ProtectAgainstFork"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "access to `this->state_->desired_capacity_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "access to `this->state_->desired_capacity_`"
+            }
+        ],
+        "key": "thread_pool.cc|Shutdown|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "ea472fb8d14bc314e5254e07cc820f7d",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA60WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBCEORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::GetNumTasks` indirectly reads without synchronization from `this->state_->desired_capacity_`. Potentially races with write in method `arrow::internal::ThreadPool::SetCapacity`.",
+        "severity": "WARNING",
+        "line": 285,
+        "column": 3,
+        "procedure": "arrow::internal::ThreadPool::GetNumTasks",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 285,
+                "column_number": 3,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 285,
+                "column_number": 3,
+                "description": "call to arrow::internal::ThreadPool::ProtectAgainstFork"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "access to `this->state_->desired_capacity_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "access to `this->state_->desired_capacity_`"
+            }
+        ],
+        "key": "thread_pool.cc|GetNumTasks|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "1efc6b59db5639a23b95af5d979cb3bb",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA60WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBCEORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::ThreadPool::GetActualCapacity` indirectly reads without synchronization from `this->state_->desired_capacity_`. Potentially races with write in method `arrow::internal::ThreadPool::SetCapacity`.",
+        "severity": "WARNING",
+        "line": 291,
+        "column": 3,
+        "procedure": "arrow::internal::ThreadPool::GetActualCapacity",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/thread_pool.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 291,
+                "column_number": 3,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 291,
+                "column_number": 3,
+                "description": "call to arrow::internal::ThreadPool::ProtectAgainstFork"
+            },
+            {
+                "level": 1,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 235,
+                "column_number": 5,
+                "description": "access to `this->state_->desired_capacity_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/thread_pool.cc",
+                "line_number": 264,
+                "column_number": 3,
+                "description": "access to `this->state_->desired_capacity_`"
+            }
+        ],
+        "key": "thread_pool.cc|GetActualCapacity|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "26a4828bee9989bfbf5fccc05fbead70",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGcAAAAIAAAAKgAAACCgsAEA60WRCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2OgsAEBCEORCSovcHJvamVjdC9jcHAvc3JjL2Fycm93L3V0aWwvdGhyZWFkX3Bvb2wuY2NA"
+    },
+    {
+        "bug_type": "LOCK_CONSISTENCY_VIOLATION",
+        "qualifier": "Read/Write race. Non-private method `arrow::internal::anonymous_namespace__project_cpp_src_arrow_util_task_group.cc::ThreadedTaskGroup::AppendReal` reads without synchronization from `this->finished_`. Potentially races with write in method `arrow::internal::anonymous_namespace__project_cpp_src_arrow_util_task_group.cc::ThreadedTaskGroup::OneTaskDone`.",
+        "severity": "WARNING",
+        "line": 91,
+        "column": 5,
+        "procedure": "arrow::internal::anonymous_namespace__project_cpp_src_arrow_util_task_group.cc::ThreadedTaskGroup::AppendReal",
+        "procedure_start_line": 0,
+        "file": "/project/cpp/src/arrow/util/task_group.cc",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/task_group.cc",
+                "line_number": 91,
+                "column_number": 5,
+                "description": "<Read trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/task_group.cc",
+                "line_number": 91,
+                "column_number": 5,
+                "description": "access to `this->finished_`"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/task_group.cc",
+                "line_number": 188,
+                "column_number": 11,
+                "description": "<Write trace>"
+            },
+            {
+                "level": 0,
+                "filename": "/project/cpp/src/arrow/util/task_group.cc",
+                "line_number": 188,
+                "column_number": 11,
+                "description": "access to `this->finished_`"
+            }
+        ],
+        "key": "task_group.cc|AppendReal|LOCK_CONSISTENCY_VIOLATION",
+        "hash": "fd71eccbcb4cbb42b28a6f3a748a06b8",
+        "bug_type_hum": "Lock Consistency Violation",
+        "access": "hJWmvgAAAGQAAAAIAAAAKgAAACCgsABbRZEJKS9wcm9qZWN0L2NwcC9zcmMvYXJyb3cvdXRpbC90YXNrX2dyb3VwLmNjoLABALxLkQkpL3Byb2plY3QvY3BwL3NyYy9hcnJvdy91dGlsL3Rhc2tfZ3JvdXAuY2NA"
+    }
+]

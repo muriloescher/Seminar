@@ -1,0 +1,60 @@
+Build problems:
+
+(codeql/infer): grok fails to build because commit in not in a branch
+(codeql/infer): gdal takes forever and there is a mistake at the end 
+(codeql/infer): libxml2 does not build properly since there are syntax errors in the code
+(codeql/infer): readstat cannot be built because of function declaration (changing cflags was impossibleerror: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes), /project/src/readstat_bits.h:10:29, 
+(codeql/infer): usrsctplib is the same as above
+(infer): harfbuzz with ninja cant be built by infer
+
+Results:
+
+grok, gdal, libxml2, readstat, usrsctplib: not buildable
+
+arrow: (codeql) no errors
+       (infer) lots of errors, in same file as BugOSS but not same function
+
+aspell: (codeql) no errors
+        (infer) lots of errors, in same file as BugOSS but not same function
+
+curl: (codeql) some errors, not in same file as BugOSS 
+      (infer) lots of errors, not in same file as BugOSS 
+
+exiv2: (codeql) some errors, not in same file as BugOSS
+       (infer) lots of errors, not in same file as BugOSS
+
+file: (codeql) no errors
+      (infer) lots of errors, not in same file as BugOSS
+
+harfbuzz: (codeql) no errors
+          (infer) not buildable
+
+leptonica: (codeql) some errors, not in same file as BugOSS
+           (infer) lots of errors, in same file as BugOSS but not same function
+
+libarchive: (codeql) some errors, not in same file as BugOSS
+            (infer) lots of errors, in same file as BugOSS but not same function, but close
+
+libhtp: (codeql) some errors, not in same file as BugOSS
+        (infer) lots of errors, in same file as BugOSS but not same function, but close
+
+ndpi: (codeql) some errors, not in same file as BugOSS
+      (infer) lots of errors, not in same file as BugOSS
+
+openh264: (codeql) lots of errors, not in same file as BugOSS
+          (infer) lots of errors, in same file as BugOSS but not same function, but close
+
+openssl: (codeql) lots of errors, not in same file as BugOSS
+         (infer) lots of errors, not in same file as BugOSS
+
+pcapplusplus: (codeql) some errors, in same file as BugOSS but not same function, but maybe
+              (infer) lots of errors, in same file as BugOSS AND SAME FUNCTION!!!!!!!!!!!
+
+poppler: (codeql) lots of errors, in same file as BugOSS but not same function
+         (infer) lots of errors, in same file as BugOSS but not same function
+
+yara: (codeql) some errors, not in same file as BugOSS
+      (infer) lots of errors, in same file as BugOSS but not same function
+
+zstd: (codeql) some errors, not in same file as BugOSS
+      (infer) some errors, not in same file as BugOSS

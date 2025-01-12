@@ -1,0 +1,631 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &result (type int) is never used.",
+        "severity": "ERROR",
+        "line": 43,
+        "column": 3,
+        "procedure": "yr_process_open_iterator",
+        "procedure_start_line": 39,
+        "file": "/project/libyara/proc.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/proc.c",
+                "line_number": 43,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "proc.c|yr_process_open_iterator|DEAD_STORE",
+        "hash": "21f2f4c116285d01432cf4a28350cb4d",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &fd (type int) is never used.",
+        "severity": "ERROR",
+        "line": 82,
+        "column": 3,
+        "procedure": "_yr_compiler_default_include_callback",
+        "procedure_start_line": 64,
+        "file": "/project/libyara/compiler.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/compiler.c",
+                "line_number": 82,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "compiler.c|_yr_compiler_default_include_callback|DEAD_STORE",
+        "hash": "f618a83f884d18dd4f4c66634ecbf910",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &block (type YR_MEMORY_BLOCK*) is never used.",
+        "severity": "ERROR",
+        "line": 130,
+        "column": 3,
+        "procedure": "get_distribution_global",
+        "procedure_start_line": 119,
+        "file": "/project/libyara/modules/math/math.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/modules/math/math.c",
+                "line_number": 130,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "math.c|get_distribution_global|DEAD_STORE",
+        "hash": "949b1e11eac6d9754bf3d10887fa4954",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &result (type int) is never used.",
+        "severity": "ERROR",
+        "line": 215,
+        "column": 3,
+        "procedure": "yr_rules_scan_mem",
+        "procedure_start_line": 196,
+        "file": "/project/libyara/rules.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/rules.c",
+                "line_number": 215,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "rules.c|yr_rules_scan_mem|DEAD_STORE",
+        "hash": "1f5b895b8dd879de4ccfb29348a26ddd",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &len (type int) is never used.",
+        "severity": "ERROR",
+        "line": 275,
+        "column": 7,
+        "procedure": "args_print_usage",
+        "procedure_start_line": 254,
+        "file": "/project/cli/args.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cli/args.c",
+                "line_number": 275,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "args.c|args_print_usage|DEAD_STORE",
+        "hash": "a1c3061ac21d089b05c8e2c1dab6f50a",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &i (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 294,
+        "column": 20,
+        "procedure": "ASN1_get_time_t",
+        "procedure_start_line": 260,
+        "file": "/project/libyara/modules/pe/pe_utils.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/modules/pe/pe_utils.c",
+                "line_number": 294,
+                "column_number": 20,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "pe_utils.c|ASN1_get_time_t|DEAD_STORE",
+        "hash": "1842d40a2ab82fbd4b8b9dd843d8ce31",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "RESOURCE_LEAK",
+        "qualifier": "resource of type `_IO_FILE` acquired by call to `yr_process_open_iterator()` at line 300, column 16 is not released after line 312, column 5.",
+        "severity": "ERROR",
+        "line": 312,
+        "column": 5,
+        "procedure": "yr_rules_scan_proc",
+        "procedure_start_line": 287,
+        "file": "/project/libyara/rules.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/rules.c",
+                "line_number": 287,
+                "column_number": 1,
+                "description": "start of procedure yr_rules_scan_proc()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/rules.c",
+                "line_number": 300,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/rules.c",
+                "line_number": 302,
+                "column_number": 7,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/rules.c",
+                "line_number": 304,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/rules.c",
+                "line_number": 312,
+                "column_number": 5,
+                "description": "Skipping yr_process_close_iterator(): empty list of specs"
+            }
+        ],
+        "key": "rules.c|yr_rules_scan_proc|RESOURCE_LEAK",
+        "node_key": "c9b64ab129602fc16d161fc0c614a975",
+        "hash": "77281785b5e0d00bc02f73d8c84da326",
+        "bug_type_hum": "Resource Leak"
+    },
+    {
+        "bug_type": "RESOURCE_LEAK",
+        "qualifier": "resource acquired to `fd` by call to `open()` at line 304, column 8 is not released after line 311, column 7.",
+        "severity": "ERROR",
+        "line": 311,
+        "column": 7,
+        "procedure": "yr_filemap_map_ex",
+        "procedure_start_line": 292,
+        "file": "/project/libyara/filemap.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/filemap.c",
+                "line_number": 292,
+                "column_number": 1,
+                "description": "start of procedure yr_filemap_map_ex()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/filemap.c",
+                "line_number": 301,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/filemap.c",
+                "line_number": 304,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/filemap.c",
+                "line_number": 306,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/filemap.c",
+                "line_number": 309,
+                "column_number": 3,
+                "description": "Skipping yr_filemap_map_fd(): empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/filemap.c",
+                "line_number": 311,
+                "column_number": 7,
+                "description": "Taking false branch"
+            }
+        ],
+        "key": "filemap.c|yr_filemap_map_ex|RESOURCE_LEAK",
+        "node_key": "de4a20adf58c4b2fcd0c2363ac0ca064",
+        "hash": "9a5daa51359f29d9e10a1c6436218743",
+        "bug_type_hum": "Resource Leak"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from begin was never initialized.",
+        "severity": "ERROR",
+        "line": 350,
+        "column": 5,
+        "procedure": "yr_process_get_next_memory_block",
+        "procedure_start_line": 303,
+        "file": "/project/libyara/proc/linux.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/proc/linux.c",
+                "line_number": 350,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "linux.c|yr_process_get_next_memory_block|UNINITIALIZED_VALUE",
+        "hash": "3e119608957ad0f335fcaa78da5d97e8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from begin was never initialized.",
+        "severity": "ERROR",
+        "line": 351,
+        "column": 5,
+        "procedure": "yr_process_get_next_memory_block",
+        "procedure_start_line": 303,
+        "file": "/project/libyara/proc/linux.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/proc/linux.c",
+                "line_number": 351,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "linux.c|yr_process_get_next_memory_block|UNINITIALIZED_VALUE",
+        "hash": "3e119608957ad0f335fcaa78da5d97e8",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from end was never initialized.",
+        "severity": "ERROR",
+        "line": 351,
+        "column": 5,
+        "procedure": "yr_process_get_next_memory_block",
+        "procedure_start_line": 303,
+        "file": "/project/libyara/proc/linux.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/proc/linux.c",
+                "line_number": 351,
+                "column_number": 5,
+                "description": ""
+            }
+        ],
+        "key": "linux.c|yr_process_get_next_memory_block|UNINITIALIZED_VALUE",
+        "hash": "bdb747b9eaf07705a11ab9a57a851b6c",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from n was never initialized.",
+        "severity": "ERROR",
+        "line": 348,
+        "column": 7,
+        "procedure": "yr_process_get_next_memory_block",
+        "procedure_start_line": 303,
+        "file": "/project/libyara/proc/linux.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/proc/linux.c",
+                "line_number": 348,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "linux.c|yr_process_get_next_memory_block|UNINITIALIZED_VALUE",
+        "hash": "1a81742592223ec66b3bc32329a1a833",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &stack_top (type int) is never used.",
+        "severity": "ERROR",
+        "line": 647,
+        "column": 3,
+        "procedure": "elf__declarations",
+        "procedure_start_line": 492,
+        "file": "/project/libyara/modules/elf/elf.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/modules/elf/elf.c",
+                "line_number": 647,
+                "column_number": 3,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "elf.c|elf__declarations|DEAD_STORE",
+        "hash": "927f360d43724231f7c7a60d0dcd1cb9",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &nread (type long) is never used.",
+        "severity": "ERROR",
+        "line": 703,
+        "column": 7,
+        "procedure": "populate_scan_list",
+        "procedure_start_line": 681,
+        "file": "/project/cli/yara.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/cli/yara.c",
+                "line_number": 703,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "yara.c|populate_scan_list|DEAD_STORE",
+        "hash": "e7b2ff5fc348fcecc40dd5ecfd965d1b",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "RESOURCE_LEAK",
+        "qualifier": "resource of type `_IO_FILE` acquired by call to `yr_process_open_iterator()` at line 706, column 16 is not released after line 712, column 14.",
+        "severity": "ERROR",
+        "line": 712,
+        "column": 14,
+        "procedure": "yr_scanner_scan_proc",
+        "procedure_start_line": 702,
+        "file": "/project/libyara/scanner.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/scanner.c",
+                "line_number": 702,
+                "column_number": 1,
+                "description": "start of procedure yr_scanner_scan_proc()"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/scanner.c",
+                "line_number": 706,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/scanner.c",
+                "line_number": 708,
+                "column_number": 7,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/scanner.c",
+                "line_number": 710,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/scanner.c",
+                "line_number": 711,
+                "column_number": 5,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "/project/libyara/scanner.c",
+                "line_number": 712,
+                "column_number": 5,
+                "description": "Skipping yr_scanner_scan_mem_blocks(): empty list of specs"
+            }
+        ],
+        "key": "scanner.c|yr_scanner_scan_proc|RESOURCE_LEAK",
+        "node_key": "600f5cff0b2d940b8df81814150125b9",
+        "hash": "be22f0f38de0937210b4ea338e5f69df",
+        "bug_type_hum": "Resource Leak"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from recent_re_nodes[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 976,
+        "column": 15,
+        "procedure": "_yr_atoms_extract_from_re",
+        "procedure_start_line": 850,
+        "file": "/project/libyara/atoms.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/atoms.c",
+                "line_number": 976,
+                "column_number": 15,
+                "description": ""
+            }
+        ],
+        "key": "atoms.c|_yr_atoms_extract_from_re|UNINITIALIZED_VALUE",
+        "hash": "998de7af2396345d36a78564f169cbd2",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from recent_re_nodes[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 984,
+        "column": 13,
+        "procedure": "_yr_atoms_extract_from_re",
+        "procedure_start_line": 850,
+        "file": "/project/libyara/atoms.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/atoms.c",
+                "line_number": 984,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "atoms.c|_yr_atoms_extract_from_re|UNINITIALIZED_VALUE",
+        "hash": "998de7af2396345d36a78564f169cbd2",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &BoundImportAddressTableRVA (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1272,
+        "column": 7,
+        "procedure": "pe_parse_delayed_imports",
+        "procedure_start_line": 1196,
+        "file": "/project/libyara/modules/pe/pe.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/modules/pe/pe.c",
+                "line_number": 1272,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "pe.c|pe_parse_delayed_imports|DEAD_STORE",
+        "hash": "f727bcaf250b2062b6eb204335124c6c",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &ModuleHandleRVA (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1266,
+        "column": 7,
+        "procedure": "pe_parse_delayed_imports",
+        "procedure_start_line": 1196,
+        "file": "/project/libyara/modules/pe/pe.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/modules/pe/pe.c",
+                "line_number": 1266,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "pe.c|pe_parse_delayed_imports|DEAD_STORE",
+        "hash": "2fbeb587fd0c4e1479caa8f98f8cf996",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &UnloadInformationTableRVA (type unsigned int) is never used.",
+        "severity": "ERROR",
+        "line": 1274,
+        "column": 7,
+        "procedure": "pe_parse_delayed_imports",
+        "procedure_start_line": 1196,
+        "file": "/project/libyara/modules/pe/pe.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/modules/pe/pe.c",
+                "line_number": 1274,
+                "column_number": 7,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "pe.c|pe_parse_delayed_imports|DEAD_STORE",
+        "hash": "17a1b2ba2bcd47b853490b8f1c313808",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from splits_executed[_] was never initialized.",
+        "severity": "ERROR",
+        "line": 1435,
+        "column": 13,
+        "procedure": "_yr_re_fiber_sync",
+        "procedure_start_line": 1392,
+        "file": "/project/libyara/re.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/re.c",
+                "line_number": 1435,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "re.c|_yr_re_fiber_sync|UNINITIALIZED_VALUE",
+        "hash": "290154602c88f41abec8773246ddc4a3",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &yymsg (type char const *) is never used.",
+        "severity": "ERROR",
+        "line": 1536,
+        "column": 5,
+        "procedure": "yydestruct",
+        "procedure_start_line": 1529,
+        "file": "libyara/grammar.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "libyara/grammar.c",
+                "line_number": 1536,
+                "column_number": 5,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "grammar.c|yydestruct|DEAD_STORE",
+        "hash": "261954a9d1b055841a6fba573882de64",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ref.buffer_id was never initialized.",
+        "severity": "ERROR",
+        "line": 1108,
+        "column": 11,
+        "procedure": "yara_yyparse",
+        "procedure_start_line": 1645,
+        "file": "libyara/grammar.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/grammar.y",
+                "line_number": 1108,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "grammar.c|yara_yyparse|UNINITIALIZED_VALUE",
+        "hash": "ffe3475d450a2be1454c6c3b23b7d218",
+        "bug_type_hum": "Uninitialized Value"
+    },
+    {
+        "bug_type": "UNINITIALIZED_VALUE",
+        "qualifier": "The value read from ref.offset was never initialized.",
+        "severity": "ERROR",
+        "line": 1108,
+        "column": 11,
+        "procedure": "yara_yyparse",
+        "procedure_start_line": 1645,
+        "file": "libyara/grammar.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "/project/libyara/grammar.y",
+                "line_number": 1108,
+                "column_number": 11,
+                "description": ""
+            }
+        ],
+        "key": "grammar.c|yara_yyparse|UNINITIALIZED_VALUE",
+        "hash": "a2fcc94cad7a8f752e6532ab9cb47373",
+        "bug_type_hum": "Uninitialized Value"
+    }
+]
