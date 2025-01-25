@@ -1,0 +1,242 @@
+{
+    "light_create_default_file_info": {
+        "callers": [
+            "Node0x55eb7455a290"
+        ],
+        "callees": []
+    },
+    "light_create_file_info": {
+        "callers": [
+            "Node0x55eb7455eb10"
+        ],
+        "callees": []
+    },
+    "light_pcapng_open_read": {
+        "callers": [
+            "Node0x55eb7453b420"
+        ],
+        "callees": []
+    },
+    "light_pcapng_open_write": {
+        "callers": [
+            "Node0x55eb7455a290",
+            "Node0x55eb7455eb10"
+        ],
+        "callees": []
+    },
+    "pcpp::IDnsResource::decodeName": {
+        "callers": [
+            "Node0x55eb745b4790",
+            "Node0x55eb745b1590"
+        ],
+        "callees": [
+            "Node0x55eb7453adc0",
+            "Node0x55eb74649540",
+            "Node0x55eb746465c0",
+            "Node0x55eb74647ec0",
+            "Node0x55eb74648140",
+            "Node0x55eb74646ac0",
+            "Node0x55eb746460c0",
+            "Node0x55eb74648b40",
+            "Node0x55eb7454d840",
+            "Node0x55eb746492c0",
+            "Node0x55eb74645bc0",
+            "Node0x55eb74646d40",
+            "Node0x55eb74645e40",
+            "Node0x55eb7454dac0",
+            "Node0x55eb7454d980",
+            "Node0x55eb74647b00",
+            "Node0x55eb74647d80",
+            "Node0x55eb74648780",
+            "Node0x55eb7464f800",
+            "Node0x55eb7454dc00"
+        ]
+    },
+    "pcpp::IDnsResource::encodeName": {
+        "callers": [
+            "Node0x55eb745b0cd0",
+            "Node0x55eb745b1f90"
+        ],
+        "callees": [
+            "Node0x55eb7453adc0",
+            "Node0x55eb74434d40",
+            "Node0x55eb746465c0",
+            "Node0x55eb74647ec0",
+            "Node0x55eb74652640",
+            "Node0x55eb746528c0",
+            "Node0x55eb74648140",
+            "Node0x55eb746523c0",
+            "Node0x55eb74646ac0",
+            "Node0x55eb7464d780",
+            "Node0x55eb74650c00",
+            "Node0x55eb7464fa80",
+            "Node0x55eb746460c0",
+            "Node0x55eb74646980",
+            "Node0x55eb746500c0",
+            "Node0x55eb74645f80",
+            "Node0x55eb746519c0",
+            "Node0x55eb74646480",
+            "Node0x55eb74646c00",
+            "Node0x55eb74652280",
+            "Node0x55eb74648b40",
+            "Node0x55eb7454d840",
+            "Node0x55eb74648a00",
+            "Node0x55eb74645bc0",
+            "Node0x55eb74646d40",
+            "Node0x55eb74652780",
+            "Node0x55eb7464a6c0",
+            "Node0x55eb74645e40",
+            "Node0x55eb7454dac0",
+            "Node0x55eb74651100",
+            "Node0x55eb74648f00",
+            "Node0x55eb7454d980",
+            "Node0x55eb74647d80",
+            "Node0x55eb74652500",
+            "Node0x55eb7454dc00"
+        ]
+    },
+    "pcpp::IPFilter::convertToIPAddressWithLen": {
+        "callers": [
+            "Node0x55eb74561c30"
+        ],
+        "callees": [
+            "Node0x55eb7453adc0",
+            "Node0x55eb7463ff40",
+            "Node0x55eb746465c0",
+            "Node0x55eb74647ec0",
+            "Node0x55eb74641ac0",
+            "Node0x55eb74646340",
+            "Node0x55eb746460c0",
+            "Node0x55eb74646480",
+            "Node0x55eb74646200",
+            "Node0x55eb74646c00",
+            "Node0x55eb7463f900",
+            "Node0x55eb7454d840",
+            "Node0x55eb74648a00",
+            "Node0x55eb74641840",
+            "Node0x55eb746406c0",
+            "Node0x55eb74645bc0",
+            "Node0x55eb74646d40",
+            "Node0x55eb74641d40",
+            "Node0x55eb74642880",
+            "Node0x55eb74645e40",
+            "Node0x55eb7454dac0",
+            "Node0x55eb745629f0",
+            "Node0x55eb74648f00",
+            "Node0x55eb7454d980",
+            "Node0x55eb74647b00",
+            "Node0x55eb745628b0",
+            "Node0x55eb74647d80",
+            "Node0x55eb74562770",
+            "Node0x55eb74647600",
+            "Node0x55eb74648640",
+            "Node0x55eb74648780",
+            "Node0x55eb7454dc00"
+        ]
+    },
+    "pcpp::IPv4Layer::parseNextLayer": {
+        "callers": [
+            "Node0x55eb745a8570",
+            "Node0x55eb745a96f0",
+            "Node0x55eb74566af0",
+            "Node0x55eb7457de70",
+            "Node0x55eb74566ff0",
+            "Node0x55eb7457d970",
+            "Node0x55eb7457dbf0",
+            "Node0x55eb7457d830"
+        ],
+        "callees": [
+            "Node0x55eb74649540",
+            "Node0x55eb746465c0",
+            "Node0x55eb74649900",
+            "Node0x55eb745e7050",
+            "Node0x55eb7458b0b0",
+            "Node0x55eb745d5990",
+            "Node0x55eb745d5710",
+            "Node0x55eb745bb6d0",
+            "Node0x55eb745bae10",
+            "Node0x55eb74649e00",
+            "Node0x55eb74646ac0",
+            "Node0x55eb7456c7b0",
+            "Node0x55eb7456ca30",
+            "Node0x55eb7464c240",
+            "Node0x55eb745874b0",
+            "Node0x55eb746460c0",
+            "Node0x55eb74572f70",
+            "Node0x55eb74646980",
+            "Node0x55eb745ccc50",
+            "Node0x55eb745daad0",
+            "Node0x55eb74646200",
+            "Node0x55eb74648b40",
+            "Node0x55eb7456c670",
+            "Node0x55eb74651240",
+            "Node0x55eb745d32d0",
+            "Node0x55eb745b89d0",
+            "Node0x55eb7458ceb0",
+            "Node0x55eb746492c0",
+            "Node0x55eb745a5230",
+            "Node0x55eb7456c030",
+            "Node0x55eb74645bc0",
+            "Node0x55eb74646d40",
+            "Node0x55eb745910f0",
+            "Node0x55eb74580a70",
+            "Node0x55eb745d1890",
+            "Node0x55eb74645e40",
+            "Node0x55eb7464a6c0",
+            "Node0x55eb745d5c10",
+            "Node0x55eb745ef750",
+            "Node0x55eb745dda50",
+            "Node0x55eb7456c530",
+            "Node0x55eb745b66d0",
+            "Node0x55eb745f5f10",
+            "Node0x55eb745a0c30",
+            "Node0x55eb745d2b50",
+            "Node0x55eb7456b3b0",
+            "Node0x55eb7458fbb0",
+            "Node0x55eb7456b8b0",
+            "Node0x55eb745d5d50",
+            "Node0x55eb7456cb70",
+            "Node0x55eb7456c170",
+            "Node0x55eb7456d2f0",
+            "Node0x55eb74573fb0",
+            "Node0x55eb745d4d10",
+            "Node0x55eb74585570",
+            "Node0x55eb745b7990",
+            "Node0x55eb7458e670",
+            "Node0x55eb7456c8f0",
+            "Node0x55eb745dfad0",
+            "Node0x55eb7457fcb0"
+        ]
+    },
+    "pcpp::IPv6Layer::parseExtensions": {
+        "callers": [
+            "Node0x55eb74573fb0",
+            "Node0x55eb74576530",
+            "Node0x55eb745763f0"
+        ],
+        "callees": [
+            "Node0x55eb74573830",
+            "Node0x55eb746465c0",
+            "Node0x55eb74574730",
+            "Node0x55eb745744b0",
+            "Node0x55eb74574230",
+            "Node0x55eb74649e00",
+            "Node0x55eb74573bf0",
+            "Node0x55eb7464c240",
+            "Node0x55eb74574eb0",
+            "Node0x55eb746460c0",
+            "Node0x55eb74646980",
+            "Node0x55eb74646200",
+            "Node0x55eb74574870",
+            "Node0x55eb74648b40",
+            "Node0x55eb74573970",
+            "Node0x55eb746492c0",
+            "Node0x55eb74645bc0",
+            "Node0x55eb74645e40",
+            "Node0x55eb745745f0",
+            "Node0x55eb7464a6c0",
+            "Node0x55eb74574af0",
+            "Node0x55eb74574370"
+        ]
+    }
+}

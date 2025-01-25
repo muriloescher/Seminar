@@ -1,0 +1,11 @@
+{
+    "light_create_default_file_info": "Node0x55eb7464b700",
+    "light_create_file_info": "Node0x55eb7464cd80",
+    "light_pcapng_open_read": "Node0x55eb74649cc0",
+    "light_pcapng_open_write": "Node0x55eb7464b840",
+    "pcpp::IDnsResource::decodeName": "Node0x55eb745b1450",
+    "pcpp::IDnsResource::encodeName": "Node0x55eb745b0e10",
+    "pcpp::IPFilter::convertToIPAddressWithLen": "Node0x55eb74562130",
+    "pcpp::IPv4Layer::parseNextLayer": "Node0x55eb7456b270",
+    "pcpp::IPv6Layer::parseExtensions": "Node0x55eb745740f0"
+}

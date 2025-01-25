@@ -1,0 +1,61 @@
+{
+    "__copy_block": [],
+    "__copy_option": [],
+    "__create_file_info": [],
+    "__create_flow": [],
+    "__get_option_size": [],
+    "__parse_mem_inplace": [],
+    "__parse_options": [],
+    "light_alloc_block": [],
+    "light_alloc_option": [],
+    "light_create_default_file_info": [
+        "Node0x55eb7464b700"
+    ],
+    "light_create_file_info": [
+        "Node0x55eb7464cd80"
+    ],
+    "light_create_option": [],
+    "light_ip_flow": [],
+    "light_open": [],
+    "light_open_compression": [],
+    "light_open_decompression": [],
+    "light_pcapng_historgram": [],
+    "light_pcapng_open_read": [
+        "Node0x55eb74649cc0"
+    ],
+    "light_pcapng_open_write": [
+        "Node0x55eb7464b840"
+    ],
+    "light_pcapng_release": [],
+    "light_pcapng_to_file_stream": [],
+    "light_pcapng_to_string": [],
+    "parse_by_block_type": [],
+    "pcpp::IDnsResource::decodeName": [
+        "Node0x55eb745b1450",
+        "Node0x55eb745b4790"
+    ],
+    "pcpp::IDnsResource::encodeName": [
+        "Node0x55eb745b0e10",
+        "Node0x55eb745b1f90"
+    ],
+    "pcpp::IPFilter::convertToIPAddressWithLen": [
+        "Node0x55eb74562130"
+    ],
+    "pcpp::IPv4Layer::parseNextLayer": [
+        "Node0x55eb7456b270"
+    ],
+    "pcpp::IPv6Layer::parseExtensions": [
+        "Node0x55eb745740f0"
+    ],
+    "pcpp::SSLCertificateRequestMessage::SSLCertificateRequestMessage": [
+        "Node0x55eb74604790",
+        "Node0x55eb746048d0",
+        "Node0x55eb74604a10",
+        "Node0x55eb74638600",
+        "Node0x55eb74638740",
+        "Node0x55eb74638880",
+        "Node0x55eb74638c40"
+    ],
+    "pcpp::TLVRecordReader<pcpp::DhcpOption>::getFirstTLVRecord": [],
+    "pcpp::TcpReassembly::reassemblePacket": []
+}

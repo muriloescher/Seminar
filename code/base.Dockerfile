@@ -32,14 +32,14 @@ RUN if [ ! -z "${DEPENDENCIES}" ]; then \
     fi
 
 # Instal CodeQL
-#RUN wget "https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.19.4/codeql-bundle-linux64.tar.zst" && \
-#    tar --use-compress-program=unzstd -xvf codeql-bundle-linux64.tar.zst && \
-#    mv codeql /opt/codeql
+# RUN wget "https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.19.4/codeql-bundle-linux64.tar.zst" && \
+#     tar --use-compress-program=unzstd -xvf codeql-bundle-linux64.tar.zst && \
+#     mv codeql /opt/codeql
 
 # Install Infer
-RUN curl -sSL "https://github.com/facebook/infer/releases/download/v1.1.0/infer-linux64-v1.1.0.tar.xz" \
-    | tar -C /opt -xJ && \
-    ln -s "/opt/infer-linux64-v1.1.0/bin/infer" /usr/local/bin/infer
+# RUN curl -sSL "https://github.com/facebook/infer/releases/download/v1.1.0/infer-linux64-v1.1.0.tar.xz" \
+#     | tar -C /opt -xJ && \
+#     ln -s "/opt/infer-linux64-v1.1.0/bin/infer" /usr/local/bin/infer
 
 # Clone project and check out to BIC
 RUN git clone --recurse-submodules \
