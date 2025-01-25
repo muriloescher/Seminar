@@ -7,3 +7,82 @@
       primaryClass={cs.CR},
       url={https://arxiv.org/abs/2408.12986}, 
 }
+
+@inproceedings{10.1145/3533767.3534380,
+author = {Lipp, Stephan and Banescu, Sebastian and Pretschner, Alexander},
+title = {An empirical study on the effectiveness of static C code analyzers for vulnerability detection},
+year = {2022},
+isbn = {9781450393799},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3533767.3534380},
+doi = {10.1145/3533767.3534380},
+abstract = {Static code analysis is often used to scan source code for security vulnerabilities. Given the wide range of existing solutions implementing different analysis techniques, it is very challenging to perform an objective comparison between static analysis tools to determine which ones are most effective at detecting vulnerabilities. Existing studies are thereby limited in that (1) they use synthetic datasets, whose vulnerabilities do not reflect the complexity of security bugs that can be found in practice and/or (2) they do not provide differentiated analyses w.r.t. the types of vulnerabilities output by the static analyzers. Hence, their conclusions about an analyzer's capability to detect vulnerabilities may not generalize to real-world programs. In this paper, we propose a methodology for automatically evaluating the effectiveness of static code analyzers based on CVE reports. We evaluate five free and open-source and one commercial static C code analyzer(s) against 27 software projects containing a total of 1.15 million lines of code and 192 vulnerabilities (ground truth). While static C analyzers have been shown to perform well in benchmarks with synthetic bugs, our results indicate that state-of-the-art tools miss in-between 47\% and 80\% of the vulnerabilities in a benchmark set of real-world programs. Moreover, our study finds that this false negative rate can be reduced to 30\% to 69\% when combining the results of static analyzers, at the cost of 15 percentage points more functions flagged. Many vulnerabilities hence remain undetected, especially those beyond the classical memory-related security bugs.},
+booktitle = {Proceedings of the 31st ACM SIGSOFT International Symposium on Software Testing and Analysis},
+pages = {544–555},
+numpages = {12},
+keywords = {empirical study, static code analysis, vulnerability detection},
+location = {Virtual, South Korea},
+series = {ISSTA 2022}
+}
+
+@INPROCEEDINGS{BugOSS,
+     author={Kim, Jeewoong and Hong, Shin},
+     booktitle={IEEE International Conference on Software Testing, Verification, and Validation (ICST)}, 
+     title={{Poster}: {BugOSS}: A Regression Bug Benchmark for Evaluating Fuzzing Techniques}, 
+     year={2023}
+}
+
+@misc{codeql,
+  title = {CodeQL},
+  author = {GitHub},
+  howpublished = {\url{https://codeql.github.com/}},
+  note = {Accessed: 2025-01-25}
+}
+
+@misc{infer,
+  title = {Infer: A Tool to Detect Bugs in Java and C/C++/Objective-c Code},
+  author = {Meta},
+  howpublished = {\url{https://fbinfer.com/}},
+  note = {Accessed: 2025-01-25}
+}
+
+@misc{li2024llmassistedstaticanalysisdetecting,
+      title={LLM-Assisted Static Analysis for Detecting Security Vulnerabilities}, 
+      author={Ziyang Li and Saikat Dutta and Mayur Naik},
+      year={2024},
+      eprint={2405.17238},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2405.17238}, 
+}
+
+@misc{keltek2024boostingcybersecurityvulnerabilityscanning,
+      title={Boosting Cybersecurity Vulnerability Scanning based on LLM-supported Static Application Security Testing}, 
+      author={Mete Keltek and Rong Hu and Mohammadreza Fani Sani and Ziyue Li},
+      year={2024},
+      eprint={2409.15735},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2409.15735}, 
+}
+
+@misc{du2024vulragenhancingllmbasedvulnerability,
+      title={Vul-RAG: Enhancing LLM-based Vulnerability Detection via Knowledge-level RAG}, 
+      author={Xueying Du and Geng Zheng and Kaixin Wang and Jiayi Feng and Wentai Deng and Mingwei Liu and Bihuan Chen and Xin Peng and Tao Ma and Yiling Lou},
+      year={2024},
+      eprint={2406.11147},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2406.11147}, 
+}
+
+@misc{zhou2024comparisonstaticapplicationsecurity,
+      title={Comparison of Static Application Security Testing Tools and Large Language Models for Repo-level Vulnerability Detection}, 
+      author={Xin Zhou and Duc-Manh Tran and Thanh Le-Cong and Ting Zhang and Ivana Clairine Irsan and Joshua Sumarlin and Bach Le and David Lo},
+      year={2024},
+      eprint={2407.16235},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2407.16235}, 
+}
