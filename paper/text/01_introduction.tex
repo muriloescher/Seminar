@@ -5,16 +5,17 @@ Among their many use cases, one currently much researched possibility is their a
 
 \Acl{sast} is a widely used methodology for identifying software vulnerabilities by analyzing the source code, bytecode or binaries of an application.
 In contrast to dynamic testing methods, which require the code to be executed, \ac{sast} operates statically.
-This characteristic proves useful for integration into the software development lifecycle, for example in \ac{ci} pipelines.
+This characteristic proves useful for integration into the software development life cycle, for example in \ac{ci} pipelines.
 However, despite their widespread adoption, \ac{sast} tools face notable limitations.
-They are often not capable of identifying all existing vulnerabilities, especially those caused by runtime behaviour, like dynamic memory allocation.
+They are often not capable of identifying all existing vulnerabilities, especially those caused by runtime behavior, like dynamic memory allocation.
 Moreover, they usually generate many false positives, which require a lot of effort for the developers to manually go through~\cite{8804441}.
 
-In light of this, the possibility of combining \ac{sast} tools' output with \acp{llm}, as a way to enhance their reasoning and mitigate some of these flaws, is being much researched.
+In light of this, the possibility of combining the output from static analyzers with \acp{llm}, as a way to enhance their reasoning and mitigate some of these flaws, is a promising approach being researched.
 
 Recent studies have investigated the use of \acp{llm} for taint analysis~\cite{li2024llmassistedstaticanalysisdetecting}, combined \ac{sast} output with a \ac{rag} system~\cite{du2024vulragenhancingllmbasedvulnerability,keltek2024boostingcybersecurityvulnerabilityscanning}, and compared the effectiveness of both tools~\cite{zhou2024comparisonstaticapplicationsecurity}.
-Despite of highlighting their potential in security testing, significant challenges still remain in the way of practical use~\cite{ding2024vulnerabilitydetectioncodelanguage}
+Despite of highlighting their potential in security testing, significant challenges still remain in the way of practical use~\cite{ding2024vulnerabilitydetectioncodelanguage}.
+One such challenge is the common necessity of providing context for the vulnerable functions, be it in the form of \ac{rag} systems or the actual relations between the targeted functions and the other ones from the project they are inserted in, as this often proves to be decisive when analyzing software security~\cite{risse2024scorewrongexambenchmarking}.
 
-This paper further investigates the usability of \acp{llm} when combined with \ac{sast} tools. 
-By leveraging a human-curated dataset containing known vulnerabilities in \ac{oss}~\cite{BugOSS}, \ac{sast} tools~\cite{codeql,infer}, and code context acquired through different program representations, this study evaluates the extent to which \acp{llm} can enhance the accuracy and utility of static analysis results.
+This paper further investigates the usability of \acp{llm} when combined with \ac{sast} tools and extra context. 
+By leveraging a human-curated dataset containing known vulnerabilities in \ac{oss}~\cite{BugOSS}, \ac{sast} tools~\cite{codeql,infer}, and code context, specifically callers and callees of the analyzed functions, acquired through different program representations, this study evaluates the extent to which \acp{llm} can enhance the accuracy and utility of static analysis results.
 In this way, it aims to address the challenges presented by false positives in vulnerability detection, contributing to the development of better security systems.

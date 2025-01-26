@@ -1,28 +1,27 @@
 \section{Related Work}
 \label{sec:relwork}
-This section covers related studies and in which ways this project differs from them and provides additional value.
+This section reviews relevant studies and highlights how this project extends or differs from them, focusing on four key areas: \acl{sast}, the use of \acp{llm} for vulnerability detection, the integration of SAST tools with LLMs, and the importance of providing code context for security analysis.
 
 \textbf{\Acl{sast}}. 
-Lipp et. al~\cite{10.1145/3533767.3534380} did a comprehensive analysis of the effectiveness of different \ac{sast} tools. 
-They chose 5 relevant tools and examined their detection rate on different vulnerability classes.
-Aditionally, they also proposed different voting systems based on the combination of different static analyzers and examined how they fared in comparison to the use of single tools. 
-The study concluded that the used analyzers were mostly not capable of detecting real-world vulnerabilities, while combining different analyzers proves very useful for increasing the detection rate, despite also marking more functions as vulnerable. 
+Lipp et al.~\cite{10.1145/3533767.3534380} conducted a comprehensive evaluation of the effectiveness of different \ac{sast} tools, testing their detection capabilities across various vulnerability classes. 
+The study involved five static analyzers and proposed different voting systems based on the combination of different tools and examined how they fared in comparison to the use of single analyzers. 
+It was concluded that the used analyzers were mostly not capable of detecting real-world vulnerabilities, while combining different analyzers proves very useful for increasing the detection rate, despite also marking more functions as vulnerable. 
 Their findings on combining various tools motivated the use of more than one analyzer on this study.
 
 \textbf{Use of \acp{llm} in vulnerability detection}. 
-Ding et. al~\cite{ding2024vulnerabilitydetectioncodelanguage} analyzed the usefulness of code \acp{lm} in real-world vulnerability detection. 
-They highlighted the innefectiveness of the current evaluation metrics and created a new dataset, PrimeVul, to combat the limitations they found in existing benchmark datasets. 
-Their findings reinforce the belief that code \acp{lm} are inneffective in detecting vulnerabilities and highlight the need for more code context.
-Their study did not investigate the difference in performance when this added context is present.
+Ding et al.~\cite{ding2024vulnerabilitydetectioncodelanguage} analyzed the usefulness of code \acp{lm} in real-world vulnerability detection. 
+They highlighted the ineffectiveness of the current evaluation metrics and created a new dataset, PrimeVul, to combat the limitations they found in existing benchmark datasets. 
+Their findings reinforce the belief that code \acp{lm} are ineffective in detecting vulnerabilities and highlight the need for more code context.
+However, their study did not investigate how providing additional code might affect detection performance, a gap this study aims to address.
 
 \textbf{Combining \ac{sast} tools with \acp{llm}}.
-Li et. al~\cite{li2024llmassistedstaticanalysisdetecting} propose a new approach, IRIS, to combining \acp{llm} with static analyzers. They focused their study on taint analysis in Java vulnerabilities using GPT-4 and CodeQL. This study uses 2 static analyzers and examines C/C++ code.
+Li et al.~\cite{li2024llmassistedstaticanalysisdetecting} introduced IRIS, a novel framework based on combining \acp{llm} with static analyzers. The study demonstrated the potential of combining GPT-4 with CodeQL to enhance vulnerability detection. However, their focus was on taint analysis in Java vulnerabilities, whereas this study explores the combination of 2 static analyzers and examines C/C++ code.
 
 \textbf{Providing code context for security testing with \acp{llm}}.
-Risse and Böhme~\cite{risse2024scorewrongexambenchmarking} thoroughly analyzed recent top publications in the field of using machine learning for vulnerability detection and argued that their treatment of vulnerability detection as a function-level problem does not represent real-world vulnerabilities. They discussed and highlighted the importance of the calling and/or code context in security analysis. Their results inspired this study to provide the \ac{llm} with extra context in the form of callers and callees of the flagged functions.
+Risse and Böhme~\cite{risse2024scorewrongexambenchmarking} thoroughly analyzed recent top publications in the field of using machine learning for vulnerability detection and argued that their treatment of vulnerability detection as an isolated function-level problem does not reflect real-world vulnerabilities. They highlighted the significance of incorporating calling and code context for effective security analysis. Their results inspired this study to provide the \ac{llm} with extra context in the form of caller and callee relationships for flagged functions.
 
-Keltek et. al~\cite{keltek2024boostingcybersecurityvulnerabilityscanning} combined \acp{llm} with \ac{sast} tools and a knowledge retrieval system based on HackerOne vulnerability reports. They proposed different methods for retrieving similar code and improving their \ac{rag} system. However, their study did not provide the actual code context from the examined functions and also focused on synthetic datasets, which may not represent real-world software vulnerabilities.
+Keltek et al.~\cite{keltek2024boostingcybersecurityvulnerabilityscanning} combined \acp{llm} with \ac{sast} tools and a knowledge retrieval system based on HackerOne vulnerability reports. They proposed different methods for retrieving similar code and improving their \ac{rag} system. However, their study did not provide the actual code context from the examined functions and relied on synthetic datasets, which may not represent real-world software vulnerabilities.
 
-Du et. al~\cite{du2024vulragenhancingllmbasedvulnerability} created Vul-RAG, a \ac{rag} framework for use in vulnerability detection. They focused on Linux kernel \ac{cve} reports and compared the metrics from different \acp{llm} and Cppcheck, a static analyzer. Their study did not provide the \ac{llm} with real code context nor did it use static analysis results as a knowledge source. Moreover, the benchmark dataset was based on pairs of functions, of which one was vulnerable and the other was a similar, but correct version.
+Du et al.~\cite{du2024vulragenhancingllmbasedvulnerability} created Vul-RAG, a \ac{rag} framework for use in vulnerability detection. They focused on Linux kernel \ac{cve} reports and compared the metrics from different \acp{llm} and the static analyzer Cppcheck. Their study, however, did not include real code context or static analysis results as a knowledge source. Moreover, the benchmark dataset consisted of pairs of functions, where one was vulnerable and the other was a similar, but correct version, which does not correspond to real-world challenges in vulnerability detection.
 
-Sun et. al~\cite{sun2025llm4vulnunifiedevaluationframework} created a \ac{rag} framework based on similar vulnerability reports and the callees for all analyzed functions. They found that providing code context did not necessarily improve the performance results and was even detrimental in some cases. Their study did not examine the effect of static analysis results as added context on the \ac{llm} detection capability.
+Sun et al.~\cite{sun2025llm4vulnunifiedevaluationframework} created a \ac{rag} framework based on similar vulnerability reports and the callees for all analyzed functions. Interestingly, they found that additional code context did not necessarily improve the performance results and was even detrimental in some cases. Their study did not examine the effect of integrating static analysis results as contextual information on the \ac{llm} detection capability.
