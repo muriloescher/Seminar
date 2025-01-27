@@ -1,0 +1,33 @@
+BugOSS~\cite{BugOSS} is a dataset containing vulnerabilities manually detected in various \acl{oss} projects.
+It comprises a total of 21 different real-world projects, ranging from lesser known projects like Poppler~\cite{poppler}, a library used for rendering PDFs, to widely used software tools, such as Curl~\cite{curl}, a command-line tool that enables data transfer with URLs.
+
+Despite being originally crafted for examinations through fuzz testing, BugOSS contains, for each of the listed projects, information regarding the \ac{bic}, as well as the \ac{bfc}. 
+Together with corresponding Dockerfiles and build scripts for each one of the projects, this dataset proves very useful for the reproducibility of the detected vulnerabilities.
+Listing~\ref{bugoss} provides a clear overview of how information is structured in the dataset.
+
+\begin{lstlisting}[caption={Hierarchy of the BugOSS dataset}, label={bugoss}]
+BugOSS Dataset
++-- Projects (21 Total)
+|   \-- Project A (e.g., Poppler)
+|   |   +-- Bug-Inducing Commit (BIC)
+|   |   +-- Bug-Fixing Commit (BFC)
+|   |   +-- Information about Failure Type
+|   |   +-- Dockerfile
+|   |   +-- Build Script
+|   |   \-- Supporting Artifacts
+|   \-- Project B (e.g., Curl)
+|   |   +-- Bug-Inducing Commit (BIC)
+|   |   +-- Bug-Fixing Commit (BFC)
+|   |   +-- Information about Failure Type
+|   |   +-- Dockerfile
+|   |   +-- Build Script
+|   |   \-- Supporting Artifacts
+\-- Fuzz Testing Metadata
+\end{lstlisting}
+
+For this study, the selection and treatment of ground truths followed a systematic process:
+\begin{enumerate}
+    \item \textbf{Selection Criteria:} Out of the 21 projects in the dataset, only those that could be successfully built and reproduced using the provided Dockerfiles and build scripts were included in the analysis. While the dataset aims to ensure reproducibility, certain projects encountered build errors due to syntax errors in the code or the \ac{bic} not being in a branch. Ultimately, 16 projects were successfully built and used as the basis for further analysis.
+
+    \item \textbf{Use of Ground Truths:} The validated vulnerabilities served as the baseline for evaluating the performance of static analysis tools. For each successfully built project, the outputs of the tools were analyzed to determine whether they could detect the known vulnerabilities. This process is discussed in greater detail in the next section.
+\end{enumerate}

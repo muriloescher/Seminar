@@ -1,0 +1,42 @@
+To evaluate the potential of static analysis tools in detecting vulnerabilities, this study utilized two widely known tools: CodeQL and Infer. These tools were selected for their distinct methodologies—CodeQL's query-based analysis and Infer's focus on memory-related issues—and their relevance in the field of software security. Together, they represent complementary approaches to vulnerability detection in real-world software projects.
+
+\subsubsection{CodeQL}
+Developed by GitHub, CodeQL is a query-based static analysis tool that generates a database representation of a codebase, enabling developers to query their code as though it were a database. CodeQL excels at identifying vulnerabilities such as:
+\begin{itemize}
+    \item SQL injection,
+    \item Cross-site scripting (XSS), and
+    \item Insecure deserialization.
+\end{itemize}
+
+For this study, the standard library of 60 predefined queries provided by CodeQL's base installation was used without customization. While highly effective for analyzing web applications and languages like JavaScript and Python, CodeQL's performance in detecting vulnerabilities in C/C++ codebases was limited. This analysis found that CodeQL struggled to detect vulnerabilities relevant to C/C++ projects, such as memory-related issues, and often produced very few or no results for the BugOSS projects.
+
+To run CodeQL, the provided build scripts from the BugOSS dataset were adapted to work with CodeQL's database creation process. Instead of running the \texttt{make} command (or its corresponding equivalent depending on the build setup) directly, the build command was passed to CodeQL's CLI, which intercepted the build process and generated the required database for analysis.
+
+\subsubsection{Infer}
+Developed by Meta, Infer is a static analysis tool designed to identify specific classes of vulnerabilities commonly found in C and C++ codebases. Its strengths include detecting:
+\begin{itemize}
+    \item Null pointer dereferences,
+    \item Memory leaks, and
+    \item Thread safety violations.
+\end{itemize}
+
+Infer uses symbolic execution to analyze paths through the program's control flow, identifying potential bugs. Due to its specialization in memory-related bugs, Infer proved highly effective for analyzing the C/C++ projects in the BugOSS dataset. However, limitations in build system support were observed: the Harfbuzz project could not be analyzed because its Ninja build system is not supported by Infer. This highlights a key challenge when dealing with non-standard or less commonly supported build configurations.
+
+Similar to CodeQL, Infer required modifications to the BugOSS build scripts. Instead of executing the build command directly, the command was passed through Infer's CLI, allowing it to hook into the build process and analyze the code during compilation.
+
+\subsubsection{Comparison and Application in This Study}
+Both tools were run on the successfully built projects from the BugOSS dataset. The application process differed:
+\begin{itemize}
+    \item \textbf{CodeQL}: Required the creation of a database for each project using its build process.
+    \item \textbf{Infer}: Analyzed the source code directly without requiring additional preprocessing.
+\end{itemize}
+
+The effectiveness of each tool was heavily influenced by the types of vulnerabilities they were designed to detect. Given that the BugOSS dataset consists largely of C/C++ projects:
+\begin{itemize}
+    \item \textbf{Infer's specialization in memory-related issues} resulted in a significantly higher number of detected vulnerabilities across all projects.
+    \item \textbf{CodeQL's default query set} was not well-suited for C/C++ projects and detected very few or no bugs in many cases.
+\end{itemize}
+
+This stark difference highlights the importance of tool selection and configuration in vulnerability analysis, especially when analyzing language-specific codebases. The results underline the need to consider the characteristics of the codebase and vulnerabilities when choosing and setting up static analysis tools.
+
+Given that only one ground truth vulnerability was detected across all analyzed projects - specifically, in the PcapPlusPlus project using Infer - this study followed through with PcapPlusPlus for deeper contextual analysis. In addition to the ground truth vulnerability, flagged vulnerabilities detected by Infer in PcapPlusPlus, which were assumed to include false positives, were also analyzed further. The project thus provided a suitable basis for evaluating both the limitations of static analysis tools and the potential to gather contextual information for reducing false positives among flagged vulnerabilities.
