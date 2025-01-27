@@ -7,3 +7,5 @@
 *.log
 *.gz
 lincsdoc.pdf
+code/
+steps.txt
