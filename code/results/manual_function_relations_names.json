@@ -1,0 +1,693 @@
+{
+    "light_create_default_file_info": {
+        "callers": [
+            {
+                "node": "Node0x55eb7455a290",
+                "name": "pcpp::PcapNgFileWriterDevice::open"
+            }
+        ],
+        "callees": []
+    },
+    "light_create_file_info": {
+        "callers": [
+            {
+                "node": "Node0x55eb7455eb10",
+                "name": "pcpp::PcapNgFileWriterDevice::open"
+            }
+        ],
+        "callees": []
+    },
+    "light_pcapng_open_read": {
+        "callers": [
+            {
+                "node": "Node0x55eb7453b420",
+                "name": "pcpp::PcapNgFileReaderDevice::open"
+            }
+        ],
+        "callees": []
+    },
+    "light_pcapng_open_write": {
+        "callers": [
+            {
+                "node": "Node0x55eb7455a290",
+                "name": "pcpp::PcapNgFileWriterDevice::open"
+
+            },
+            {
+                "node": "Node0x55eb7455eb10",
+                "name": "pcpp::PcapNgFileWriterDevice::open"
+            }
+        ],
+        "callees": []
+    },
+    "pcpp::IDnsResource::decodeName": {
+        "callers": [
+            {
+                "node": "Node0x55eb745b4790",
+                "name": "pcpp::IDnsResourceData::decodeName"
+            }
+        ],
+        "callees": [
+            {
+                "node": "Node0x55eb74647d80",
+                "name": "snprintf"
+            },
+            {
+                "node": "Node0x55eb746460c0",
+                "name": "_asan_report_load8"
+            },
+            {
+                "node": "Node0x55eb7454d840",
+                "name": "pcpp::Logger::isSupressErrors"
+            },
+            {
+                "node": "Node0x55eb746492c0",
+                "name": "_sanitizer_cov_trace_cmp8"
+            },
+            {
+                "node": "Node0x55eb74649540",
+                "name": "_sanitizer_cov_trace_const_cmp8"
+            },
+            {
+                "node": "Node0x55eb74646ac0",
+                "name": "_asan_report_store1"
+            },
+            {
+                "node": "Node0x55eb74646d40",
+                "name": "_sanitizer_cov_trace_const_cmp4"
+            },
+            {
+                "node": "Node0x55eb74648b40",
+                "name": "_asan_report_load1"
+            },
+            {
+                "node": "Node0x55eb74647b00",
+                "name": "_asan_stack_malloc_3"
+            },
+            {
+                "node": "Node0x55eb7454d980",
+                "name": "pcpp::Logger::isErrorStringSet"
+            },
+            {
+                "node": "Node0x55eb7454dac0",
+                "name": "pcpp::Logger::getErrorString"
+            },
+            {
+                "node": "Node0x55eb7454dc00",
+                "name": "pcpp::Logger::getErrorStringLength"
+            },
+            {
+                "node": "Node0x55eb74647ec0",
+                "name": "fprintf"
+            },
+            {
+                "node": "Node0x55eb7464f800",
+                "name": "_asan_memset"
+            },
+            {
+                "node": "Node0x55eb74648140",
+                "name": "_asan_memcpy"
+            },
+            {
+                "node": "Node0x55eb74648780",
+                "name": "_asan_set_shadow_f5"
+            }
+        ]
+    },
+    "pcpp::IDnsResource::encodeName": {
+        "callers": [
+            {
+                "node": "Node0x55eb745b0cd0",
+                "name": "pcpp::IDnsResource::setName"
+            },
+            {
+                "node": "Node0x55eb745b1f90",
+                "name": "pcpp::IDnsResourceData::encodeName"
+            }
+        ],
+        "callees": [
+            {
+                "node": "Node0x55eb746519c0",
+                "name": "char_traits::length"
+            },
+            {
+                "node": "Node0x55eb74647d80",
+                "name": "snprintf"
+            },
+            {
+                "node": "Node0x55eb746460c0",
+                "name": "_asan_report_load8"
+            },
+            {
+                "node": "Node0x55eb74434d40",
+                "name": "Ios::Openmode"
+            },
+            {
+                "node": "Node0x55eb74647ec0",
+                "name": "fprintf"
+            },
+            {
+                "node": "Node0x55eb7454dc00",
+                "name": "pcpp::Logger::getErrorStringLength"
+            },
+            {
+                "node": "Node0x55eb746500c0",
+                "name": "_asan_stack_free_5"
+            },
+            {
+                "node": "Node0x55eb7464a6c0",
+                "name": "_sanitizer_cov_trace_switch"
+            },
+            {
+                "node": "Node0x55eb74646ac0",
+                "name": "_asan_report_store1"
+            },
+            {
+                "node": "Node0x55eb74646980",
+                "name": "_asan_report_store8"
+            },
+            {
+                "node": "Node0x55eb7454d980",
+                "name": "pcpp::Logger::isErrorStringSet"
+            },
+            {
+                "node": "Node0x55eb74646d40",
+                "name": "_sanitizer_cov_trace_const_cmp4"
+            },
+            {
+                "node": "Node0x55eb74648a00",
+                "name": "ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv"
+            },
+            {
+                "node": "Node0x55eb746528c0",
+                "name": "ZNKSt9basic_iosIcSt11char_traitsIcEE4failEv"
+            },
+            {
+                "node": "Node0x55eb7454dac0",
+                "name": "pcpp::Logger::getErrorString"
+            },
+            {
+                "node": "Node0x55eb74648f00",
+                "name": "_asan_report_store4"
+            },
+            {
+                "node": "Node0x55eb74648b40",
+                "name": "_asan_report_load1"
+            },
+            {
+                "node": "Node0x55eb7464fa80",
+                "name": "_asan_stack_malloc_5"
+            },
+            {
+                "node": "Node0x55eb74652280",
+                "name": "Ios::Openmode"
+            },
+            {
+                "node": "Node0x55eb74645f80",
+                "name": "ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1Ev"
+            },
+            {
+                "node": "Node0x55eb74652500",
+                "name": "ZNKSt9basic_iosIcSt11char_traitsIcEEcvbEv"
+            },
+            {
+                "node": "Node0x55eb74650c00",
+                "name": "ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEixEm"
+            },
+            {
+                "node": "Node0x55eb74652640",
+                "name": "ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE6substrEmm"
+            },
+            {
+                "node": "Node0x55eb74646480",
+                "name": "ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev"
+            },
+            {
+                "node": "Node0x55eb74652780",
+                "name": "ZNSirsERi"
+            },
+            {
+                "node": "Node0x55eb74646c00",
+                "name": "_asan_report_load4"
+            },
+            {
+                "node": "Node0x55eb7454d840",
+                "name": "pcpp::Logger::isSupressErrors"
+            },
+            {
+                "node": "Node0x55eb74651100",
+                "name": "ZNSt7__cxx1118basic_stringstreamIcSt11char_traitsIcESaIcEED1Ev"
+            },
+            {
+                "node": "Node0x55eb74648140",
+                "name": "_asan_memcpy"
+            },
+            {
+                "node": "Node0x55eb7464d780",
+                "name": "_asan_set_shadow_00"
+            },
+            {
+                "node": "Node0x55eb746523c0",
+                "name": "ZSt7getlineIcSt11char_traitsIcESaIcEERSt13basic_istreamIT_T0_ES7_RNSt7__cxx1112basic_stringIS4_S5_T1_EES4_"
+            }
+        ]
+    },
+    "pcpp::IPFilter::convertToIPAddressWithLen": {
+        "callers": [
+            {
+                "node": "Node0x55eb74561c30",
+                "name": "pcpp::IPFilter::parseToString"
+            }
+        ],
+        "callees": [
+            {
+                "node": "Node0x55eb74648780",
+                "name": "_asan_set_shadow_f5"
+            },
+            {
+                "node": "Node0x55eb746460c0",
+                "name": "_asan_report_load8"
+            },
+            {
+                "node": "Node0x55eb74646c00",
+                "name": "_asan_report_load4"
+            },
+            {
+                "node": "Node0x55eb74646200",
+                "name": "_sanitizer_cov_trace_pc_indir"
+            },
+            {
+                "node": "Node0x55eb74647d80",
+                "name": "snprinf"
+            },
+            {
+                "node": "Node0x55eb745628b0",
+                "name": "pcpp::IPAddress::toString"
+            },
+            {
+                "node": "Node0x55eb74646480",
+                "name": "ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED1Ev"
+            },
+            {
+                "node": "Node0x55eb74562770",
+                "name": "unique_ptr::default_delete"
+            },
+            {
+                "node": "Node0x55eb74646d40",
+                "name": "_sanitizer_cov_trace_const_cmp4"
+            },
+            {
+                "node": "Node0x55eb74646340",
+                "name": "ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC1ERKS4_"
+            },
+            {
+                "node": "Node0x55eb7453adc0",
+                "name": "pcpp::Logger::getInstance"
+            },
+            {
+                "node": "Node0x55eb74647ec0",
+                "name": "fprintf"
+            },
+            {
+                "node": "Node0x55eb745629f0",
+                "name": "unique_ptr::default_delete"
+            },
+            {
+                "node": "Node0x55eb74647b00",
+                "name": "_asan_stack_malloc_3"
+            },
+            {
+                "node": "Node0x55eb7454d980",
+                "name": "pcpp::Logger::isErrorStringSet"
+            },
+            {
+                "node": "Node0x55eb74648640",
+                "name": "ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEaSEOS4_"
+            },
+            {
+                "node": "Node0x55eb74641d40",
+                "name": "pcpp::IPv4Address::toInt"
+            },
+            {
+                "node": "Node0x55eb74641840",
+                "name": "pcpp::IPv6Address::copyTo"
+            },
+            {
+                "node": "Node0x55eb7454dac0",
+                "name": "pcpp::Logger::getErrorString"
+            },
+            {
+                "node": "Node0x55eb74648a00",
+                "name": "ZNKSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE5c_strEv"
+            },
+            {
+                "node": "Node0x55eb7454d840",
+                "name": "pcpp::Logger::isSupressErrors"
+            },
+            {
+                "node": "Node0x55eb74648f00",
+                "name": "_asan_report_store4"
+            },
+            {
+                "node": "Node0x55eb74642880",
+                "name": "pcpp::IPAddress::fromString"
+            },
+            {
+                "node": "Node0x55eb7454dc00",
+                "name": "pcpp::Logger::getErrorStringLength"
+            },
+            {
+                "node": "Node0x55eb746406c0",
+                "name": "pcpp::IPv4Address"
+            },
+            {
+                "node": "Node0x55eb7463f900",
+                "name": "pcpp::IPv4Address"
+            },
+            {
+                "node": "Node0x55eb74641ac0",
+                "name": "pcpp::IPv4Address"
+            },
+            {
+                "node": "Node0x55eb7463ff40",
+                "name": "pcpp::IPv6Address"
+            }
+        ]
+    },
+    "pcpp::IPv4Layer::parseNextLayer": {
+        "callers": [
+            {
+                "node": "Node0x55eb74566af0",
+                "name": "pcpp::Packet::copyDataFrom"
+            },
+            {
+                "node": "Node0x55eb74566ff0",
+                "name": "pcpp::Packet::setRawPacket"
+            },
+            {
+                "node": "Node0x55eb745a8570",
+                "name": "pcpp::DnsLayer::removeResource"
+            },
+            {
+                "node": "Node0x55eb745a96f0",
+                "name": "pcpp::DnsLayer::addResource"
+            },
+            {
+                "node": "Node0x55eb7457d830",
+                "name": "pcpp::DnsLayer::getNextQuery"
+            },
+            {
+                "node": "Node0x55eb7457d970",
+                "name": "pcpp::DnsLayer::getNextAdditionalRecord"
+            },
+            {
+                "node": "Node0x55eb7457dbf0",
+                "name": "pcpp::DnsLayer::getNextAuthority"
+            },
+            {
+                "node": "Node0x55eb7457de70",
+                "name": "pcpp::DnsLayer::getNextAnswer"
+            }
+        ],
+        "callees": [
+            {
+                "node": "Node0x55eb746460c0",
+                "name": "_asan_report_load8"
+            },
+            {
+                "node": "Node0x55eb74649540",
+                "name": "_sanitizer_cov_trace_const_cmp8"
+            },
+            {
+                "node": "Node0x55eb74646980",
+                "name": "_asan_report_store8"
+            },
+            {
+                "node": "Node0x55eb7456c030",
+                "name": "pcpp::IPv4Layer::getIPv4Header"
+            },
+            {
+                "node": "Node0x55eb74646d40",
+                "name": "_sanitizer_cov_trace_const_cmp4"
+            },
+            {
+                "node": "Node0x55eb74648b40",
+                "name": "_asan_report_load1"
+            },
+            {
+                "node": "Node0x55eb7456b8b0",
+                "name": "pcpp::IPv4Layer::isFragment"
+            },
+            {
+                "node": "Node0x55eb74649900",
+                "name": "_asan_stack_malloc_0"
+            },
+            {
+                "node": "Node0x55eb745bae10",
+                "name": "pcpp::GreLayer::getGREVersion"
+            },
+            {
+                "node": "Node0x55eb74651240",
+                "name": "_asan_report_load_n"
+            },
+            {
+                "node": "Node0x55eb7456c7b0",
+                "name": "pcpp::TcpLayer::isDataValid"
+            },
+            {
+                "node": "Node0x55eb746492c0",
+                "name": "_sanitizer_cov_trace_cmp8"
+            },
+            {
+                "node": "Node0x55eb7464a6c0",
+                "name": "_sanitizer_cov_trace_switch"
+            },
+            {
+                "node": "Node0x55eb74646ac0",
+                "name": "_asan_report_store1"
+            },
+            {
+                "node": "Node0x55eb74646200",
+                "name": "_sanitizer_cov_trace_pc_indir"
+            },
+            {
+                "node": "Node0x55eb745d5d50",
+                "name": "pcpp::IgmpLayer::getIGMPVerFromData"
+            },
+            {
+                "node": "Node0x55eb7456d2f0",
+                "name": "pcpp::IPv4Layer"
+            },
+            {
+                "node": "Node0x55eb74573fb0",
+                "name": "pcpp::IPv6Layer"
+            },
+            {
+                "node": "Node0x55eb745d5c10",
+                "name": "pcpp::IgmpV1Layer"
+            },
+            {
+                "node": "Node0x55eb745d5990",
+                "name": "pcpp::IgmpV2Layer"
+            },
+            {
+                "node": "Node0x55eb745d5710",
+                "name": "pcpp::IgmpV3QueryLayer"
+            },
+            {
+                "node": "Node0x55eb745d4d10",
+                "name": "pcpp::IgmpV3ReportLayer"
+            },
+            {
+                "node": "Node0x55eb745a5230",
+                "name": "pcpp::DnsLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb7458b0b0",
+                "name": "pcpp::UdpLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb74572f70",
+                "name": "pcpp::IPv6Layer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb74585570",
+                "name": "pcpp::TcpLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb7456b3b0",
+                "name": "pcpp::IPv4Layer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745b7990",
+                "name": "pcpp::GreLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb74580a70",
+                "name": "pcpp::PayloadLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745bb6d0",
+                "name": "pcpp::GtpV1Layer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745a0c30",
+                "name": "pcpp::DhcpLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745b89d0",
+                "name": "pcpp::PPP_PPTPLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745d2b50",
+                "name": "pcpp::IgmpV3QueryLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745ef750",
+                "name": "pcpp::SSLLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745d1890",
+                "name": "pcpp::IgmpLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745f5f10",
+                "name": "pcpp::TextBasedProtocolMessage::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745daad0",
+                "name": "pcpp::MplsLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745d32d0",
+                "name": "pcpp::IgmpV3ReportLayer::getHeaderLenEv"
+            },
+            {
+                "node": "Node0x55eb745ccc50",
+                "name": "pcpp::IcmpLayer::getHeaderLenEv"
+            },
+            {
+                "node": "Node0x55eb745910f0",
+                "name": "pcpp::BgpLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745e7050",
+                "name": "pcpp::RadiusLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb7458e670",
+                "name": "pcpp::VxlanLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb7458ceb0",
+                "name": "pcpp::VlanLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb7457fcb0",
+                "name": "pcpp::PacketTrailerLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745dfad0",
+                "name": "pcpp::PPPoEDiscoveryLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb7458fbb0",
+                "name": "pcpp::ArpLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745dda50",
+                "name": "pcpp::PPPoESessionLayer::getHeaderLen"
+            },
+            {
+                "node": "Node0x55eb745b66d0",
+                "name": "pcpp::EthLayer::getHeaderLen"
+            }
+        ]
+    },
+    "pcpp::IPv6Layer::parseExtensions": {
+        "callers": [
+            {
+                "node": "Node0x55eb74573fb0",
+                "name": "pcpp::IPv6Layer"
+            },
+            {
+                "node": "Node0x55eb745763f0",
+                "name": "pcpp::IPv6Layer"
+            },
+            {
+                "node": "Node0x55eb74576530",
+                "name": "pcpp::IPv6Layer"
+            }
+        ],
+        "callees": [
+            {
+                "node": "Node0x55eb74574230",
+                "name": "pcpp::IPv6FragmentationHeader::IDataContainer"
+            },
+            {
+                "node": "Node0x55eb746492c0",
+                "name": "_sanitizer_cov_trace_cmp8"
+            },
+            {
+                "node": "Node0x55eb74646980",
+                "name": "_asan_report_store8"
+            },
+            {
+                "node": "Node0x55eb746460c0",
+                "name": "_asan_report_load8"
+            },
+            {
+                "node": "Node0x55eb74573bf0",
+                "name": "pcpp::IPv6Extension::getBaseHeader"
+            },
+            {
+                "node": "Node0x55eb74648b40",
+                "name": "_asan_report_load1"
+            },
+            {
+                "node": "Node0x55eb74573970",
+                "name": "pcpp::IPv6Layer::getIPv6Header"
+            },
+            {
+                "node": "Node0x55eb74574370",
+                "name": "pcpp::IPv6HopByHopHeader::IDataContainer"
+            },
+            {
+                "node": "Node0x55eb745744b0",
+                "name": "pcpp::IPv6DestinationHeader::IDataContainer"
+            },
+            {
+                "node": "Node0x55eb745745f0",
+                "name": "pcpp::IPv6RoutingHeader::IDataContainer"
+            },
+            {
+                "node": "Node0x55eb74574730",
+                "name": "pcpp::IPv6AuthenticationHeader::IDataContainer"
+            },
+            {
+                "node": "Node0x55eb74573830",
+                "name": "pcpp::IPv6Extension::getNextHeader"
+            },
+            {
+                "node": "Node0x55eb74646200",
+                "name": "_sanitizer_cov_trace_pc_indir"
+            },
+            {
+                "node": "Node0x55eb74574870",
+                "name": "pcpp::IPv6Extension::setNextHeader"
+            },
+            {
+                "node": "Node0x55eb7464a6c0",
+                "name": "_sanitizer_cov_trace_switch"
+            },
+            {
+                "node": "Node0x55eb74574af0",
+                "name": "pcpp::IPv6AuthenticationHeader::getExtensionLen"
+            },
+            {
+                "node": "Node0x55eb74574eb0",
+                "name": "pcpp::IPv6Extension::getExtensionLen"
+            }
+        ]
+    }
+}
