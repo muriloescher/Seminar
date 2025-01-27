@@ -1,4 +1,5 @@
 *.cls
+*.dvi
 *.aux
 *.bbl
 *.blg
