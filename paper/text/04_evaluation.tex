@@ -1,5 +1,43 @@
 \section{Evaluation}
 \label{sec:eval}
-How the results are going to be interpreted. 
-For ex. the voting system when using multiple SAST Tools.
-The research questions we are going to analyse also come here.
+Each of the following topics will present the results of the subsections discussed in Section~\ref{sec:approach}.
+
+\subsubsection{Project Builds}
+As mentioned in Subsection~\ref{sec:approach:sub:dataset}, only 16 out of the 21 projects contained in BugOSS could be successfully built. These projects were then used with the static analyzers.
+
+\subsubsection{Flagged vulnerabilities}
+
+\begin{table}[ht]
+\centering
+\caption{Number of vulnerabilities flagged by CodeQL and Infer for each project.}
+\label{tab:sast_results}
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Project Name} & \textbf{Flagged by CodeQL} & \textbf{Flagged by Infer} \\
+\hline
+Arrow &  & 71 \\
+Aspell &  & 63 \\
+Curl &  & 33 \\
+Exiv2 &  & 55 \\
+File &  & 107 \\
+Gdal &  & - \\
+Grok &  & - \\
+Harfbuzz &  & - \\
+Leptonica &  & 200 \\
+Libarchive &  & 200 \\
+Libhtp &  & 15 \\
+Libxml2 &  & - \\
+Ndpi &  & 75 \\
+Openh264 &  & 191 \\
+OpenSSL &  & 200 \\
+PcapPlusPlus &  & 51 \\
+Poppler &  & 200 \\
+Readstat &  & - \\
+Usrsctp &  & - \\
+Yara &  & 24 \\
+Zstd &  & 20 \\
+\hline
+Total & \textbf{} & \textbf{} \\
+\hline
+\end{tabular}
+\end{table}
