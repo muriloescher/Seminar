@@ -1,0 +1,46 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &greVer (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 245,
+        "column": 2,
+        "procedure": "pcpp::IPv4Layer::parseNextLayer",
+        "procedure_start_line": 237,
+        "file": "Packet++/src/IPv4Layer.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "Packet++/src/IPv4Layer.cpp",
+                "line_number": 245,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "IPv4Layer.cpp|parseNextLayer|DEAD_STORE",
+        "hash": "8f460557d28b1b296c8462d0479d89f1",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &igmpVer (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 246,
+        "column": 2,
+        "procedure": "pcpp::IPv4Layer::parseNextLayer",
+        "procedure_start_line": 237,
+        "file": "Packet++/src/IPv4Layer.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "Packet++/src/IPv4Layer.cpp",
+                "line_number": 246,
+                "column_number": 2,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "IPv4Layer.cpp|parseNextLayer|DEAD_STORE",
+        "hash": "87a879da5bff6d4c260a3fc0c8f0d00f",
+        "bug_type_hum": "Dead Store"
+    }
+]

@@ -1,0 +1,240 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `curExt` last assigned on line 82 could be null and is dereferenced at line 133, column 4.",
+    "severity": "ERROR",
+    "line": 133,
+    "column": 4,
+    "procedure": "pcpp::IPv6Layer::parseExtensions",
+    "procedure_start_line": 79,
+    "file": "Packet++/src/IPv6Layer.cpp",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 79,
+            "column_number": 1,
+            "description": "start of procedure parseExtensions"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 81,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/IPv6Layer.h",
+            "line_number": 97,
+            "column_number": 3,
+            "description": "start of procedure getIPv6Header"
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/IPv6Layer.h",
+            "line_number": 97,
+            "column_number": 36,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/IPv6Layer.h",
+            "line_number": 97,
+            "column_number": 61,
+            "description": "return from a call to pcpp::IPv6Layer::getIPv6Header"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 82,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 84,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 86,
+            "column_number": 9,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 88,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 90,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 92,
+            "column_number": 3,
+            "description": "Switch condition is false. Skipping switch case"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 97,
+            "column_number": 3,
+            "description": "Switch condition is true. Entering switch case"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 99,
+            "column_number": 13,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 360,
+            "column_number": 3,
+            "description": "start of procedure IPv6HopByHopHeader"
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 360,
+            "column_number": 70,
+            "description": ""
+        },
+        {
+            "level": 2,
+            "filename": "Packet++/src/IPv6Extensions.cpp",
+            "line_number": 177,
+            "column_number": 1,
+            "description": "start of procedure IPv6TLVOptionHeader"
+        },
+        {
+            "level": 2,
+            "filename": "Packet++/src/IPv6Extensions.cpp",
+            "line_number": 177,
+            "column_number": 90,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 77,
+            "column_number": 3,
+            "description": "start of procedure IPv6Extension"
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 78,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 78,
+            "column_number": 24,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 78,
+            "column_number": 57,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 78,
+            "column_number": 89,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 78,
+            "column_number": 107,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 78,
+            "column_number": 127,
+            "description": "return from a call to pcpp::IPv6Extension::IPv6Extension"
+        },
+        {
+            "level": 2,
+            "filename": "Packet++/src/IPv6Extensions.cpp",
+            "line_number": 177,
+            "column_number": 22,
+            "description": "Skipping TLVRecordReader: empty list of specs"
+        },
+        {
+            "level": 2,
+            "filename": "Packet++/src/IPv6Extensions.cpp",
+            "line_number": 179,
+            "column_number": 1,
+            "description": "return from a call to pcpp::IPv6TLVOptionHeader::IPv6TLVOptionHeader"
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 360,
+            "column_number": 115,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/IPv6Extensions.h",
+            "line_number": 360,
+            "column_number": 141,
+            "description": "return from a call to pcpp::IPv6HopByHopHeader::IPv6HopByHopHeader"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 99,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 123,
+            "column_number": 7,
+            "description": "Taking false branch"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 126,
+            "column_number": 7,
+            "description": "Taking false branch"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/src/IPv6Layer.cpp",
+            "line_number": 133,
+            "column_number": 4,
+            "description": ""
+        }
+    ],
+    "key": "IPv6Layer.cpp|parseExtensions|NULL_DEREFERENCE",
+    "node_key": "3270f355aac0438f53b5c838a5d8d563",
+    "hash": "8865b8eff1952e9bf6ed2416a85b0d48",
+    "bug_type_hum": "Null Dereference"
+}

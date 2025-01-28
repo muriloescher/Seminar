@@ -1,0 +1,37 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `default_file_info` last assigned on line 307 could be null and is dereferenced by call to `memset()` at line 308, column 2.",
+    "severity": "ERROR",
+    "line": 308,
+    "column": 2,
+    "procedure": "light_create_default_file_info",
+    "procedure_start_line": 305,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 305,
+            "column_number": 1,
+            "description": "start of procedure light_create_default_file_info()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 307,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 308,
+            "column_number": 2,
+            "description": ""
+        }
+    ],
+    "key": "light_pcapng_ext.c|light_create_default_file_info|NULL_DEREFERENCE",
+    "node_key": "45384413ccfced93e3996bb9a38b6e55",
+    "hash": "f59c85ca4f947db76d982e677a9a55c3",
+    "bug_type_hum": "Null Dereference"
+}

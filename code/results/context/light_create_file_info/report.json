@@ -1,0 +1,174 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `info->hardware_desc` last assigned on line 328 could be null and is dereferenced by call to `memcpy()` at line 329, column 3.",
+        "severity": "ERROR",
+        "line": 329,
+        "column": 3,
+        "procedure": "light_create_file_info",
+        "procedure_start_line": 313,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 313,
+                "column_number": 1,
+                "description": "start of procedure light_create_file_info()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 315,
+                "column_number": 2,
+                "description": "Skipping light_create_default_file_info(): empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 317,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 317,
+                "column_number": 25,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 319,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 320,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 321,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 322,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 325,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 325,
+                "column_number": 31,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 327,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 328,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 329,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng_ext.c|light_create_file_info|NULL_DEREFERENCE",
+        "node_key": "91cadb4ed8f1f253f7a3167325e59c94",
+        "hash": "db82e45870bf839e33ef5aa4433a5ba0",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `info->os_desc` last assigned on line 320 could be null and is dereferenced by call to `memcpy()` at line 321, column 3.",
+        "severity": "ERROR",
+        "line": 321,
+        "column": 3,
+        "procedure": "light_create_file_info",
+        "procedure_start_line": 313,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 313,
+                "column_number": 1,
+                "description": "start of procedure light_create_file_info()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 315,
+                "column_number": 2,
+                "description": "Skipping light_create_default_file_info(): empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 317,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 317,
+                "column_number": 25,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 319,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 320,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+                "line_number": 321,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng_ext.c|light_create_file_info|NULL_DEREFERENCE",
+        "node_key": "91cadb4ed8f1f253f7a3167325e59c94",
+        "hash": "c63f6c4de157994b9d76c3e021d53264",
+        "bug_type_hum": "Null Dereference"
+    }
+]

@@ -1,0 +1,65 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `pcapng` last assigned on line 228 could be null and is dereferenced at line 230, column 2.",
+    "severity": "ERROR",
+    "line": 230,
+    "column": 2,
+    "procedure": "light_pcapng_open_write",
+    "procedure_start_line": 223,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 223,
+            "column_number": 1,
+            "description": "start of procedure light_pcapng_open_write()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 225,
+            "column_number": 2,
+            "description": "Taking false branch"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 225,
+            "column_number": 2,
+            "description": "Loop condition is false. Leaving loop"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 226,
+            "column_number": 2,
+            "description": "Taking false branch"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 226,
+            "column_number": 2,
+            "description": "Loop condition is false. Leaving loop"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 228,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_ext.c",
+            "line_number": 230,
+            "column_number": 2,
+            "description": "Skipping light_open_compression(): empty list of specs"
+        }
+    ],
+    "key": "light_pcapng_ext.c|light_pcapng_open_write|NULL_DEREFERENCE",
+    "node_key": "e941a39408358e5e4bfa7594061774f1",
+    "hash": "2a59ef022bac4f4f006249a555e8fe67",
+    "bug_type_hum": "Null Dereference"
+}

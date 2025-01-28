@@ -1,0 +1,46 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &addrHigherBytes (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 184,
+        "column": 4,
+        "procedure": "pcpp::IPFilter::convertToIPAddressWithLen",
+        "procedure_start_line": 156,
+        "file": "Pcap++/src/PcapFilter.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "Pcap++/src/PcapFilter.cpp",
+                "line_number": 184,
+                "column_number": 4,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "PcapFilter.cpp|convertToIPAddressWithLen|DEAD_STORE",
+        "hash": "41ba90ac4dd24795a2fd7f34f70aa0f1",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &addrLowerBytes (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 188,
+        "column": 4,
+        "procedure": "pcpp::IPFilter::convertToIPAddressWithLen",
+        "procedure_start_line": 156,
+        "file": "Pcap++/src/PcapFilter.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "Pcap++/src/PcapFilter.cpp",
+                "line_number": 188,
+                "column_number": 4,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "PcapFilter.cpp|convertToIPAddressWithLen|DEAD_STORE",
+        "hash": "49ea4dc4c1333a6f535343220f4bc070",
+        "bug_type_hum": "Dead Store"
+    }
+]

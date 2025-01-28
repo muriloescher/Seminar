@@ -1,0 +1,46 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &decodedNameLength (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 91,
+        "column": 6,
+        "procedure": "pcpp::IDnsResource::decodeName",
+        "procedure_start_line": 34,
+        "file": "Packet++/src/DnsResource.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "Packet++/src/DnsResource.cpp",
+                "line_number": 91,
+                "column_number": 6,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "DnsResource.cpp|decodeName|DEAD_STORE",
+        "hash": "a4b9b475d1e5a77749950daecd7819ab",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &decodedNameLength (type unsigned long) is never used.",
+        "severity": "ERROR",
+        "line": 117,
+        "column": 6,
+        "procedure": "pcpp::IDnsResource::decodeName",
+        "procedure_start_line": 34,
+        "file": "Packet++/src/DnsResource.cpp",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "Packet++/src/DnsResource.cpp",
+                "line_number": 117,
+                "column_number": 6,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "DnsResource.cpp|decodeName|DEAD_STORE",
+        "hash": "a4b9b475d1e5a77749950daecd7819ab",
+        "bug_type_hum": "Dead Store"
+    }
+]

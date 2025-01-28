@@ -1,0 +1,22 @@
+{
+    "bug_type": "DEAD_STORE",
+    "qualifier": "The value written to &result (type char*) is never used.",
+    "severity": "ERROR",
+    "line": 172,
+    "column": 7,
+    "procedure": "pcpp::IDnsResource::encodeName",
+    "procedure_start_line": 147,
+    "file": "Packet++/src/DnsResource.cpp",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "Packet++/src/DnsResource.cpp",
+            "line_number": 172,
+            "column_number": 7,
+            "description": "Write of unused value"
+        }
+    ],
+    "key": "DnsResource.cpp|encodeName|DEAD_STORE",
+    "hash": "830f58ad5c2db83f40a3b33aa8d28b32",
+    "bug_type_hum": "Dead Store"
+}
