@@ -12,6 +12,7 @@
 \usepackage[nohyperlinks,nolist]{acronym} % abbreviation utilities
 \usepackage{listings}
 \usepackage{float}
+\usepackage{tabularx}
 % TODO: add more packages below if necessary
 %
 % ---- Acronyms ----
@@ -55,10 +56,11 @@ Technical University of Munich\\
 % ---- Abstract ----
 %
 \begin{abstract}
-The abstract should briefly summarize the contents of the paper in
-15--250 words.
+Static Application Security Testing (SAST) tools are widely used to detect vulnerabilities in software systems by analyzing source code, bytecode, or binaries. However, these tools often face limitations, including false positives and difficulties in analyzing vulnerabilities caused by runtime behavior. Recent advancements in large language models (LLMs) have demonstrated their potential to enhance software security analysis, particularly when combined with traditional SAST tools.
 
-\Aclp{llm} have recently seen widespread use in different areas.
+This paper explores the integration of SAST tools with LLMs to address these limitations. By leveraging the BugOSS dataset—a collection of open-source projects with documented vulnerabilities—this study employs CodeQL and Infer to analyze vulnerabilities and gathers additional context through call graph analysis. The contextual data, including caller and callee relationships, is combined with SAST output and formatted into structured prompts for GPT-4. This approach aims to reduce false positives and improve the reasoning behind vulnerability detection.
+
+The results reveal that while LLMs excel in reasoning about simpler vulnerabilities like null pointer dereferences, their performance diminishes for more complex issues requiring deeper code comprehension. While contextual information provided valuable insights into the code structure, its overall impact on reducing false positives was limited, as many flagged vulnerabilities were isolated or lacked meaningful interdependencies in the call graph. These findings highlight both the potential and the limitations of LLM-augmented static analysis, laying the groundwork for future research on integrating richer program representations with LLMs for enhanced security testing.
 
 \keywords{Security testing  \and Static analysis \and Large language models.}
 \end{abstract}

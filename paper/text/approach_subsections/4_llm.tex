@@ -1,16 +1,16 @@
-To enhance the static analysis process and reduce false positives, this study utilized a Large Language Model (LLM), specifically GPT-4, to analyze and reason about flagged vulnerabilities. The aim of this augmentation was to leverage GPT-4’s natural language understanding and contextual reasoning capabilities to refine the results obtained from static analysis tools.
+To enhance the static analysis process and reduce false positives, this study utilized a Large Language Model (LLM), specifically GPT-4o, to analyze and reason about flagged vulnerabilities. The aim of this augmentation was to leverage the LLM's natural language understanding and contextual reasoning capabilities to refine the results obtained from static analysis tools.
 
 \subsubsection{Data Consolidation and Prompt Construction}
 To facilitate the analysis by GPT-4, the following information was consolidated for each flagged vulnerability:
 \begin{enumerate}
-    \item \textbf{Static Analysis Results}: Details from the SAST tools, including the type of vulnerability, file and line location, and any explanatory information provided by the tool.
-    \item \textbf{Contextual Information}: The callers and callees of the flagged function derived from the SVF-generated call graph.
+    \item \textbf{Static Analysis Results}: Details from the SAST tools, including the type of vulnerability, file and line location, and any other explanatory information provided by the tool.
+    \item \textbf{Contextual Information}: The callers and callees of the flagged function derived from the SVF-generated call graph, as well as the source code for the actual function.
 \end{enumerate}
 
-Given that some functions had numerous callers and callees, it was impractical to include the complete code for each function directly in the prompt. Instead, the code for all relevant functions (callers, callees, and the flagged function) was extracted from the codebase and saved into separate files. These files were referenced in the prompt to provide GPT-4 with access to the full context while keeping the prompt concise.
+Given that some functions had numerous callers and callees, it was impractical to include the complete code for them directly in the prompt. Instead, the code for all relevant functions (callers, callees, and the flagged function) was extracted from the codebase and saved into separate files. These files were referenced in the prompt to provide GPT-4 with access to the full context while keeping the prompt concise.
 
 \subsubsection{Prompt Structure}
-The prompt provided to GPT-4 followed the structure below:
+The prompt provided followed the structure below:
 
 \begin{lstlisting}[breaklines=true, caption={Prompt structure for GPT-4 analysis of flagged vulnerabilities.}, label={prompt}]
 I want you to help me determine whether the following function is vulnerable or not.
@@ -33,14 +33,12 @@ Task:
 Analyze the above information and determine whether the flagged vulnerability is likely a false positive. Provide your reasoning.
 \end{lstlisting}
 
-\subsubsection{Input and Output Process}
 Once the prompt was constructed, it was input into GPT-4 through ChatGPT. Each prompt corresponded to a flagged vulnerability, and the LLM was tasked with:
 \begin{itemize}
     \item Determining whether the vulnerability was a true positive or a false positive.
     \item Providing reasoning for the classification, referencing both the SAST output and contextual information.
 \end{itemize}
 
-\subsubsection{Expected Benefits}
 By combining structured outputs from static analysis tools with external code files and contextual information, the prompts leveraged GPT-4’s ability to reason about software vulnerabilities in a way that SAST tools alone could not. This approach aimed to:
 \begin{itemize}
     \item Reduce false positives by incorporating comprehensive context into the analysis.

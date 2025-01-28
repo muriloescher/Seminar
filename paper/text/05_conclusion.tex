@@ -1,7 +1,6 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-You can also reference other parts of the document, e.g., sections or subsections.
-In Section~\ref{sec:intro} we briefly introduced something, whereas in Subsection~\ref{sec:intro:sub:motivation}, we motivated something else.
+This study had the goal of improving static analysis results through the use of contextual information, provided by a call graph, paired with a large language model's reasoning capability. The results point to the fact that more complex issue types, requiring greater understanding of the code, present a real challenge to the model. Moreover, the relevance of the provided context is an important fact to be considered, as it can result in extra clutter for the LLM to digest without improving performance, when not properly chosen.
 
-Make sure to capitalize chapters, sections or subsections when referencing them.
+Future work could investigate the performance increase for CodeQL analysis when using customized queries and examining how other types of context, for example related issues for similar code, impact the LLM's decision-making.
