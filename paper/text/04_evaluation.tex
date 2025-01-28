@@ -1,43 +1,46 @@
 \section{Evaluation}
 \label{sec:eval}
-Each of the following topics will present the results of the subsections discussed in Section~\ref{sec:approach}.
+Each of the following topics presents the results of the subsections discussed in Section~\ref{sec:approach}.
 
 \subsubsection{Project Builds}
-As mentioned in Subsection~\ref{sec:approach:sub:dataset}, only 16 out of the 21 projects contained in BugOSS could be successfully built. These projects were then used with the static analyzers.
+As mentioned in Subsection~\ref{sec:approach:sub:dataset}, only 16 out of the 21 projects contained in BugOSS could be successfully built. These projects were then used with the static analyzers. The fact that not all projects could be built points to a flaw in BugOSS regarding reproducibility.
 
-\subsubsection{Flagged vulnerabilities}
+\subsubsection{Static Analysis Results}
+To evaluate the detection capabilities of the static analysis tools, both CodeQL and Infer were run on the 16 successfully built projects. The number of flagged vulnerabilities for each project is summarized in Table~\ref{sast_results}. It is important to denote that Infer was not able to be executed on Harfbuzz due to its unsupported build system.
 
 \begin{table}[ht]
 \centering
 \caption{Number of vulnerabilities flagged by CodeQL and Infer for each project.}
-\label{tab:sast_results}
+\label{sast_results}
 \begin{tabular}{|l|c|c|}
 \hline
 \textbf{Project Name} & \textbf{Flagged by CodeQL} & \textbf{Flagged by Infer} \\
 \hline
-Arrow &  & 71 \\
-Aspell &  & 63 \\
-Curl &  & 33 \\
-Exiv2 &  & 55 \\
-File &  & 107 \\
-Gdal &  & - \\
-Grok &  & - \\
-Harfbuzz &  & - \\
-Leptonica &  & 200 \\
-Libarchive &  & 200 \\
-Libhtp &  & 15 \\
-Libxml2 &  & - \\
-Ndpi &  & 75 \\
-Openh264 &  & 191 \\
-OpenSSL &  & 200 \\
-PcapPlusPlus &  & 51 \\
-Poppler &  & 200 \\
-Readstat &  & - \\
-Usrsctp &  & - \\
-Yara &  & 24 \\
-Zstd &  & 20 \\
+Arrow & 0 & 71 \\
+Aspell & 0 & 63 \\
+Curl & 5 & 33 \\
+Exiv2 & 3 & 55 \\
+File & 0 & 107 \\
+Gdal & - & - \\
+Grok & - & - \\
+Harfbuzz & 0 & - \\
+Leptonica & 1 & 200 \\
+Libarchive & 2 & 200 \\
+Libhtp & 1 & 15 \\
+Libxml2 & - & - \\
+Ndpi & 5 & 75 \\
+Openh264 & 11 & 191 \\
+OpenSSL & 55 & 200 \\
+PcapPlusPlus & 1 & 51 \\
+Poppler & 15 & 200 \\
+Readstat & - & - \\
+Usrsctp & - & - \\
+Yara & 1 & 24 \\
+Zstd & 2 & 20 \\
 \hline
 Total & \textbf{} & \textbf{} \\
 \hline
 \end{tabular}
 \end{table}
+
+As shown in the table, CodeQL flagged significantly fewer vulnerabilities compared to Infer, particularly for C/C++ projects. While Infer specializes in detecting memory-related vulnerabilities, CodeQL's default query set focuses on issues like SQL injection and cross-site scripting, which are less common in this dataset. CodeQL's analysis could possibly be improved with customized queries adapted to the nature of the projects in question.

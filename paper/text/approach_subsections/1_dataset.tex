@@ -27,7 +27,7 @@ BugOSS Dataset
 
 For this study, the selection and treatment of ground truths followed a systematic process:
 \begin{enumerate}
-    \item \textbf{Selection Criteria:} Out of the 21 projects in the dataset, only those that could be successfully built and reproduced using the provided Dockerfiles and build scripts were included in the analysis. While the dataset aims to ensure reproducibility, certain projects encountered build errors due to syntax errors in the code or the \ac{bic} not being in a branch. Ultimately, 16 projects were successfully built and used as the basis for further analysis.
+    \item \textbf{Selection Criteria:} Out of the 21 projects in the dataset, only those that could be successfully built and reproduced using the provided Dockerfiles and build scripts were included in the analysis. While the dataset aims to ensure reproducibility, certain projects encountered build errors due to syntax errors in the code or the \ac{bic} not being in a branch. The build process consisted of reverting the repository to the \ac{bic} and using the appropriate build script. Ultimately, 16 projects were successfully built and used as the basis for further analysis.
 
     \item \textbf{Use of Ground Truths:} The validated vulnerabilities served as the baseline for evaluating the performance of static analysis tools. For each successfully built project, the outputs of the tools were analyzed to determine whether they could detect the known vulnerabilities. This process is discussed in greater detail in the next section.
 \end{enumerate}
