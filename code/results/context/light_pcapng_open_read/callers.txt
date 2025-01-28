@@ -1,0 +1,23 @@
+bool PcapNgFileReaderDevice::open()
+{
+	m_NumOfPacketsRead = 0;
+	m_NumOfPacketsNotParsed = 0;
+
+	if (m_LightPcapNg != NULL)
+	{
+		LOG_DEBUG("pcapng descriptor already opened. Nothing to do");
+		return true;
+	}
+
+	m_LightPcapNg = light_pcapng_open_read(m_FileName, LIGHT_FALSE);
+	if (m_LightPcapNg == NULL)
+	{
+		LOG_ERROR("Cannot open pcapng reader device for filename '%s'", m_FileName);
+		m_DeviceOpened = false;
+		return false;
+	}
+
+	LOG_DEBUG("Successfully opened pcapng reader device for filename '%s'", m_FileName);
+	m_DeviceOpened = true;
+	return true;
+}

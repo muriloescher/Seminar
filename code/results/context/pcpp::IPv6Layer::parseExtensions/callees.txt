@@ -1,0 +1,29 @@
+ipv6_ext_base_header* IPv6Extension::getBaseHeader() const
+{
+    return (ipv6_ext_base_header*)getDataPtr();
+}
+
+ip6_hdr* IPv6Layer::getIPv6Header() const
+{
+    return reinterpret_cast<ip6_hdr*>(m_Data);
+}
+
+IPv6Extension* IPv6Extension::getNextHeader() const
+{
+    return m_NextHeader;
+}
+
+void IPv6Extension::setNextHeader(IPv6Extension* nextHeader)
+{
+    m_NextHeader = nextHeader;
+}
+
+size_t IPv6AuthenticationHeader::getExtensionLen() const override
+{
+    return 4 * (getBaseHeader()->headerLen + 2);
+}
+
+virtual size_t IPv6Extension::getExtensionLen() const
+{
+    return 8 * (getBaseHeader()->headerLen + 1);
+}

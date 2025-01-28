@@ -1,0 +1,327 @@
+iphdr* getIPv4Header() const { return (iphdr*)m_Data; }
+
+bool IPv4Layer::isFragment() const
+{
+	return ((getFragmentFlags() & PCPP_IP_MORE_FRAGMENTS) != 0 || getFragmentOffset() != 0);
+}
+
+static ProtocolType getGREVersion(uint8_t* greData, size_t greDataLen);
+
+bool TcpLayer::isDataValid(const uint8_t* data, size_t dataLen)
+	{
+		const tcphdr* hdr = reinterpret_cast<const tcphdr*>(data);
+		return dataLen >= sizeof(tcphdr)
+			&& hdr->dataOffset >= 5 /* the minimum TCP header size */
+			&& dataLen >= hdr->dataOffset * sizeof(uint32_t);
+	}
+
+ProtocolType IgmpLayer::getIGMPVerFromData(uint8_t* data, size_t dataLen, bool& isQuery)
+{
+	isQuery = false;
+
+	if (dataLen < 8 || data == NULL)
+		return UnknownProtocol;
+
+	switch ((int)data[0])
+	{
+	case IgmpType_MembershipReportV2:
+	case IgmpType_LeaveGroup:
+		return IGMPv2;
+	case IgmpType_MembershipReportV1:
+		return IGMPv1;
+	case IgmpType_MembershipReportV3:
+		return IGMPv3;
+	case IgmpType_MembershipQuery:
+	{
+		isQuery = true;
+
+		if (dataLen >= sizeof(igmpv3_query_header))
+			return IGMPv3;
+
+		if (data[1] == 0)
+			return IGMPv1;
+		else
+			return IGMPv2;
+	}
+	default:
+		return UnknownProtocol;
+	}
+}
+
+IPv4Layer::IPv4Layer()
+{
+	initLayer();
+}
+
+IPv4Layer::IPv4Layer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet, bool setTotalLenAsDataLen) : Layer(data, dataLen, prevLayer, packet)
+{
+	initLayerInPacket(data, dataLen, prevLayer, packet, setTotalLenAsDataLen);
+}
+
+IPv4Layer::IPv4Layer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet) : Layer(data, dataLen, prevLayer, packet)
+{
+	initLayerInPacket(data, dataLen, prevLayer, packet, true);
+}
+
+IPv4Layer::IPv4Layer(const IPv4Address& srcIP, const IPv4Address& dstIP)
+{
+	initLayer();
+	iphdr* ipHdr = getIPv4Header();
+	ipHdr->ipSrc = srcIP.toInt();
+	ipHdr->ipDst = dstIP.toInt();
+}
+
+IPv4Layer::IPv4Layer(const IPv4Layer& other) : Layer(other)
+{
+	copyLayerData(other);
+}
+
+IPv6Layer::IPv6Layer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet) : Layer(data, dataLen, prevLayer, packet)
+{
+	m_Protocol = IPv6;
+	m_FirstExtension = NULL;
+	m_LastExtension = NULL;
+	m_ExtensionsLen = 0;
+
+	parseExtensions();
+
+	size_t totalLen = be16toh(getIPv6Header()->payloadLength) + getHeaderLen();
+	if (totalLen < m_DataLen)
+		m_DataLen = totalLen;
+}
+
+IPv6Layer::IPv6Layer()
+{
+	initLayer();
+}
+
+IPv6Layer::IPv6Layer(const IPv6Address& srcIP, const IPv6Address& dstIP)
+{
+	initLayer();
+	ip6_hdr* ipHdr = getIPv6Header();
+	srcIP.copyTo(ipHdr->ipSrc);
+	dstIP.copyTo(ipHdr->ipDst);
+}
+
+IPv6Layer::IPv6Layer(const IPv6Layer& other) : Layer(other)
+{
+	m_FirstExtension = NULL;
+	m_LastExtension = NULL;
+	m_ExtensionsLen = 0;
+	parseExtensions();
+}
+
+IgmpV1Layer::IgmpV1Layer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet) :
+		IgmpLayer(data, dataLen, prevLayer, packet, IGMPv1)
+{
+}
+
+IgmpV1Layer::IgmpV1Layer(IgmpType type, const IPv4Address& groupAddr) :
+		IgmpLayer(type, groupAddr, 0, IGMPv1)
+{
+}
+
+
+IgmpV2Layer::IgmpV2Layer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet) :
+		IgmpLayer(data, dataLen, prevLayer, packet, IGMPv2)
+{
+}
+
+IgmpV2Layer::IgmpV2Layer(IgmpType type, const IPv4Address& groupAddr, uint8_t maxResponseTime) :
+		IgmpLayer(type, groupAddr, maxResponseTime, IGMPv2)
+{
+}
+
+IgmpV3QueryLayer::IgmpV3QueryLayer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet) :
+		IgmpLayer(data, dataLen, prevLayer, packet, IGMPv3)
+{
+}
+
+IgmpV3QueryLayer::IgmpV3QueryLayer(const IPv4Address& multicastAddr, uint8_t maxResponseTime, uint8_t s_qrv) :
+		IgmpLayer(IgmpType_MembershipQuery, multicastAddr, maxResponseTime, IGMPv3)
+{
+	getIgmpV3QueryHeader()->s_qrv = s_qrv;
+}
+
+IgmpV3ReportLayer::IgmpV3ReportLayer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet) :
+		IgmpLayer(data, dataLen, prevLayer, packet, IGMPv3)
+{
+}
+
+IgmpV3ReportLayer::IgmpV3ReportLayer() :
+		IgmpLayer(IgmpType_MembershipReportV3, IPv4Address::Zero, 0, IGMPv3)
+{
+}
+
+size_t DnsLayer::getHeaderLen() const { return m_DataLen; }
+
+size_t UdpLayer::getHeaderLen() const { return sizeof(udphdr); }
+
+size_t IPv6Layer::getHeaderLen() const { return sizeof(ip6_hdr) + m_ExtensionsLen; }
+
+size_t TcpLayer::getHeaderLen() const { return getTcpHeader()->dataOffset*4 ;}
+
+size_t IPv4Layer::getHeaderLen() const { return (size_t)((uint16_t)(getIPv4Header()->internetHeaderLength) * 4) + m_TempHeaderExtension; }
+
+size_t GreLayer::getHeaderLen() const
+{
+	size_t result = sizeof(gre_basic_header);
+
+	gre_basic_header* header = (gre_basic_header*)m_Data;
+
+	if (header->checksumBit == 1 || header->routingBit == 1 )
+		result += 4;
+	if (header->keyBit == 1)
+		result += 4;
+	if (header->sequenceNumBit == 1)
+		result += 4;
+	if (header->ackSequenceNumBit == 1)
+		result += 4;
+
+	return result;
+}
+
+size_t PayloadLayer::getHeaderLen() const { return m_DataLen; }
+
+
+size_t GtpV1Layer::getHeaderLen() const
+{
+	gtpv1_header* header = getHeader();
+	if (header == NULL)
+	{
+		return 0;
+	}
+
+	size_t res = sizeof(gtpv1_header);
+
+	if (header->messageType != PCPP_GTP_V1_GPDU_MESSAGE_TYPE)
+	{
+		size_t msgLen = be16toh(header->messageLength);
+		res += (msgLen > m_DataLen - sizeof(gtpv1_header) ? m_DataLen - sizeof(gtpv1_header) : msgLen);
+	}
+	else
+	{
+		gtpv1_header_extra* headerExtra = getHeaderExtra();
+		if (headerExtra != NULL && (header->extensionHeaderFlag == 1 || header->sequenceNumberFlag == 1 || header->npduNumberFlag == 1))
+		{
+			res += sizeof(gtpv1_header_extra);
+			GtpExtension nextExt = getNextExtension();
+			while (!nextExt.isNull())
+			{
+				res += nextExt.getTotalLength();
+				nextExt = nextExt.getNextExtension();
+			}
+		}
+	}
+
+	return res;
+}
+
+size_t Dhcp::getHeaderLen() const { return m_DataLen; }
+
+size_t PPP_PPTPLayer::getHeaderLen() const { return sizeof(ppp_pptp_header); }
+
+size_t IgmpV3QueryLayer::getHeaderLen() const
+{
+	uint16_t numOfSources = getSourceAddressCount();
+
+	int headerLen = numOfSources * sizeof(uint32_t) + sizeof(igmpv3_query_header);
+
+	// verify numOfRecords is a reasonable number that points to data within the packet
+	if ((size_t)headerLen > getDataLen())
+		return getDataLen();
+
+	return (size_t)headerLen;
+}
+
+size_t getHeaderLen() const { return sizeof(sll_header); }
+
+size_t IgmpLayer::getHeaderLen() const { return sizeof(igmp_header); }
+
+size_t TextBasedProtocolMessage::getHeaderLen() const
+{
+	return m_LastField->m_NameOffsetInMessage + m_LastField->m_FieldSize;
+}
+
+size_t MplsLayer::getHeaderLen() const { return sizeof(mpls_header); }
+
+size_t IgmpV3ReportLayer::getHeaderLen() const { return m_DataLen; }
+
+size_t IcmpLayer::getHeaderLen() const
+{
+	IcmpMessageType type = getMessageType();
+	size_t routerAdvSize = 0;
+	switch (type)
+	{
+	case ICMP_ECHO_REQUEST:
+	case ICMP_ECHO_REPLY:
+		return m_DataLen;
+	case ICMP_TIMESTAMP_REQUEST:
+	case ICMP_TIMESTAMP_REPLY:
+		return sizeof(icmp_timestamp_request);
+	case ICMP_ROUTER_SOL:
+	case ICMP_INFO_REQUEST:
+	case ICMP_INFO_REPLY:
+	case ICMP_UNSUPPORTED:
+		return sizeof(icmphdr);
+	case ICMP_ADDRESS_MASK_REPLY:
+	case ICMP_ADDRESS_MASK_REQUEST:
+		return sizeof(icmp_address_mask_request);
+	case ICMP_DEST_UNREACHABLE:
+		return sizeof(icmp_destination_unreachable);
+	case ICMP_REDIRECT:
+		return sizeof(icmp_redirect);
+	case ICMP_TIME_EXCEEDED:
+	case ICMP_SOURCE_QUENCH:
+		return sizeof(icmp_time_exceeded);
+	case ICMP_PARAM_PROBLEM:
+		return sizeof(icmp_param_problem);
+	case ICMP_ROUTER_ADV:
+		routerAdvSize = sizeof(icmp_router_advertisement_hdr) + (getRouterAdvertisementData()->header->advertisementCount*sizeof(icmp_router_address_structure));
+		return routerAdvSize;
+	default:
+		return sizeof(icmphdr);
+	}
+}
+
+size_t BgpLayer::getHeaderLen() const
+{
+  if (m_DataLen < sizeof(bgp_common_header))
+  {
+    return m_DataLen;
+  }
+
+  uint16_t messageLen = be16toh(getBasicHeader()->length);
+  if (m_DataLen < messageLen)
+  {
+    return m_DataLen;
+  }
+
+  return (size_t)messageLen;
+}
+
+size_t RadiusLayer::getHeaderLen() const
+{
+	uint16_t len = be16toh(getRadiusHeader()->length);
+	if (len > m_DataLen)
+		return m_DataLen;
+
+	return len;
+}
+
+size_t VxlanLayer::getHeaderLen() const { return sizeof(vxlan_header); }
+
+size_t VlanLayer::getHeaderLen() const { return sizeof(vlan_header); }
+
+size_t PacketTrailerLayer::getHeaderLen() const { return m_DataLen; }
+
+size_t PPPoEDiscoveryLayer::getHeaderLen() const
+{
+	return sizeof(pppoe_header) + be16toh(getPPPoEHeader()->payloadLength);
+}
+
+size_t ArpLayer::getHeaderLen() const { return sizeof(arphdr); }
+
+virtual size_t PPPoESessionLayer::getHeaderLen() const { return sizeof(pppoe_header) + sizeof(uint16_t); }
+
+size_t EthLayer::getHeaderLen() const { return sizeof(ether_header); }

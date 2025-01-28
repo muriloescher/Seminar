@@ -1,0 +1,34 @@
+IPv6Layer::IPv6Layer(uint8_t* data, size_t dataLen, Layer* prevLayer, Packet* packet) : Layer(data, dataLen, prevLayer, packet)
+{
+	m_Protocol = IPv6;
+	m_FirstExtension = NULL;
+	m_LastExtension = NULL;
+	m_ExtensionsLen = 0;
+
+	parseExtensions();
+
+	size_t totalLen = be16toh(getIPv6Header()->payloadLength) + getHeaderLen();
+	if (totalLen < m_DataLen)
+		m_DataLen = totalLen;
+}
+
+IPv6Layer::IPv6Layer()
+{
+	initLayer();
+}
+
+IPv6Layer::IPv6Layer(const IPv6Address& srcIP, const IPv6Address& dstIP)
+{
+	initLayer();
+	ip6_hdr* ipHdr = getIPv6Header();
+	srcIP.copyTo(ipHdr->ipSrc);
+	dstIP.copyTo(ipHdr->ipDst);
+}
+
+IPv6Layer::IPv6Layer(const IPv6Layer& other) : Layer(other)
+{
+	m_FirstExtension = NULL;
+	m_LastExtension = NULL;
+	m_ExtensionsLen = 0;
+	parseExtensions();
+}

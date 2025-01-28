@@ -1,0 +1,28 @@
+bool PcapNgFileWriterDevice::open(const char* os, const char* hardware, const char* captureApp, const char* fileComment)
+{
+	if (m_LightPcapNg != NULL)
+	{
+		LOG_DEBUG("Pcap-ng descriptor already opened. Nothing to do");
+		return true;
+	}
+
+	m_NumOfPacketsNotWritten = 0;
+	m_NumOfPacketsWritten = 0;
+
+	light_pcapng_file_info* info = light_create_file_info(os, hardware, captureApp, fileComment);
+
+	m_LightPcapNg = light_pcapng_open_write(m_FileName, info, m_CompressionLevel);
+	if (m_LightPcapNg == NULL)
+	{
+		LOG_ERROR("Error opening file writer device for file '%s': light_pcapng_open_write returned NULL", m_FileName);
+
+		light_free_file_info(info);
+
+		m_DeviceOpened = false;
+		return false;
+	}
+
+	m_DeviceOpened = true;
+	LOG_DEBUG("pcap-ng writer device for file '%s' opened successfully", m_FileName);
+	return true;
+}

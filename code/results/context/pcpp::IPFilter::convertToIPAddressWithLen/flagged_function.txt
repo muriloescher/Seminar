@@ -1,0 +1,44 @@
+void IPFilter::convertToIPAddressWithLen(std::string& ipAddrmodified, int& len) const
+{
+	if (m_Len == 0)
+		return;
+
+	// Handle the length
+
+	// The following code lines verify IP address is valid (IPv4 or IPv6)
+
+	IPAddress::Ptr_t ipAddr = IPAddress::fromString(ipAddrmodified);
+	if (ipAddr.get()->getType() == IPAddress::IPv4AddressType)
+	{
+		IPv4Address* ip4Addr = (IPv4Address*)ipAddr.get();
+		uint32_t addrAsInt = ip4Addr->toInt();
+		uint32_t mask = ((uint32_t) - 1) >> ((sizeof(uint32_t) * 8) - m_Len);
+		addrAsInt &= mask;
+		ipAddrmodified = IPv4Address(addrAsInt).toString();
+	}
+	else if (ipAddr.get()->getType() == IPAddress::IPv6AddressType)
+	{
+		IPv6Address* ip6Addr = (IPv6Address*)ipAddr.get();
+		uint8_t* addrAsArr; size_t addrLen;
+		ip6Addr->copyTo(&addrAsArr, addrLen);
+		uint64_t addrLowerBytes = (long)addrAsArr;
+		uint64_t addrHigherBytes = (long)(addrAsArr + 8);
+		if (len > (int)(sizeof(uint64_t) * 8))
+		{
+			addrLowerBytes = 0;
+			addrHigherBytes &= (-1 << (len - sizeof(uint64_t)));
+		}
+		else
+		{
+			addrLowerBytes &= (-1 << len);
+		}
+
+		ipAddrmodified = IPv6Address(addrAsArr).toString();
+		delete [] addrAsArr;
+	}
+	else
+	{
+		LOG_ERROR("Invalid IP address '%s', setting len to zero", ipAddrmodified.c_str());
+		len = 0;
+	}
+}

@@ -1,0 +1,7 @@
+bool isSupressErrors() const { return m_SuppressErrors; }
+
+bool isErrorStringSet() const { return m_ErrorString != NULL; }
+
+char* getErrorString() const { return m_ErrorString; }
+
+int getErrorStringLength() const { return m_ErrorStringLen; }

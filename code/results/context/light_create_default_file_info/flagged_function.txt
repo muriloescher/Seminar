@@ -1,0 +1,7 @@
+light_pcapng_file_info *light_create_default_file_info()
+{
+	light_pcapng_file_info *default_file_info = calloc(1, sizeof(light_pcapng_file_info));
+	memset(default_file_info, 0, sizeof(light_pcapng_file_info));
+	default_file_info->major_version = 1;
+	return default_file_info;
+}

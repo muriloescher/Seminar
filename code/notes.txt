@@ -1,15 +1,16 @@
 Build problems:
 
-(codeql/infer): grok fails to build because commit in not in a branch
-(codeql/infer): gdal takes forever and there is a mistake at the end 
 (codeql/infer): libxml2 does not build properly since there are syntax errors in the code
-(codeql/infer): readstat cannot be built because of function declaration (changing cflags was impossibleerror: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes), /project/src/readstat_bits.h:10:29, 
+(codeql/infer): grok fails to build because commit in not in a branch
+
+(codeql/infer): gdal takes forever and there is a mistake at the end 
 (codeql/infer): usrsctplib is the same as above
 (infer): harfbuzz with ninja cant be built by infer
 
 Results:
 
-grok, gdal, libxml2, readstat, usrsctplib: not buildable
+grok, libxml2: not buildable
+readstat, usrsctp and gdal do work, no ground truth
 
 arrow: (codeql) no errors
        (infer) lots of errors, in same file as BugOSS but not same function

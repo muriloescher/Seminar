@@ -1,0 +1,19 @@
+void IPFilter::parseToString(std::string& result)
+{
+	std::string dir;
+	std::string ipAddr = m_Address;
+	std::string mask = m_IPv4Mask;
+	int len = m_Len;
+	convertToIPAddressWithMask(ipAddr, mask);
+	convertToIPAddressWithLen(ipAddr, len);
+	parseDirection(dir);
+	result = "ip and " + dir + " net " + ipAddr;
+	if (m_IPv4Mask != "")
+		result += " mask " + mask;
+	else if (m_Len > 0)
+	{
+		std::ostringstream stream;
+		stream << m_Len;
+		result += '/' + stream.str();
+	}
+}

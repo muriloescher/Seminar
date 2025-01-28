@@ -1,0 +1,65 @@
+void IPv6Layer::parseExtensions()
+{
+	uint8_t nextHdr = getIPv6Header()->nextHeader;
+	IPv6Extension* curExt = NULL;
+
+	size_t offset = sizeof(ip6_hdr);
+
+	while (offset <= m_DataLen )
+	{
+		IPv6Extension* newExt = NULL;
+
+		switch (nextHdr)
+		{
+		case PACKETPP_IPPROTO_FRAGMENT:
+		{
+			newExt = new IPv6FragmentationHeader(this, offset);
+			break;
+		}
+		case PACKETPP_IPPROTO_HOPOPTS:
+		{
+			newExt = new IPv6HopByHopHeader(this, offset);
+			break;
+		}
+		case PACKETPP_IPPROTO_DSTOPTS:
+		{
+			newExt = new IPv6DestinationHeader(this, offset);
+			break;
+		}
+		case PACKETPP_IPPROTO_ROUTING:
+		{
+			newExt = new IPv6RoutingHeader(this, offset);
+			break;
+		}
+		case PACKETPP_IPPROTO_AH:
+		{
+			newExt = new IPv6AuthenticationHeader(this, offset);
+			break;
+		}
+		default:
+		{
+			break;
+		}
+		}
+
+		if (newExt == NULL)
+			break;
+
+		if (m_FirstExtension == NULL)
+		{
+			m_FirstExtension = newExt;
+			curExt = m_FirstExtension;
+		}
+		else
+		{
+			curExt->setNextHeader(newExt);
+			curExt = curExt->getNextHeader();
+		}
+
+		offset += newExt->getExtensionLen();
+		nextHdr = newExt->getBaseHeader()->nextHeader;
+		m_ExtensionsLen += newExt->getExtensionLen();
+	}
+
+	m_LastExtension = curExt;
+}

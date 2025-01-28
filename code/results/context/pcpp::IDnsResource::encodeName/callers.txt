@@ -1,0 +1,50 @@
+bool IDnsResource::setName(const std::string& newName)
+{
+	char encodedName[256];
+	size_t encodedNameLen = 0;
+	encodeName(newName, encodedName, encodedNameLen);
+	if (m_DnsLayer != NULL)
+	{
+		if (encodedNameLen > m_NameLength)
+		{
+			if (!m_DnsLayer->extendLayer(m_OffsetInLayer, encodedNameLen-m_NameLength, this))
+			{
+				LOG_ERROR("Couldn't set name for DNS query, unable to extend layer");
+				return false;
+			}
+		}
+		else if (encodedNameLen < m_NameLength)
+		{
+			if (!m_DnsLayer->shortenLayer(m_OffsetInLayer, m_NameLength-encodedNameLen, this))
+			{
+				LOG_ERROR("Couldn't set name for DNS query, unable to shorten layer");
+				return false;
+			}
+		}
+	}
+	else
+	{
+		size_t size = getSize();
+		char* tempData = new char[size];
+		memcpy(tempData, m_ExternalRawData, size);
+		memcpy(m_ExternalRawData + encodedNameLen, tempData, size);
+		delete[] tempData;
+	}
+
+	memcpy(getRawData(), encodedName, encodedNameLen);
+	m_NameLength = encodedNameLen;
+	m_DecodedName = newName;
+
+	return true;
+}
+
+void IDnsResourceData::encodeName(const std::string& decodedName, char* result, size_t& resultLen, IDnsResource* dnsResource) const
+{
+	if (dnsResource == NULL)
+	{
+		LOG_ERROR("Cannot encode name, DNS resource object is NULL");
+		return;
+	}
+
+	dnsResource->encodeName(decodedName, result, resultLen);
+}

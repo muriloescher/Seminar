@@ -1,0 +1,10 @@
+size_t IDnsResourceData::decodeName(const char* encodedName, char* result, IDnsResource* dnsResource) const
+{
+	if (dnsResource == NULL)
+	{
+		LOG_ERROR("Cannot decode name, DNS resource object is NULL");
+		return 0;
+	}
+
+	return dnsResource->decodeName(encodedName, result);
+}
