@@ -1,0 +1,34 @@
+light_file light_open(const char *file_name, const __read_mode_t mode)
+{
+	light_file fd = calloc(1,sizeof(light_file_t));
+	fd->file = INVALID_FILE;
+	fd->compression_context = NULL;
+	fd->decompression_context = NULL;
+
+	switch (mode) {
+	case LIGHT_OREAD:
+	{
+		if (light_is_compressed_file(file_name))
+		{
+			return light_open_decompression(file_name, mode);
+		}
+		fd->file = fopen(file_name, "rb");
+		break;
+	}
+	case LIGHT_OWRITE:
+		fd->file = fopen(file_name, "wb");
+		break;
+	case LIGHT_OAPPEND:
+		fd->file = fopen(file_name, "ab");
+		break;
+	}
+
+	if (fd->file)
+	{
+		return fd;
+	}
+	else
+	{
+		return NULL;
+	}
+}

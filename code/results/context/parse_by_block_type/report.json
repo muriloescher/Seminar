@@ -1,0 +1,674 @@
+[
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &local_data (type unsigned int const *) is never used.",
+        "severity": "ERROR",
+        "line": 175,
+        "column": 10,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 175,
+                "column_number": 10,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|DEAD_STORE",
+        "hash": "e42d0b05d52d250454066796fbe57718",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "DEAD_STORE",
+        "qualifier": "The value written to &local_data (type unsigned int const *) is never used.",
+        "severity": "ERROR",
+        "line": 215,
+        "column": 13,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 215,
+                "column_number": 13,
+                "description": "Write of unused value"
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|DEAD_STORE",
+        "hash": "e42d0b05d52d250454066796fbe57718",
+        "bug_type_hum": "Dead Store"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `cnb` last assigned on line 193 could be null and is dereferenced at line 194, column 10.",
+        "severity": "ERROR",
+        "line": 194,
+        "column": 10,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 88,
+                "column_number": 1,
+                "description": "start of procedure parse_by_block_type()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 90,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 92,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 115,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 133,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 164,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 181,
+                "column_number": 7,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 183,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 184,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 185,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 186,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 187,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 188,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 190,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 192,
+                "column_number": 10,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 192,
+                "column_number": 10,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 193,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 194,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|NULL_DEREFERENCE",
+        "node_key": "681d4c1d66eae4c7b315dd9d8d443086",
+        "hash": "2caafb9aad5ab77ed57f167c18cc92bf",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `current->block_body` last assigned on line 213 could be null and is dereferenced by call to `memcpy()` at line 214, column 13.",
+        "severity": "ERROR",
+        "line": 214,
+        "column": 13,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 88,
+                "column_number": 1,
+                "description": "start of procedure parse_by_block_type()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 90,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 92,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 115,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 133,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 164,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 181,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 209,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 210,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 211,
+                "column_number": 14,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 213,
+                "column_number": 13,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 214,
+                "column_number": 13,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|NULL_DEREFERENCE",
+        "node_key": "91cadb4ed8f1f253f7a3167325e59c94",
+        "hash": "089f7299f2490fe22eeda6aa6fc0911a",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `epb` last assigned on line 148 could be null and is dereferenced at line 149, column 10.",
+        "severity": "ERROR",
+        "line": 149,
+        "column": 10,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 88,
+                "column_number": 1,
+                "description": "start of procedure parse_by_block_type()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 90,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 92,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 115,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 133,
+                "column_number": 7,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 135,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 136,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 137,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 138,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 139,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 140,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 141,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 142,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 144,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 146,
+                "column_number": 10,
+                "description": "Condition is false"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 146,
+                "column_number": 10,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 148,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 149,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|NULL_DEREFERENCE",
+        "node_key": "681d4c1d66eae4c7b315dd9d8d443086",
+        "hash": "2cc3b6902c2086d2003cf424ae3c2cc0",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `idb` last assigned on line 118 could be null and is dereferenced at line 123, column 10.",
+        "severity": "ERROR",
+        "line": 123,
+        "column": 10,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 88,
+                "column_number": 1,
+                "description": "start of procedure parse_by_block_type()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 90,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 92,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 115,
+                "column_number": 7,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 117,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 118,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 119,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 120,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 123,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|NULL_DEREFERENCE",
+        "node_key": "1fc90b2b911311025549a1a0db755ca3",
+        "hash": "bc12f185a3c267783dec4d86f2ef5c37",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `shb` last assigned on line 95 could be null and is dereferenced at line 100, column 10.",
+        "severity": "ERROR",
+        "line": 100,
+        "column": 10,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 88,
+                "column_number": 1,
+                "description": "start of procedure parse_by_block_type()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 90,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 92,
+                "column_number": 7,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 94,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 95,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 96,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 100,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|NULL_DEREFERENCE",
+        "node_key": "c76cad8f6bcde51a8c6f8de7cbb2309a",
+        "hash": "3314a573c9b68a16ec079b007a44472d",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `spb` last assigned on line 171 could be null and is dereferenced at line 172, column 10.",
+        "severity": "ERROR",
+        "line": 172,
+        "column": 10,
+        "procedure": "parse_by_block_type",
+        "procedure_start_line": 88,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 88,
+                "column_number": 1,
+                "description": "start of procedure parse_by_block_type()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 90,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 92,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 115,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 133,
+                "column_number": 7,
+                "description": "Switch condition is false. Skipping switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 164,
+                "column_number": 7,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 166,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 167,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 168,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 169,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 171,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 172,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|parse_by_block_type|NULL_DEREFERENCE",
+        "node_key": "45daa971f38fc38a7bd05b7e0a4417dc",
+        "hash": "c02e9a2056b9c292eb1be12d9075d5f5",
+        "bug_type_hum": "Null Dereference"
+    }
+]

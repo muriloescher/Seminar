@@ -1,0 +1,895 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `interface_list` last assigned on line 396 could be null and is dereferenced at line 434, column 52.",
+        "severity": "ERROR",
+        "line": 434,
+        "column": 52,
+        "procedure": "light_ip_flow",
+        "procedure_start_line": 382,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 382,
+                "column_number": 1,
+                "description": "start of procedure light_ip_flow()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 384,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 385,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 386,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 553,
+                "column_number": 1,
+                "description": "start of procedure light_get_block_count()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 555,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 556,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 558,
+                "column_number": 11,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 559,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 560,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 558,
+                "column_number": 11,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 559,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 560,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 558,
+                "column_number": 11,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 563,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 564,
+                "column_number": 1,
+                "description": "return from a call to light_get_block_count"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 387,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 389,
+                "column_number": 6,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 124,
+                "column_number": 1,
+                "description": "start of procedure __is_section_header()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 126,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 127,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 131,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 136,
+                "column_number": 1,
+                "description": "return from a call to __is_section_header"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 389,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 394,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 395,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 396,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 397,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 399,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 400,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 401,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 403,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 405,
+                "column_number": 9,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 406,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 407,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 412,
+                "column_number": 12,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 418,
+                "column_number": 12,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 419,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 421,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 423,
+                "column_number": 8,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 295,
+                "column_number": 1,
+                "description": "start of procedure __get_address()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 297,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 299,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 300,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 301,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 302,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 258,
+                "column_number": 1,
+                "description": "start of procedure __get_ip_address()"
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 260,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 261,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 263,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 264,
+                "column_number": 2,
+                "description": "Switch condition is true. Entering switch case"
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 278,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 280,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 283,
+                "column_number": 11,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 284,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 243,
+                "column_number": 1,
+                "description": "start of procedure __extract_ipv6_address()"
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 245,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 248,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 248,
+                "column_number": 14,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 249,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 248,
+                "column_number": 22,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 248,
+                "column_number": 14,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 249,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 248,
+                "column_number": 22,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 248,
+                "column_number": 14,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 252,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 253,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 253,
+                "column_number": 14,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 254,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 253,
+                "column_number": 22,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 253,
+                "column_number": 14,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 254,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 253,
+                "column_number": 22,
+                "description": ""
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 253,
+                "column_number": 14,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 3,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 256,
+                "column_number": 1,
+                "description": "return from a call to __extract_ipv6_address"
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 292,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 2,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 293,
+                "column_number": 1,
+                "description": "return from a call to __get_ip_address"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 302,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 311,
+                "column_number": 1,
+                "description": "return from a call to __get_address"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 423,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 428,
+                "column_number": 8,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 429,
+                "column_number": 9,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 433,
+                "column_number": 6,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 434,
+                "column_number": 6,
+                "description": ""
+            }
+        ],
+        "key": "light_manipulate.c|light_ip_flow|NULL_DEREFERENCE",
+        "node_key": "4a37ffabecc26ddc75d1468c208f2994",
+        "hash": "9804036212eb46551821f07a2eb51c1c",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `interface_list` last assigned on line 414 could be null and is dereferenced at line 415, column 4.",
+        "severity": "ERROR",
+        "line": 415,
+        "column": 4,
+        "procedure": "light_ip_flow",
+        "procedure_start_line": 382,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 382,
+                "column_number": 1,
+                "description": "start of procedure light_ip_flow()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 384,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 385,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 386,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 553,
+                "column_number": 1,
+                "description": "start of procedure light_get_block_count()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 555,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 556,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 558,
+                "column_number": 11,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 559,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 560,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 558,
+                "column_number": 11,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 559,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 560,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 558,
+                "column_number": 11,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 563,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 564,
+                "column_number": 1,
+                "description": "return from a call to light_get_block_count"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 387,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 389,
+                "column_number": 6,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 124,
+                "column_number": 1,
+                "description": "start of procedure __is_section_header()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 126,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 127,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 131,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 136,
+                "column_number": 1,
+                "description": "return from a call to __is_section_header"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 389,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 394,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 395,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 396,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 397,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 399,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 400,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 401,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 403,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 405,
+                "column_number": 9,
+                "description": "Loop condition is true. Entering loop body"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 406,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 407,
+                "column_number": 7,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 412,
+                "column_number": 12,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 413,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 414,
+                "column_number": 4,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 415,
+                "column_number": 4,
+                "description": ""
+            }
+        ],
+        "key": "light_manipulate.c|light_ip_flow|NULL_DEREFERENCE",
+        "node_key": "96aa42d39c16d8c3ca9bc4be65b323da",
+        "hash": "9804036212eb46551821f07a2eb51c1c",
+        "bug_type_hum": "Null Dereference"
+    }
+]

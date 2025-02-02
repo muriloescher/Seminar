@@ -1,0 +1,24 @@
+void light_pcapng_release(light_pcapng pcapng)
+{
+   light_pcapng iter = pcapng;
+   uint32_t block_count = light_get_block_count(pcapng);
+   light_pcapng *block_pointers = calloc(block_count, sizeof(light_pcapng));
+   uint32_t i = 0;
+
+   while (iter != NULL) {
+      block_pointers[i] = iter;
+      i++;
+      iter = iter->next_block;
+   }
+
+   if(pcapng)
+      pcapng->next_block = NULL;
+
+   for (i = 0; i < block_count; ++i) {
+      __free_option(block_pointers[i]->options);
+      free(block_pointers[i]->block_body);
+      free(block_pointers[i]);
+   }
+
+   free(block_pointers);
+}

@@ -1,0 +1,153 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `opt->data` last assigned on line 57 could be null and is dereferenced by call to `memcpy()` at line 58, column 10.",
+        "severity": "ERROR",
+        "line": 58,
+        "column": 10,
+        "procedure": "__parse_options",
+        "procedure_start_line": 36,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 36,
+                "column_number": 1,
+                "description": "start of procedure __parse_options()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 38,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 42,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 44,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 46,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 49,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 50,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 52,
+                "column_number": 23,
+                "description": "Condition is false"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 56,
+                "column_number": 11,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 57,
+                "column_number": 10,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 58,
+                "column_number": 10,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|__parse_options|NULL_DEREFERENCE",
+        "node_key": "71ab577d3ad7e1ed04e9da61438897eb",
+        "hash": "d0b9f8914d88e50b20292f7b4c558eab",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `opt` last assigned on line 42 could be null and is dereferenced at line 49, column 7.",
+        "severity": "ERROR",
+        "line": 49,
+        "column": 7,
+        "procedure": "__parse_options",
+        "procedure_start_line": 36,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 36,
+                "column_number": 1,
+                "description": "start of procedure __parse_options()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 38,
+                "column_number": 8,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 42,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 44,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 46,
+                "column_number": 7,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+                "line_number": 49,
+                "column_number": 7,
+                "description": ""
+            }
+        ],
+        "key": "light_pcapng.c|__parse_options|NULL_DEREFERENCE",
+        "node_key": "ee6b27284fb991917de3ac21d5a5579f",
+        "hash": "c83a2f61eea96187512c0c3c7ad5ea6c",
+        "bug_type_hum": "Null Dereference"
+    }
+]

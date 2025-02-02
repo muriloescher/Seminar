@@ -1,0 +1,20 @@
+struct _light_option *__copy_option(const struct _light_option *option)
+{
+	if (option == NULL) {
+		return NULL;
+	}
+
+	size_t current_size = 0;
+	struct _light_option *copy = calloc(1, sizeof(struct _light_option));
+
+	PADD32(option->option_length, &current_size);
+
+	copy->custom_option_code = option->custom_option_code;
+	copy->option_length = option->option_length;
+	copy->data = calloc(1, current_size);
+	memcpy(copy->data, option->data, option->option_length);
+
+	copy->next_option = __copy_option(option->next_option);
+
+	return copy;
+}

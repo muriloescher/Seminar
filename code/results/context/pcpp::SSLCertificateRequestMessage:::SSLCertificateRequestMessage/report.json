@@ -1,0 +1,22 @@
+{
+    "bug_type": "DEAD_STORE",
+    "qualifier": "The value written to &pos (type unsigned char*) is never used.",
+    "severity": "ERROR",
+    "line": 1611,
+    "column": 2,
+    "procedure": "pcpp::SSLCertificateRequestMessage::SSLCertificateRequestMessage",
+    "procedure_start_line": 1597,
+    "file": "Packet++/src/SSLHandshake.cpp",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "Packet++/src/SSLHandshake.cpp",
+            "line_number": 1611,
+            "column_number": 2,
+            "description": "Write of unused value"
+        }
+    ],
+    "key": "SSLHandshake.cpp|SSLCertificateRequestMessage|DEAD_STORE",
+    "hash": "25e65531e0f109c726008c7a0514855a",
+    "bug_type_hum": "Dead Store"
+}

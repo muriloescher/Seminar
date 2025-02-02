@@ -1,0 +1,82 @@
+static light_pcapng_file_info *__create_file_info(light_pcapng pcapng_head)
+{
+	uint32_t type = LIGHT_UNKNOWN_DATA_BLOCK;
+
+	if (pcapng_head == NULL)
+		return NULL;
+
+	light_pcapng iter = pcapng_head;
+
+	light_get_block_info(iter, LIGHT_INFO_TYPE, &type, NULL);
+
+	if (type != LIGHT_SECTION_HEADER_BLOCK)
+		return NULL;
+
+	light_pcapng_file_info *file_info = calloc(1, sizeof(light_pcapng_file_info));
+
+	struct _light_section_header* section_header;
+
+	light_get_block_info(iter, LIGHT_INFO_BODY, &section_header, NULL);
+	file_info->major_version = section_header->major_version;
+	file_info->minor_version = section_header->minor_version;
+
+	light_option opt = light_get_option(iter, LIGHT_OPTION_SHB_HARDWARE);
+	if (opt != NULL)
+	{
+		file_info->hardware_desc_size = light_get_option_length(opt);
+		file_info->hardware_desc = calloc(file_info->hardware_desc_size+1, sizeof(char));
+		memcpy(file_info->hardware_desc, (char*)light_get_option_data(opt), file_info->hardware_desc_size);
+		file_info->hardware_desc[file_info->hardware_desc_size] = '\0';
+	}
+	else
+	{
+		file_info->hardware_desc_size = 0;
+		file_info->hardware_desc = NULL;
+	}
+
+	opt = light_get_option(iter, LIGHT_OPTION_SHB_OS);
+	if (opt != NULL)
+	{
+		file_info->os_desc_size = light_get_option_length(opt);
+		file_info->os_desc = calloc(file_info->os_desc_size+1, sizeof(char));
+		memcpy(file_info->os_desc, (char*)light_get_option_data(opt), file_info->os_desc_size);
+		file_info->os_desc[file_info->os_desc_size] = '\0';
+	}
+	else
+	{
+		file_info->os_desc_size = 0;
+		file_info->os_desc = NULL;
+	}
+
+	opt = light_get_option(iter, LIGHT_OPTION_SHB_USERAPPL);
+	if (opt != NULL)
+	{
+		file_info->user_app_desc_size = light_get_option_length(opt);
+		file_info->user_app_desc = calloc(file_info->user_app_desc_size+1, sizeof(char));
+		memcpy(file_info->user_app_desc, (char*)light_get_option_data(opt), file_info->user_app_desc_size);
+		file_info->user_app_desc[file_info->user_app_desc_size] = '\0';
+	}
+	else
+	{
+		file_info->user_app_desc_size = 0;
+		file_info->user_app_desc = NULL;
+	}
+
+	opt = light_get_option(iter, LIGHT_OPTION_COMMENT);
+	if (opt != NULL)
+	{
+		file_info->file_comment_size = light_get_option_length(opt);
+		file_info->file_comment = calloc(file_info->file_comment_size+1, sizeof(char));
+		memcpy(file_info->file_comment, (char*)light_get_option_data(opt), file_info->file_comment_size);
+		file_info->file_comment[file_info->file_comment_size] = '\0';
+	}
+	else
+	{
+		file_info->file_comment_size = 0;
+		file_info->file_comment = NULL;
+	}
+
+	file_info->interface_block_count = 0;
+
+	return file_info;
+}

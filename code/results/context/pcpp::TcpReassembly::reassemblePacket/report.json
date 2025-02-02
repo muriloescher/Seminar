@@ -1,0 +1,22 @@
+{
+    "bug_type": "DEAD_STORE",
+    "qualifier": "The value written to &sideIndex (type int) is never used.",
+    "severity": "ERROR",
+    "line": 247,
+    "column": 2,
+    "procedure": "pcpp::TcpReassembly::reassemblePacket",
+    "procedure_start_line": 116,
+    "file": "Packet++/src/TcpReassembly.cpp",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "Packet++/src/TcpReassembly.cpp",
+            "line_number": 247,
+            "column_number": 2,
+            "description": "Write of unused value"
+        }
+    ],
+    "key": "TcpReassembly.cpp|reassemblePacket|DEAD_STORE",
+    "hash": "e88b6964afaa2cbee80ff1ca76a2af11",
+    "bug_type_hum": "Dead Store"
+}

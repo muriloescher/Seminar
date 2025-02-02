@@ -1,0 +1,212 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `head->mem_blocks` last assigned on line 51 could be null and is dereferenced at line 54, column 3.",
+    "severity": "ERROR",
+    "line": 54,
+    "column": 3,
+    "procedure": "__parse_mem_inplace",
+    "procedure_start_line": 32,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 32,
+            "column_number": 1,
+            "description": "start of procedure __parse_mem_inplace()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 35,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 36,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 39,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 40,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 41,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 43,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 44,
+            "column_number": 9,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 45,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 46,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 47,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 48,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 44,
+            "column_number": 9,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 45,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 46,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 47,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 48,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 44,
+            "column_number": 9,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 45,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 46,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 47,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 48,
+            "column_number": 3,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 44,
+            "column_number": 9,
+            "description": "Loop condition is false. Leaving loop"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 51,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 52,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 53,
+            "column_number": 7,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 53,
+            "column_number": 14,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng_cont.c",
+            "line_number": 54,
+            "column_number": 3,
+            "description": ""
+        }
+    ],
+    "key": "light_pcapng_cont.c|__parse_mem_inplace|NULL_DEREFERENCE",
+    "node_key": "892a01293c6ed6a497ce166db32ac775",
+    "hash": "803fb6da099505ecd236d7f466dd22ad",
+    "bug_type_hum": "Null Dereference"
+}

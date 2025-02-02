@@ -1,0 +1,14 @@
+light_option light_alloc_option(uint16_t option_length)
+{
+	struct _light_option *option = calloc(1, sizeof(struct _light_option));
+	uint16_t actual_size = 0;
+
+	option->option_length = option_length;
+
+	PADD32(option_length, &actual_size);
+	if (actual_size != 0) {
+		option->data = calloc(1, actual_size);
+	}
+
+	return option;
+}

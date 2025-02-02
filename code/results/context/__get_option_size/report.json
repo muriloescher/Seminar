@@ -1,0 +1,72 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `current_mem` last assigned on line 111 could be null and is dereferenced at line 112, column 2.",
+    "severity": "ERROR",
+    "line": 112,
+    "column": 2,
+    "procedure": "__get_option_size",
+    "procedure_start_line": 97,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 97,
+            "column_number": 1,
+            "description": "start of procedure __get_option_size()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 99,
+            "column_number": 6,
+            "description": "Taking false branch"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 105,
+            "column_number": 2,
+            "description": "Skipping __get_option_size(): function or method not found"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 107,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 109,
+            "column_number": 2,
+            "description": "Condition is true"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 109,
+            "column_number": 2,
+            "description": "Loop condition is false. Leaving loop"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 111,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+            "line_number": 112,
+            "column_number": 2,
+            "description": ""
+        }
+    ],
+    "key": "light_internal.c|__get_option_size|NULL_DEREFERENCE",
+    "node_key": "a28c894cb1787761ad479cc5248a69d5",
+    "hash": "e8837f9d29d3befedd8675fe77615c66",
+    "bug_type_hum": "Null Dereference"
+}

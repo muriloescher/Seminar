@@ -1,0 +1,167 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `flow->section` last assigned on line 319 could be null and is dereferenced at line 323, column 2.",
+        "severity": "ERROR",
+        "line": 323,
+        "column": 2,
+        "procedure": "__create_flow",
+        "procedure_start_line": 313,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 313,
+                "column_number": 1,
+                "description": "start of procedure __create_flow()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 315,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 317,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 318,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 319,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 54,
+                "column_number": 1,
+                "description": "start of procedure __copy_block()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 56,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 57,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 81,
+                "column_number": 1,
+                "description": "return from a call to __copy_block"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 320,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 54,
+                "column_number": 1,
+                "description": "start of procedure __copy_block()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 56,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 57,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 81,
+                "column_number": 1,
+                "description": "return from a call to __copy_block"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 321,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 323,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "light_manipulate.c|__create_flow|NULL_DEREFERENCE",
+        "node_key": "bf90c89ff2e8c34d5f804057174b861f",
+        "hash": "11d919b05f3c23787c07d558e2b94ad3",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `flow` last assigned on line 315 could be null and is dereferenced at line 317, column 2.",
+        "severity": "ERROR",
+        "line": 317,
+        "column": 2,
+        "procedure": "__create_flow",
+        "procedure_start_line": 313,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 313,
+                "column_number": 1,
+                "description": "start of procedure __create_flow()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 315,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 317,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "light_manipulate.c|__create_flow|NULL_DEREFERENCE",
+        "node_key": "4d1308e13e2e6358ce2e0f703d9aa061",
+        "hash": "a0a75bba69285ce49247190950ba503f",
+        "bug_type_hum": "Null Dereference"
+    }
+]

@@ -1,0 +1,44 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `option` last assigned on line 34 could be null and is dereferenced at line 37, column 2.",
+    "severity": "ERROR",
+    "line": 37,
+    "column": 2,
+    "procedure": "light_alloc_option",
+    "procedure_start_line": 32,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+            "line_number": 32,
+            "column_number": 1,
+            "description": "start of procedure light_alloc_option()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+            "line_number": 34,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+            "line_number": 35,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+            "line_number": 37,
+            "column_number": 2,
+            "description": ""
+        }
+    ],
+    "key": "light_alloc.c|light_alloc_option|NULL_DEREFERENCE",
+    "node_key": "b26607722771b3b8c64c410865f47a74",
+    "hash": "6927a0821a4e1164c627daacc3cb49a4",
+    "bug_type_hum": "Null Dereference"
+}

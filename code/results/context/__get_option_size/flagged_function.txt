@@ -1,0 +1,26 @@
+uint32_t *__get_option_size(const struct _light_option *option, size_t *size)
+{
+	if (option == NULL) {
+		*size = 0;
+		return NULL;
+	}
+
+	size_t next_size;
+	uint32_t *next_option = __get_option_size(option->next_option, &next_size);
+	uint32_t *current_mem;
+	size_t current_size = 0;
+
+	PADD32(option->option_length, &current_size);
+
+	current_mem = calloc(sizeof(uint32_t) + current_size + next_size, 1);
+	current_mem[0] = option->custom_option_code | (option->option_length << 16);
+	memcpy(&current_mem[1], option->data, current_size);
+	memcpy(&current_mem[1 + current_size / 4], next_option, next_size);
+
+	current_size += sizeof(option->custom_option_code) + sizeof(option->option_length) + next_size;
+	*size = current_size;
+
+	free(next_option);
+
+	return current_mem;
+}

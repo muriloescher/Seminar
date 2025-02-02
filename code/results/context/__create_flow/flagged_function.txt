@@ -1,0 +1,14 @@
+static flow_information_t *__create_flow(const light_pcapng section, const light_pcapng interface, const flow_address_t *key, const uint8_t protocol_version)
+{
+	flow_information_t *flow = calloc(1, sizeof(flow_information_t));
+
+	flow->version = protocol_version;
+	memcpy(&flow->address, key, sizeof(flow->address));
+	flow->section = __copy_block(section, LIGHT_FALSE);
+	flow->interface = __copy_block(interface, LIGHT_FALSE);;
+	flow->last_block = flow->interface;
+
+	flow->section->next_block = flow->interface;
+
+	return flow;
+}

@@ -1,0 +1,139 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `pcapng_block->block_body` last assigned on line 61 could be null and is dereferenced by call to `memcpy()` at line 62, column 3.",
+        "severity": "ERROR",
+        "line": 62,
+        "column": 3,
+        "procedure": "light_alloc_block",
+        "procedure_start_line": 47,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 47,
+                "column_number": 1,
+                "description": "start of procedure light_alloc_block()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 49,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 50,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 53,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 55,
+                "column_number": 2,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 55,
+                "column_number": 2,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 57,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 58,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 60,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 61,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 62,
+                "column_number": 3,
+                "description": ""
+            }
+        ],
+        "key": "light_alloc.c|light_alloc_block|NULL_DEREFERENCE",
+        "node_key": "5d242acb1076468218a9cfd70cc4ceda",
+        "hash": "06073b244efdeb0ce3572a076a08687a",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `pcapng_block` last assigned on line 49 could be null and is dereferenced at line 53, column 2.",
+        "severity": "ERROR",
+        "line": 53,
+        "column": 2,
+        "procedure": "light_alloc_block",
+        "procedure_start_line": 47,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 47,
+                "column_number": 1,
+                "description": "start of procedure light_alloc_block()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 49,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 50,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_alloc.c",
+                "line_number": 53,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "light_alloc.c|light_alloc_block|NULL_DEREFERENCE",
+        "node_key": "b26607722771b3b8c64c410865f47a74",
+        "hash": "78704b7149d337a6f715eea5f43a9d91",
+        "bug_type_hum": "Null Dereference"
+    }
+]

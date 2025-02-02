@@ -1,0 +1,26 @@
+char *light_pcapng_to_string(light_pcapng pcapng)
+{
+   if (pcapng == NULL)
+      return NULL;
+
+   light_pcapng iter = pcapng;
+   uint32_t block_count = light_get_block_count(pcapng);
+   size_t buffer_size = 128 * block_count;
+   char *string = calloc(buffer_size, sizeof(char));
+   char *offset = string;
+   DCHECK_NULLP(offset, return NULL);
+
+   while (iter != NULL) {
+      char *next = calloc(128, 1);
+
+      sprintf(next, "---\nType = 0x%X\nLength = %u\nData Pointer = %p\nOption count = %d\n---\n",
+            iter->block_type, iter->block_total_length, (void*)iter->block_body, __option_count(iter->options));
+
+      memcpy(offset, next, strlen(next));
+      offset += strlen(next);
+      free(next);
+      iter = iter->next_block;
+   }
+
+   return string;
+}

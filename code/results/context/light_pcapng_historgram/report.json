@@ -1,0 +1,114 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `*hist` last assigned on line 600 could be null and is dereferenced at line 601, column 13.",
+    "severity": "ERROR",
+    "line": 601,
+    "column": 13,
+    "procedure": "light_pcapng_historgram",
+    "procedure_start_line": 577,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 577,
+            "column_number": 1,
+            "description": "start of procedure light_pcapng_historgram()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 580,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 581,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 582,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 585,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 587,
+            "column_number": 11,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 588,
+            "column_number": 7,
+            "description": "Skipping __function_pointer__(): unresolved function pointer"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 589,
+            "column_number": 11,
+            "description": "Taking true branch"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 590,
+            "column_number": 10,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 591,
+            "column_number": 15,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 591,
+            "column_number": 22,
+            "description": "Loop condition is false. Leaving loop"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 599,
+            "column_number": 14,
+            "description": "Taking true branch"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 600,
+            "column_number": 13,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 601,
+            "column_number": 13,
+            "description": ""
+        }
+    ],
+    "key": "light_pcapng.c|light_pcapng_historgram|NULL_DEREFERENCE",
+    "node_key": "1d38fcaafae07c56a3e9a9a369c6c953",
+    "hash": "a89ce7a3fa622b4dd810df449ab21281",
+    "bug_type_hum": "Null Dereference"
+}

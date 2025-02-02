@@ -1,0 +1,37 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `fd` last assigned on line 44 could be null and is dereferenced at line 45, column 2.",
+    "severity": "ERROR",
+    "line": 45,
+    "column": 2,
+    "procedure": "light_open_decompression",
+    "procedure_start_line": 42,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_platform.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_platform.c",
+            "line_number": 42,
+            "column_number": 1,
+            "description": "start of procedure light_open_decompression()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_platform.c",
+            "line_number": 44,
+            "column_number": 2,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_platform.c",
+            "line_number": 45,
+            "column_number": 2,
+            "description": ""
+        }
+    ],
+    "key": "light_platform.c|light_open_decompression|NULL_DEREFERENCE",
+    "node_key": "53685cc892a5fac0caf1af23b2db8ab4",
+    "hash": "223691f4bce0859e41155aab01546004",
+    "bug_type_hum": "Null Dereference"
+}

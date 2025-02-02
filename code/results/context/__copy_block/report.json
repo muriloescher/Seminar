@@ -1,0 +1,188 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `pcopy->block_body` last assigned on line 70 could be null and is dereferenced by call to `memcpy()` at line 71, column 2.",
+        "severity": "ERROR",
+        "line": 71,
+        "column": 2,
+        "procedure": "__copy_block",
+        "procedure_start_line": 54,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 54,
+                "column_number": 1,
+                "description": "start of procedure __copy_block()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 56,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 60,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 61,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 62,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 64,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 65,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 66,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 33,
+                "column_number": 1,
+                "description": "start of procedure __copy_option()"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 35,
+                "column_number": 6,
+                "description": "Taking true branch"
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 36,
+                "column_number": 3,
+                "description": ""
+            },
+            {
+                "level": 1,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 52,
+                "column_number": 1,
+                "description": "return from a call to __copy_option"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 67,
+                "column_number": 2,
+                "description": "Skipping __get_option_total_size(): empty list of specs"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 68,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 70,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 71,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "light_internal.c|__copy_block|NULL_DEREFERENCE",
+        "node_key": "b6fe22873058f3f9148c525273a417ec",
+        "hash": "1cd855ec5e70b2f8f460986a9ffddacf",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `pcopy` last assigned on line 61 could be null and is dereferenced at line 64, column 2.",
+        "severity": "ERROR",
+        "line": 64,
+        "column": 2,
+        "procedure": "__copy_block",
+        "procedure_start_line": 54,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 54,
+                "column_number": 1,
+                "description": "start of procedure __copy_block()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 56,
+                "column_number": 6,
+                "description": "Taking false branch"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 60,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 61,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 62,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_internal.c",
+                "line_number": 64,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "light_internal.c|__copy_block|NULL_DEREFERENCE",
+        "node_key": "b6235f4ea0366021935e2e01069923d8",
+        "hash": "51299ee53cc7fa5af528bd77a98bc4d6",
+        "bug_type_hum": "Null Dereference"
+    }
+]

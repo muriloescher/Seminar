@@ -1,0 +1,128 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `block_pointers` last assigned on line 387 could be null and is dereferenced at line 391, column 7.",
+    "severity": "ERROR",
+    "line": 391,
+    "column": 7,
+    "procedure": "light_pcapng_release",
+    "procedure_start_line": 383,
+    "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 383,
+            "column_number": 1,
+            "description": "start of procedure light_pcapng_release()"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 385,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 386,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 553,
+            "column_number": 1,
+            "description": "start of procedure light_get_block_count()"
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 555,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 556,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 558,
+            "column_number": 11,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 559,
+            "column_number": 7,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 560,
+            "column_number": 7,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 558,
+            "column_number": 11,
+            "description": "Loop condition is false. Leaving loop"
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 563,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 564,
+            "column_number": 1,
+            "description": "return from a call to light_get_block_count"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 387,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 388,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 390,
+            "column_number": 11,
+            "description": "Loop condition is true. Entering loop body"
+        },
+        {
+            "level": 0,
+            "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_pcapng.c",
+            "line_number": 391,
+            "column_number": 7,
+            "description": ""
+        }
+    ],
+    "key": "light_pcapng.c|light_pcapng_release|NULL_DEREFERENCE",
+    "node_key": "53c608064e746b38ff3a892da83eb871",
+    "hash": "12f93587ef02758c8cc343156d1f87d0",
+    "bug_type_hum": "Null Dereference"
+}

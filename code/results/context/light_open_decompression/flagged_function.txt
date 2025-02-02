@@ -1,0 +1,25 @@
+light_file light_open_decompression(const char *file_name, const __read_mode_t mode)
+{
+	light_file fd = calloc(1, sizeof(light_file_t));
+	fd->file = INVALID_FILE;
+	fd->decompression_context = light_get_decompression_context();
+
+	switch (mode)
+	{
+		case LIGHT_OREAD:
+			fd->file = fopen(file_name, "rb");
+			break;
+
+		default:
+			break;
+	}
+
+	if (fd->file)
+	{
+		return fd;
+	}
+	else
+	{
+		return NULL;
+	}
+}

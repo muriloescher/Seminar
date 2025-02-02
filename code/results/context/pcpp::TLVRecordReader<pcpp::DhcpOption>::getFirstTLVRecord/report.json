@@ -1,0 +1,135 @@
+{
+    "bug_type": "NULL_DEREFERENCE",
+    "qualifier": "pointer `&resRec->m_Data` last assigned on line 243 could be null and is dereferenced by call to `getTotalSize` at line 246, column 27.",
+    "severity": "ERROR",
+    "line": 246,
+    "column": 27,
+    "procedure": "pcpp::TLVRecordReader<pcpp::DhcpOption>::getFirstTLVRecord",
+    "procedure_start_line": 240,
+    "file": "Packet++/header/TLVData.h",
+    "bug_trace": [
+        {
+            "level": 0,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 240,
+            "column_number": 3,
+            "description": "start of procedure getFirstTLVRecord"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 243,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/DhcpLayer.h",
+            "line_number": 406,
+            "column_number": 3,
+            "description": "start of procedure DhcpOption"
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/DhcpLayer.h",
+            "line_number": 406,
+            "column_number": 40,
+            "description": ""
+        },
+        {
+            "level": 2,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 46,
+            "column_number": 3,
+            "description": "start of procedure TLVRecord"
+        },
+        {
+            "level": 2,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 48,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 70,
+            "column_number": 3,
+            "description": "start of procedure assign"
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 72,
+            "column_number": 7,
+            "description": "Taking true branch"
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 73,
+            "column_number": 5,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 72,
+            "column_number": 4,
+            "description": ""
+        },
+        {
+            "level": 3,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 76,
+            "column_number": 3,
+            "description": "return from a call to pcpp::TLVRecord::assign"
+        },
+        {
+            "level": 2,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 49,
+            "column_number": 3,
+            "description": "return from a call to pcpp::TLVRecord::TLVRecord"
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/DhcpLayer.h",
+            "line_number": 406,
+            "column_number": 67,
+            "description": "return from a call to pcpp::DhcpOption::DhcpOption"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 246,
+            "column_number": 8,
+            "description": "Taking false branch"
+        },
+        {
+            "level": 0,
+            "filename": "Packet++/header/TLVData.h",
+            "line_number": 246,
+            "column_number": 27,
+            "description": ""
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/DhcpLayer.h",
+            "line_number": 473,
+            "column_number": 3,
+            "description": "start of procedure getTotalSize"
+        },
+        {
+            "level": 1,
+            "filename": "Packet++/header/DhcpLayer.h",
+            "line_number": 475,
+            "column_number": 8,
+            "description": ""
+        }
+    ],
+    "key": "TLVData.h|getFirstTLVRecord|NULL_DEREFERENCE",
+    "node_key": "a54c44d5620f6dcdb2b884a4fadf3c42",
+    "hash": "1be103446dfe5c33b5d4d1309d8afbec",
+    "bug_type_hum": "Null Dereference"
+}

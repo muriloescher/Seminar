@@ -1,0 +1,139 @@
+[
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `option->data` last assigned on line 69 could be null and is dereferenced by call to `memcpy()` at line 70, column 2.",
+        "severity": "ERROR",
+        "line": 70,
+        "column": 2,
+        "procedure": "light_create_option",
+        "procedure_start_line": 60,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 60,
+                "column_number": 1,
+                "description": "start of procedure light_create_option()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 62,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 63,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 65,
+                "column_number": 2,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 65,
+                "column_number": 2,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 66,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 67,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 69,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 70,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "light_manipulate.c|light_create_option|NULL_DEREFERENCE",
+        "node_key": "f063383b029c8858fc25c6f6a2949cd9",
+        "hash": "07a9d27fdd1873d1e44e5a2c0d4e9f52",
+        "bug_type_hum": "Null Dereference"
+    },
+    {
+        "bug_type": "NULL_DEREFERENCE",
+        "qualifier": "pointer `option` last assigned on line 63 could be null and is dereferenced at line 66, column 2.",
+        "severity": "ERROR",
+        "line": 66,
+        "column": 2,
+        "procedure": "light_create_option",
+        "procedure_start_line": 60,
+        "file": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+        "bug_trace": [
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 60,
+                "column_number": 1,
+                "description": "start of procedure light_create_option()"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 62,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 63,
+                "column_number": 2,
+                "description": ""
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 65,
+                "column_number": 2,
+                "description": "Condition is true"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 65,
+                "column_number": 2,
+                "description": "Loop condition is false. Leaving loop"
+            },
+            {
+                "level": 0,
+                "filename": "3rdParty/LightPcapNg/LightPcapNg/src/light_manipulate.c",
+                "line_number": 66,
+                "column_number": 2,
+                "description": ""
+            }
+        ],
+        "key": "light_manipulate.c|light_create_option|NULL_DEREFERENCE",
+        "node_key": "11ad868c78cb5ac7cfebc2a6732d7ff2",
+        "hash": "64c80af881d58e391bad3cab26e2b15a",
+        "bug_type_hum": "Null Dereference"
+    }
+]

@@ -1,0 +1,14 @@
+light_option light_create_option(const uint16_t option_code, const uint16_t option_length, void *option_value)
+{
+	uint16_t size = 0;
+	light_option option = calloc(1, sizeof(struct _light_option));
+
+	PADD32(option_length, &size);
+	option->custom_option_code = option_code;
+	option->option_length = option_length;
+
+	option->data = calloc(size, sizeof(uint8_t));
+	memcpy(option->data, option_value, option_length);
+
+	return option;
+}
