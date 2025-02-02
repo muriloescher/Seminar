@@ -1,0 +1,57 @@
+Change format to 16:9, download from tum website
+
+Took a little bit too much in the outline, skim through
+
+Change approach to methodology, evaluation to results
+
+Static testing has a lot of fps (assumed), dynamic testing no
+we dont want to spend too much time and not have many fps
+the dream is that static testing checks everything quickly and has not many fps
+
+following report structure is not the best
+
+present vision, we dont want to execute, we dont wanna have fps, we dont wanna need to check
+we want to automate
+
+ditch introduction and present big vision
+
+explain the dream, big picture, attract people
+
+put mininum amount of words, people and title
+citing is important
+
+making a diagram of the combination of sast tools would
+split related work into 3 slides, make diagram for all
+
+related work isnt the main topic, just a mean to get to the actual problem
+
+make titles more teatrical
+
+
+make different diagrams for the slides
+
+5 make diagram horizontal, put logo of infer and codeql, also svf, also chatgpt logo
+step-by-step animations
+
+6 change bugoss dataset header, ground truth data (type, bic), box with files inside
+
+7 codeql can also find memory-related issues, put logos of the tools
+
+8 change bytecode for bitcode everywhere, changing font from digraph into similar to text in the
+slide, draw by myself in power point
+
+9 make diagram prompt+files -> chatgpt -> labels
+
+10 make clear that vulns detected were flagged (51 vulns reported), context
+
+12
+Important:
+ANALYSIS NEEDS TO BE DONE FOR FUNCTIONS WITHOUT CONTEXT
+Come up with false positive reduction rate, analyze all functions and see what llm says
+
+13
+change takeaway depending on fp reduction rate, talk about ground truth
+
+add vuln. amount table 1 from report as extra resource
+
+eliminate outline if time does not allow
