@@ -1,0 +1,1 @@
+FP dead store when flagged by Infer, but mentioned the actual buffer overflow error
