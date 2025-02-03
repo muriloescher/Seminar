@@ -33,6 +33,24 @@ Task:
 Analyze the above information and determine whether the flagged vulnerability is likely a false positive. Provide your reasoning.
 \end{lstlisting}
 
+\begin{lstlisting}[breaklines=true, caption={Prompt structure for GPT-4 analysis of flagged vulnerabilities.}, label={prompt}]
+I want you to help me determine whether the following function is vulnerable or not.
+The input consists of:
+- Results from a static analysis tool, Infer.
+- A file containing the full code for the function.
+
+Static Analysis Results:
+- The full static analysis results from Infer for the flagged function are available in the following file:
+    - Callers: report.json
+
+Contextual Information:
+- Code Files: The full code for the flagged function is available in the following file:
+    - Flagged Function: flagged_function.txt
+
+Task:
+Analyze the above information and determine whether the flagged vulnerability is likely a false positive. Provide your reasoning.
+\end{lstlisting}
+
 Once the prompt was constructed, it was input into GPT-4 through ChatGPT. Each prompt corresponded to a flagged vulnerability, and the LLM was tasked with:
 \begin{itemize}
     \item Determining whether the vulnerability was a true positive or a false positive.
