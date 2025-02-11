@@ -12,6 +12,17 @@ For this study, the standard library of 60 predefined queries provided by CodeQL
 
 To run CodeQL, the provided build scripts from the BugOSS dataset were adapted to work with CodeQL's database creation process. Instead of running the \texttt{make} command (or its corresponding equivalent depending on the build setup) directly, the build command was passed to CodeQL's CLI, which intercepted the build process and generated the required database for analysis.
 
+For example, for PcapPlusPlus, instead of running:
+\begin{verbatim}
+make -j8 fuzzers
+\end{verbatim}
+
+The build must be executed and analyzed through CodeQL as:
+\begin{verbatim}
+codeql database create codeql-db --language=cpp --command="make -j8 fuzzers"
+codeql database analyze codeql-db --format sarif-latest --output results.sarif
+\end{verbatim}
+
 \subsubsection{Infer}
 Developed by Meta, Infer is a static analysis tool designed to identify specific classes of vulnerabilities commonly found in C and C++ codebases. Its strengths include detecting:
 \begin{itemize}

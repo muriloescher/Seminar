@@ -7,7 +7,7 @@ To facilitate the analysis by GPT-4, the following information was consolidated 
     \item \textbf{Contextual Information}: The callers and callees of the flagged function derived from the SVF-generated call graph, as well as the source code for the actual function.
 \end{enumerate}
 
-Given that some functions had numerous callers and callees, it was impractical to include the complete code for them directly in the prompt. Instead, the code for all relevant functions (callers, callees, and the flagged function) was extracted from the codebase and saved into separate files. These files were referenced in the prompt to provide GPT-4 with access to the full context while keeping the prompt concise.
+Given that some functions had numerous callers and callees, it was impractical to include the complete code for them directly in the prompt. Instead, the code for all relevant functions (callers, callees, and the flagged function) was extracted from the codebase and saved into separate files. These files were referenced in the prompt to provide GPT-4 with access to the full context while keeping the prompt concise. For files whose context could not be found, references to contextual information and the corresponding files were removed from the prompt.
 
 \subsubsection{Prompt Structure}
 The prompt provided followed the structure below:
@@ -17,7 +17,7 @@ I want you to help me determine whether the following function is vulnerable or 
 The input consists of:
 - Results from a static analysis tool, Infer.
 - Contextual information in the form of callers and callees derived from a call graph.
-- Links to files containing the full code for related functions.
+- Files containing the full code for related functions.
 
 Static Analysis Results:
 - The full static analysis results from Infer for the flagged function are available in the following file:
@@ -33,24 +33,6 @@ Task:
 Analyze the above information and determine whether the flagged vulnerability is likely a false positive. Provide your reasoning.
 \end{lstlisting}
 
-\begin{lstlisting}[breaklines=true, caption={Prompt structure for GPT-4 analysis of flagged vulnerabilities.}, label={prompt}]
-I want you to help me determine whether the following function is vulnerable or not.
-The input consists of:
-- Results from a static analysis tool, Infer.
-- A file containing the full code for the function.
-
-Static Analysis Results:
-- The full static analysis results from Infer for the flagged function are available in the following file:
-    - Callers: report.json
-
-Contextual Information:
-- Code Files: The full code for the flagged function is available in the following file:
-    - Flagged Function: flagged_function.txt
-
-Task:
-Analyze the above information and determine whether the flagged vulnerability is likely a false positive. Provide your reasoning.
-\end{lstlisting}
-
 Once the prompt was constructed, it was input into GPT-4 through ChatGPT. Each prompt corresponded to a flagged vulnerability, and the LLM was tasked with:
 \begin{itemize}
     \item Determining whether the vulnerability was a true positive or a false positive.
@@ -59,6 +41,6 @@ Once the prompt was constructed, it was input into GPT-4 through ChatGPT. Each p
 
 By combining structured outputs from static analysis tools with external code files and contextual information, the prompts leveraged GPT-4’s ability to reason about software vulnerabilities in a way that SAST tools alone could not. This approach aimed to:
 \begin{itemize}
-    \item Reduce false positives by incorporating comprehensive context into the analysis.
+    \item Reduce false positives by incorporating code context into the analysis.
     \item Enhance explainability by producing detailed reasoning for each classification.
 \end{itemize}

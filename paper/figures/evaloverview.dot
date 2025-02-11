@@ -1,0 +1,64 @@
+digraph G {
+    rankdir=LR;
+    splines=ortho;
+    fontname="Arial";
+    node [shape=box, style=filled, fillcolor=lightgray];
+
+    // Layer 1: BugOSS Dataset with 19 Projects Built
+    subgraph cluster_bugoss {
+        label="BugOSS Dataset (19 Projects Built)";
+        style=dashed;
+        proj1 [label="Project 19", fillcolor=lightblue];
+        projx [label="...", shape=plaintext, fillcolor=none];
+        proj19 [label="Project 1", fillcolor=lightblue];
+    }
+
+    // Layer 2: Static Analysis Tools
+    sast_tools [label="SAST Tools:\nCodeQL & Infer", fillcolor=lightgray];
+
+    // Layer 3: Filtered Project Selection
+    pcapplusplus [label="PcapPlusPlus (Selected Project)", fillcolor=lightyellow];
+
+    // Layer 4: Detected Vulnerabilities
+    subgraph cluster_vulns {
+        label="51 Vulnerabilites\nFlagged\nin 31 Functions";
+        style=dashed;
+        vuln51 [label="Vuln 51", fillcolor=lightcoral];
+        vulnx [label="...", shape=plaintext, fillcolor=none];
+        vuln1 [label="Vuln 1", fillcolor=lightcoral];
+    }
+    
+    ground_truth [label="Ground Truth Detected", fillcolor=lightgreen];
+
+    // Layer 5: Context Extraction via SVF
+    svf [label="SVF Call Graph Analysis", fillcolor=lightgray];
+
+    subgraph cluster_context {
+        label="Context Extracted\nfor 9 Functions";
+        style=dashed;
+        ctx1 [label="Context 9", fillcolor=lightblue];
+        ctxx [label="...", shape=plaintext, fillcolor=none];
+        ctx9 [label="Context 1", fillcolor=lightblue];
+    }
+
+    // Layer 6: LLM Augmentation
+    llm [label="GPT-4 Analysis", fillcolor=lightgoldenrod];
+
+    // Layer 7: Results positioned below GPT-4 Analysis
+    results [label="Final Results", shape=ellipse, fillcolor=lightgreen];
+    {rank=same; results}
+
+    // Edges (Workflow)
+    projx -> sast_tools [penwidth=5];
+    
+    sast_tools -> pcapplusplus;
+    pcapplusplus -> vulnx [penwidth=5];
+    vuln1 -> ground_truth [color=green, penwidth=2, label="Ground Truth"];
+    pcapplusplus -> svf;
+    svf -> ctxx [penwidth=5];
+    
+    sast_tools -> llm [label="SAST Output"];
+    ctxx -> llm;
+    
+    llm -> results;
+}
